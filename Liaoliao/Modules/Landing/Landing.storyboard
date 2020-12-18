@@ -51,6 +51,9 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq8-bc-yn4">
                                 <rect key="frame" x="186" y="752" width="46" height="30"/>
+                                <connections>
+                                    <action selector="onStartTapped:" destination="LE2-hf-00K" eventType="touchUpInside" id="Koz-5Y-hfa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SOV-re-Qoh"/>

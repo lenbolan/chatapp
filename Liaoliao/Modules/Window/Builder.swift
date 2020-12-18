@@ -7,6 +7,7 @@
 
 import UIKit
 import Landing
+import ChatroomLogin
 
 public final class Builder {
     
@@ -14,10 +15,13 @@ public final class Builder {
         let window = Window(windowScene: windowScene)
         
         let landingModule = Landing.Builder.build
+        let loginModule = ChatroomLogin.Builder.build
+        
         let router = Router(
             window: window,
             submodules: (
-                landingModule: landingModule, ()
+                landingModule: landingModule,
+                loginModule: loginModule
             )
         )
         let presenter = Presenter(router: router)

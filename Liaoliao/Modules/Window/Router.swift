@@ -13,7 +13,8 @@ class Router {
     private let submodules: Submodules
     
     typealias Submodules = (
-        landingModule: () -> UIViewController, ()
+        landingModule: (_ onStart: @escaping () -> Void) -> UIViewController,
+        loginModule: () -> UIViewController
     )
     
     init(window: UIWindow, submodules: Submodules) {
@@ -26,8 +27,16 @@ class Router {
 extension Router: Routing {
     
     func routeToLanding() {
-        let landingView = self.submodules.landingModule()
+        let landingView = self.submodules.landingModule { [weak self] in
+            self?.routeToLogin()
+        }
         self.window.rootViewController = landingView
+        self.window.makeKeyAndVisible()
+    }
+    
+    func routeToLogin() {
+        let loginView = self.submodules.loginModule()
+        self.window.rootViewController = loginView
         self.window.makeKeyAndVisible()
     }
     

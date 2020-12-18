@@ -15,9 +15,79 @@
                     <view key="view" contentMode="scaleToFill" id="RKS-SZ-YGH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="聊聊" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irh-9F-XCk">
+                                <rect key="frame" x="162" y="134" width="90" height="52.5"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Socket IO based" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubu-3r-Wcj">
+                                <rect key="frame" x="107" y="201.5" width="200" height="17.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="eeD-I6-MlT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Light" family="Arial Hebrew" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zKg-3e-pWO">
+                                <rect key="frame" x="107" y="269" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="GmG-Yf-N3b"/>
+                                    <constraint firstAttribute="width" constant="200" id="qto-OD-6XF"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uUr-d0-fZ1">
+                                <rect key="frame" x="60" y="508" width="294" height="100"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AIM-rl-ZVz">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="mCx-z9-0fe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UhD-sA-8Xa">
+                                        <rect key="frame" x="0.0" y="70" width="294" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Bt8-RL-Inw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIP-2d-AvD">
+                                <rect key="frame" x="192" y="778" width="30" height="34"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="yd0-vj-VnL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ubu-3r-Wcj" firstAttribute="centerX" secondItem="yd0-vj-VnL" secondAttribute="centerX" id="3Pa-dZ-75x"/>
+                            <constraint firstItem="uUr-d0-fZ1" firstAttribute="top" secondItem="zKg-3e-pWO" secondAttribute="bottom" constant="39" id="8Dz-5l-6dq"/>
+                            <constraint firstItem="iIP-2d-AvD" firstAttribute="centerX" secondItem="yd0-vj-VnL" secondAttribute="centerX" id="BGV-CU-Aqc"/>
+                            <constraint firstItem="Irh-9F-XCk" firstAttribute="centerX" secondItem="yd0-vj-VnL" secondAttribute="centerX" id="BHq-Dh-vo0"/>
+                            <constraint firstItem="zKg-3e-pWO" firstAttribute="centerX" secondItem="yd0-vj-VnL" secondAttribute="centerX" id="DPf-gR-Hc0"/>
+                            <constraint firstItem="ubu-3r-Wcj" firstAttribute="top" secondItem="Irh-9F-XCk" secondAttribute="bottom" constant="15" id="PqF-ho-JUv"/>
+                            <constraint firstItem="yd0-vj-VnL" firstAttribute="trailing" secondItem="uUr-d0-fZ1" secondAttribute="trailing" constant="60" id="XbH-Dk-e8g"/>
+                            <constraint firstItem="Irh-9F-XCk" firstAttribute="top" secondItem="yd0-vj-VnL" secondAttribute="top" constant="90" id="YXW-Pp-EQU"/>
+                            <constraint firstItem="yd0-vj-VnL" firstAttribute="bottom" secondItem="iIP-2d-AvD" secondAttribute="bottom" constant="50" id="qYM-Da-1Ai"/>
+                            <constraint firstItem="zKg-3e-pWO" firstAttribute="top" secondItem="ubu-3r-Wcj" secondAttribute="bottom" constant="50" id="raa-Mb-vcS"/>
+                            <constraint firstItem="uUr-d0-fZ1" firstAttribute="centerX" secondItem="yd0-vj-VnL" secondAttribute="centerX" id="uFN-e0-fmL"/>
+                            <constraint firstItem="uUr-d0-fZ1" firstAttribute="leading" secondItem="yd0-vj-VnL" secondAttribute="leading" constant="60" id="yvY-bx-9GZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="zKg-3e-pWO" id="qVc-EH-JOt"/>
+                        <outlet property="descriptionLabel" destination="ubu-3r-Wcj" id="XLF-i2-091"/>
+                        <outlet property="emailTextField" destination="UhD-sA-8Xa" id="UQ3-q2-PTi"/>
+                        <outlet property="loginButton" destination="iIP-2d-AvD" id="BP9-Qn-gTY"/>
+                        <outlet property="titleLabel" destination="Irh-9F-XCk" id="TFF-Fk-I9d"/>
+                        <outlet property="usernameTextField" destination="AIM-rl-ZVz" id="qpY-zs-28U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bA-qk-LOK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

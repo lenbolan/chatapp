@@ -37,6 +37,7 @@
 		A16B447B258C76BA00875743 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4478258C76B900875743 /* Builder.swift */; };
 		A16B447C258C76BB00875743 /* ChatroomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */; };
 		A16B447D258C76BB00875743 /* ChatroomLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16B447A258C76BA00875743 /* ChatroomLogin.storyboard */; };
+		A16B4487258C7B2B00875743 /* ChatroomLogin.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16B4486258C7B2B00875743 /* ChatroomLogin.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,7 @@
 		A16B4478258C76B900875743 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatroomLoginViewController.swift; sourceTree = "<group>"; };
 		A16B447A258C76BA00875743 /* ChatroomLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatroomLogin.storyboard; sourceTree = "<group>"; };
+		A16B4486258C7B2B00875743 /* ChatroomLogin.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ChatroomLogin.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 				A16B447A258C76BA00875743 /* ChatroomLogin.storyboard */,
 				A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */,
 				A16B442F258C74EB00875743 /* Info.plist */,
+				A16B4486258C7B2B00875743 /* ChatroomLogin.xcassets */,
 			);
 			path = ChatroomLogin;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16B4487258C7B2B00875743 /* ChatroomLogin.xcassets in Resources */,
 				A16B447D258C76BB00875743 /* ChatroomLogin.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
