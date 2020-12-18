@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="Yat-gJ-Sgv">
+            <objects>
+                <viewController storyboardIdentifier="LandingViewController" id="LE2-hf-00K" customClass="LandingViewController" customModule="Landing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xaH-wj-xfp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wrU-Q0-1fL">
+                                <rect key="frame" x="147" y="134" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="cYA-jA-XrY"/>
+                                    <constraint firstAttribute="height" constant="120" id="j5M-4t-ede"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="聊聊" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMh-Hg-dxb">
+                                <rect key="frame" x="65" y="292" width="284" height="60"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="28c-Ov-34Q">
+                                <rect key="frame" x="109" y="372" width="200" height="66.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="聊天，一触及达" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVw-Xe-xAZ">
+                                        <rect key="frame" x="12.5" y="0.0" width="175" height="29"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Socket IO based" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1m7-2G-0HC">
+                                        <rect key="frame" x="40" y="49" width="120.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew-Light" family="Arial Hebrew" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ewc-US-qGH"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq8-bc-yn4">
+                                <rect key="frame" x="186" y="752" width="46" height="30"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SOV-re-Qoh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wrU-Q0-1fL" firstAttribute="top" secondItem="SOV-re-Qoh" secondAttribute="top" constant="90" id="7IS-Ty-una"/>
+                            <constraint firstItem="wrU-Q0-1fL" firstAttribute="centerX" secondItem="SOV-re-Qoh" secondAttribute="centerX" id="8dS-AE-U0B"/>
+                            <constraint firstItem="XMh-Hg-dxb" firstAttribute="centerX" secondItem="SOV-re-Qoh" secondAttribute="centerX" id="HW6-og-xDC"/>
+                            <constraint firstItem="Pq8-bc-yn4" firstAttribute="centerX" secondItem="SOV-re-Qoh" secondAttribute="centerX" id="Qp0-ez-P57"/>
+                            <constraint firstItem="SOV-re-Qoh" firstAttribute="bottom" secondItem="Pq8-bc-yn4" secondAttribute="bottom" constant="80" id="dT0-s4-G9d"/>
+                            <constraint firstItem="28c-Ov-34Q" firstAttribute="centerX" secondItem="SOV-re-Qoh" secondAttribute="centerX" id="egx-d4-DlO"/>
+                            <constraint firstItem="28c-Ov-34Q" firstAttribute="top" secondItem="XMh-Hg-dxb" secondAttribute="bottom" constant="18" id="lZq-bt-gcS"/>
+                            <constraint firstItem="XMh-Hg-dxb" firstAttribute="top" secondItem="wrU-Q0-1fL" secondAttribute="bottom" constant="38" id="mnq-oJ-fZW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="1m7-2G-0HC" id="lBd-hV-Rrx"/>
+                        <outlet property="logoImageView" destination="wrU-Q0-1fL" id="PjA-mN-5eR"/>
+                        <outlet property="startButton" destination="Pq8-bc-yn4" id="jPA-L3-4jW"/>
+                        <outlet property="subtitleLabel" destination="ZVw-Xe-xAZ" id="nN6-M0-pAu"/>
+                        <outlet property="titleLabel" destination="XMh-Hg-dxb" id="9ur-ww-Fr8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWL-qr-Qc7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108.69565217391305" y="127.90178571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -13,7 +13,93 @@
 		A16B43DE258C739600875743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16B43DC258C739600875743 /* Main.storyboard */; };
 		A16B43E0258C739B00875743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16B43DF258C739B00875743 /* Assets.xcassets */; };
 		A16B43E3258C739B00875743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16B43E1258C739B00875743 /* LaunchScreen.storyboard */; };
+		A16B43F5258C741700875743 /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = A16B43F3258C741700875743 /* Window.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16B43F8258C741700875743 /* Window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16B43F1258C741700875743 /* Window.framework */; };
+		A16B43F9258C741700875743 /* Window.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A16B43F1258C741700875743 /* Window.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A16B4408258C744300875743 /* Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = A16B4406258C744300875743 /* Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16B440B258C744300875743 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16B4404258C744300875743 /* Utility.framework */; };
+		A16B440C258C744300875743 /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A16B4404258C744300875743 /* Utility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A16B441C258C74D400875743 /* Landing.h in Headers */ = {isa = PBXBuildFile; fileRef = A16B441A258C74D400875743 /* Landing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16B441F258C74D400875743 /* Landing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16B4418258C74D400875743 /* Landing.framework */; };
+		A16B4420258C74D400875743 /* Landing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A16B4418258C74D400875743 /* Landing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A16B4430258C74EB00875743 /* ChatroomLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = A16B442E258C74EB00875743 /* ChatroomLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16B4433258C74EB00875743 /* ChatroomLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16B442C258C74EB00875743 /* ChatroomLogin.framework */; };
+		A16B4434258C74EB00875743 /* ChatroomLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A16B442C258C74EB00875743 /* ChatroomLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A16B4449258C759C00875743 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4446258C759C00875743 /* Builder.swift */; };
+		A16B444A258C759C00875743 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4447258C759C00875743 /* Router.swift */; };
+		A16B444B258C759C00875743 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4448258C759C00875743 /* Presenter.swift */; };
+		A16B4451258C75BC00875743 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4450258C75BC00875743 /* Window.swift */; };
+		A16B4457258C75E800875743 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4456258C75E800875743 /* UIViewController+Extensions.swift */; };
+		A16B4460258C760700875743 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B445C258C760600875743 /* Builder.swift */; };
+		A16B4461258C760700875743 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16B445D258C760600875743 /* Landing.storyboard */; };
+		A16B4462258C760700875743 /* Landing.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16B445E258C760700875743 /* Landing.xcassets */; };
+		A16B4463258C760700875743 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B445F258C760700875743 /* LandingViewController.swift */; };
+		A16B447B258C76BA00875743 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4478258C76B900875743 /* Builder.swift */; };
+		A16B447C258C76BB00875743 /* ChatroomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */; };
+		A16B447D258C76BB00875743 /* ChatroomLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16B447A258C76BA00875743 /* ChatroomLogin.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A16B43F6258C741700875743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16B43F0258C741700875743;
+			remoteInfo = Window;
+		};
+		A16B4409258C744300875743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16B4403258C744300875743;
+			remoteInfo = Utility;
+		};
+		A16B441D258C74D400875743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16B4417258C74D400875743;
+			remoteInfo = Landing;
+		};
+		A16B4431258C74EB00875743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16B442B258C74EB00875743;
+			remoteInfo = ChatroomLogin;
+		};
+		A16B4470258C767C00875743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16B4403258C744300875743;
+			remoteInfo = Utility;
+		};
+		A16B4472258C768300875743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16B4403258C744300875743;
+			remoteInfo = Utility;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A16B43FD258C741700875743 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A16B43F9258C741700875743 /* Window.framework in Embed Frameworks */,
+				A16B4434258C74EB00875743 /* ChatroomLogin.framework in Embed Frameworks */,
+				A16B440C258C744300875743 /* Utility.framework in Embed Frameworks */,
+				A16B4420258C74D400875743 /* Landing.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A16B43D3258C739600875743 /* Liaoliao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liaoliao.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +110,66 @@
 		A16B43DF258C739B00875743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A16B43E2258C739B00875743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A16B43E4258C739B00875743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A16B43F1258C741700875743 /* Window.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Window.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A16B43F3258C741700875743 /* Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		A16B43F4258C741700875743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A16B4404258C744300875743 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A16B4406258C744300875743 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		A16B4407258C744300875743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A16B4418258C74D400875743 /* Landing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Landing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A16B441A258C74D400875743 /* Landing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Landing.h; sourceTree = "<group>"; };
+		A16B441B258C74D400875743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A16B442C258C74EB00875743 /* ChatroomLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChatroomLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A16B442E258C74EB00875743 /* ChatroomLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatroomLogin.h; sourceTree = "<group>"; };
+		A16B442F258C74EB00875743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A16B4446258C759C00875743 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		A16B4447258C759C00875743 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A16B4448258C759C00875743 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A16B4450258C75BC00875743 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		A16B4456258C75E800875743 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		A16B445C258C760600875743 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		A16B445D258C760600875743 /* Landing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
+		A16B445E258C760700875743 /* Landing.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Landing.xcassets; sourceTree = "<group>"; };
+		A16B445F258C760700875743 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		A16B4478258C76B900875743 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatroomLoginViewController.swift; sourceTree = "<group>"; };
+		A16B447A258C76BA00875743 /* ChatroomLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatroomLogin.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A16B43D0258C739600875743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16B43F8258C741700875743 /* Window.framework in Frameworks */,
+				A16B4433258C74EB00875743 /* ChatroomLogin.framework in Frameworks */,
+				A16B440B258C744300875743 /* Utility.framework in Frameworks */,
+				A16B441F258C74D400875743 /* Landing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B43EE258C741700875743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B4401258C744300875743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B4415258C74D400875743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B4429258C74EB00875743 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				A16B43D3258C739600875743 /* Liaoliao.app */,
+				A16B43F1258C741700875743 /* Window.framework */,
+				A16B4404258C744300875743 /* Utility.framework */,
+				A16B4418258C74D400875743 /* Landing.framework */,
+				A16B442C258C74EB00875743 /* ChatroomLogin.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +202,7 @@
 		A16B43D5258C739600875743 /* Liaoliao */ = {
 			isa = PBXGroup;
 			children = (
+				A16B43EB258C73EF00875743 /* Modules */,
 				A16B43D6258C739600875743 /* AppDelegate.swift */,
 				A16B43D8258C739600875743 /* SceneDelegate.swift */,
 				A16B43DA258C739600875743 /* ViewController.swift */,
@@ -67,7 +214,109 @@
 			path = Liaoliao;
 			sourceTree = "<group>";
 		};
+		A16B43EB258C73EF00875743 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A16B442D258C74EB00875743 /* ChatroomLogin */,
+				A16B4419258C74D400875743 /* Landing */,
+				A16B4412258C749500875743 /* Shared */,
+				A16B43F2258C741700875743 /* Window */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A16B43F2258C741700875743 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				A16B4446258C759C00875743 /* Builder.swift */,
+				A16B43F4258C741700875743 /* Info.plist */,
+				A16B4448258C759C00875743 /* Presenter.swift */,
+				A16B4447258C759C00875743 /* Router.swift */,
+				A16B43F3258C741700875743 /* Window.h */,
+				A16B4450258C75BC00875743 /* Window.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		A16B4405258C744300875743 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A16B4407258C744300875743 /* Info.plist */,
+				A16B4456258C75E800875743 /* UIViewController+Extensions.swift */,
+				A16B4406258C744300875743 /* Utility.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A16B4412258C749500875743 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A16B4405258C744300875743 /* Utility */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A16B4419258C74D400875743 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				A16B445C258C760600875743 /* Builder.swift */,
+				A16B441B258C74D400875743 /* Info.plist */,
+				A16B441A258C74D400875743 /* Landing.h */,
+				A16B445D258C760600875743 /* Landing.storyboard */,
+				A16B445E258C760700875743 /* Landing.xcassets */,
+				A16B445F258C760700875743 /* LandingViewController.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		A16B442D258C74EB00875743 /* ChatroomLogin */ = {
+			isa = PBXGroup;
+			children = (
+				A16B4478258C76B900875743 /* Builder.swift */,
+				A16B442E258C74EB00875743 /* ChatroomLogin.h */,
+				A16B447A258C76BA00875743 /* ChatroomLogin.storyboard */,
+				A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */,
+				A16B442F258C74EB00875743 /* Info.plist */,
+			);
+			path = ChatroomLogin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A16B43EC258C741700875743 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16B43F5258C741700875743 /* Window.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B43FF258C744300875743 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16B4408258C744300875743 /* Utility.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B4413258C74D400875743 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16B441C258C74D400875743 /* Landing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B4427258C74EB00875743 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16B4430258C74EB00875743 /* ChatroomLogin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		A16B43D2258C739600875743 /* Liaoliao */ = {
@@ -77,15 +326,94 @@
 				A16B43CF258C739600875743 /* Sources */,
 				A16B43D0258C739600875743 /* Frameworks */,
 				A16B43D1258C739600875743 /* Resources */,
+				A16B43FD258C741700875743 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A16B43F7258C741700875743 /* PBXTargetDependency */,
+				A16B440A258C744300875743 /* PBXTargetDependency */,
+				A16B441E258C74D400875743 /* PBXTargetDependency */,
+				A16B4432258C74EB00875743 /* PBXTargetDependency */,
 			);
 			name = Liaoliao;
 			productName = Liaoliao;
 			productReference = A16B43D3258C739600875743 /* Liaoliao.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A16B43F0258C741700875743 /* Window */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A16B43FA258C741700875743 /* Build configuration list for PBXNativeTarget "Window" */;
+			buildPhases = (
+				A16B43EC258C741700875743 /* Headers */,
+				A16B43ED258C741700875743 /* Sources */,
+				A16B43EE258C741700875743 /* Frameworks */,
+				A16B43EF258C741700875743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Window;
+			productName = Window;
+			productReference = A16B43F1258C741700875743 /* Window.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A16B4403258C744300875743 /* Utility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A16B440D258C744300875743 /* Build configuration list for PBXNativeTarget "Utility" */;
+			buildPhases = (
+				A16B43FF258C744300875743 /* Headers */,
+				A16B4400258C744300875743 /* Sources */,
+				A16B4401258C744300875743 /* Frameworks */,
+				A16B4402258C744300875743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Utility;
+			productName = Utility;
+			productReference = A16B4404258C744300875743 /* Utility.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A16B4417258C74D400875743 /* Landing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A16B4421258C74D500875743 /* Build configuration list for PBXNativeTarget "Landing" */;
+			buildPhases = (
+				A16B4413258C74D400875743 /* Headers */,
+				A16B4414258C74D400875743 /* Sources */,
+				A16B4415258C74D400875743 /* Frameworks */,
+				A16B4416258C74D400875743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A16B4471258C767C00875743 /* PBXTargetDependency */,
+			);
+			name = Landing;
+			productName = Landing;
+			productReference = A16B4418258C74D400875743 /* Landing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A16B442B258C74EB00875743 /* ChatroomLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A16B4435258C74EB00875743 /* Build configuration list for PBXNativeTarget "ChatroomLogin" */;
+			buildPhases = (
+				A16B4427258C74EB00875743 /* Headers */,
+				A16B4428258C74EB00875743 /* Sources */,
+				A16B4429258C74EB00875743 /* Frameworks */,
+				A16B442A258C74EB00875743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A16B4473258C768300875743 /* PBXTargetDependency */,
+			);
+			name = ChatroomLogin;
+			productName = ChatroomLogin;
+			productReference = A16B442C258C74EB00875743 /* ChatroomLogin.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +426,22 @@
 				TargetAttributes = {
 					A16B43D2258C739600875743 = {
 						CreatedOnToolsVersion = 12.0.1;
+					};
+					A16B43F0258C741700875743 = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
+					};
+					A16B4403258C744300875743 = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
+					};
+					A16B4417258C74D400875743 = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
+					};
+					A16B442B258C74EB00875743 = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -115,6 +459,10 @@
 			projectRoot = "";
 			targets = (
 				A16B43D2258C739600875743 /* Liaoliao */,
+				A16B43F0258C741700875743 /* Window */,
+				A16B4403258C744300875743 /* Utility */,
+				A16B4417258C74D400875743 /* Landing */,
+				A16B442B258C74EB00875743 /* ChatroomLogin */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +475,37 @@
 				A16B43E3258C739B00875743 /* LaunchScreen.storyboard in Resources */,
 				A16B43E0258C739B00875743 /* Assets.xcassets in Resources */,
 				A16B43DE258C739600875743 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B43EF258C741700875743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B4402258C744300875743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B4416258C74D400875743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16B4461258C760700875743 /* Landing.storyboard in Resources */,
+				A16B4462258C760700875743 /* Landing.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B442A258C74EB00875743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16B447D258C76BB00875743 /* ChatroomLogin.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +522,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A16B43ED258C741700875743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16B444A258C759C00875743 /* Router.swift in Sources */,
+				A16B444B258C759C00875743 /* Presenter.swift in Sources */,
+				A16B4449258C759C00875743 /* Builder.swift in Sources */,
+				A16B4451258C75BC00875743 /* Window.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B4400258C744300875743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16B4457258C75E800875743 /* UIViewController+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B4414258C74D400875743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16B4463258C760700875743 /* LandingViewController.swift in Sources */,
+				A16B4460258C760700875743 /* Builder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A16B4428258C74EB00875743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16B447B258C76BA00875743 /* Builder.swift in Sources */,
+				A16B447C258C76BB00875743 /* ChatroomLoginViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A16B43F7258C741700875743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A16B43F0258C741700875743 /* Window */;
+			targetProxy = A16B43F6258C741700875743 /* PBXContainerItemProxy */;
+		};
+		A16B440A258C744300875743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A16B4403258C744300875743 /* Utility */;
+			targetProxy = A16B4409258C744300875743 /* PBXContainerItemProxy */;
+		};
+		A16B441E258C74D400875743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A16B4417258C74D400875743 /* Landing */;
+			targetProxy = A16B441D258C74D400875743 /* PBXContainerItemProxy */;
+		};
+		A16B4432258C74EB00875743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A16B442B258C74EB00875743 /* ChatroomLogin */;
+			targetProxy = A16B4431258C74EB00875743 /* PBXContainerItemProxy */;
+		};
+		A16B4471258C767C00875743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A16B4403258C744300875743 /* Utility */;
+			targetProxy = A16B4470258C767C00875743 /* PBXContainerItemProxy */;
+		};
+		A16B4473258C768300875743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A16B4403258C744300875743 /* Utility */;
+			targetProxy = A16B4472258C768300875743 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A16B43DC258C739600875743 /* Main.storyboard */ = {
@@ -284,6 +733,7 @@
 		A16B43E8258C739B00875743 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +752,7 @@
 		A16B43E9258C739B00875743 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +765,226 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A16B43FB258C741700875743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Window/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Window;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A16B43FC258C741700875743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Window/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Window;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A16B440E258C744300875743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Shared/Utility/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Utility;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A16B440F258C744300875743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Shared/Utility/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Utility;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A16B4422258C74D500875743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Landing/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Landing;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A16B4423258C74D500875743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Landing/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Landing;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A16B4436258C74EB00875743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/ChatroomLogin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.ChatroomLogin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A16B4437258C74EB00875743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/ChatroomLogin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.ChatroomLogin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -334,6 +1005,42 @@
 			buildConfigurations = (
 				A16B43E8258C739B00875743 /* Debug */,
 				A16B43E9258C739B00875743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A16B43FA258C741700875743 /* Build configuration list for PBXNativeTarget "Window" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16B43FB258C741700875743 /* Debug */,
+				A16B43FC258C741700875743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A16B440D258C744300875743 /* Build configuration list for PBXNativeTarget "Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16B440E258C744300875743 /* Debug */,
+				A16B440F258C744300875743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A16B4421258C74D500875743 /* Build configuration list for PBXNativeTarget "Landing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16B4422258C74D500875743 /* Debug */,
+				A16B4423258C74D500875743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A16B4435258C74EB00875743 /* Build configuration list for PBXNativeTarget "ChatroomLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16B4436258C74EB00875743 /* Debug */,
+				A16B4437258C74EB00875743 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
