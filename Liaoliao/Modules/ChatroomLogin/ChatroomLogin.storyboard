@@ -60,7 +60,13 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIP-2d-AvD">
-                                <rect key="frame" x="192" y="778" width="30" height="34"/>
+                                <rect key="frame" x="60" y="722" width="294" height="60"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="JX1-y0-AQD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Log In"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yd0-vj-VnL"/>
@@ -74,7 +80,9 @@
                             <constraint firstItem="ubu-3r-Wcj" firstAttribute="top" secondItem="Irh-9F-XCk" secondAttribute="bottom" constant="15" id="PqF-ho-JUv"/>
                             <constraint firstItem="yd0-vj-VnL" firstAttribute="trailing" secondItem="uUr-d0-fZ1" secondAttribute="trailing" constant="60" id="XbH-Dk-e8g"/>
                             <constraint firstItem="Irh-9F-XCk" firstAttribute="top" secondItem="yd0-vj-VnL" secondAttribute="top" constant="90" id="YXW-Pp-EQU"/>
-                            <constraint firstItem="yd0-vj-VnL" firstAttribute="bottom" secondItem="iIP-2d-AvD" secondAttribute="bottom" constant="50" id="qYM-Da-1Ai"/>
+                            <constraint firstItem="yd0-vj-VnL" firstAttribute="trailing" secondItem="iIP-2d-AvD" secondAttribute="trailing" constant="60" id="p9m-NI-6el"/>
+                            <constraint firstItem="yd0-vj-VnL" firstAttribute="bottom" secondItem="iIP-2d-AvD" secondAttribute="bottom" constant="80" id="qYM-Da-1Ai"/>
+                            <constraint firstItem="iIP-2d-AvD" firstAttribute="leading" secondItem="yd0-vj-VnL" secondAttribute="leading" constant="60" id="qbh-5i-maL"/>
                             <constraint firstItem="zKg-3e-pWO" firstAttribute="top" secondItem="ubu-3r-Wcj" secondAttribute="bottom" constant="50" id="raa-Mb-vcS"/>
                             <constraint firstItem="uUr-d0-fZ1" firstAttribute="centerX" secondItem="yd0-vj-VnL" secondAttribute="centerX" id="uFN-e0-fmL"/>
                             <constraint firstItem="uUr-d0-fZ1" firstAttribute="leading" secondItem="yd0-vj-VnL" secondAttribute="leading" constant="60" id="yvY-bx-9GZ"/>
@@ -95,6 +103,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

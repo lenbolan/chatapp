@@ -33,7 +33,9 @@ private extension LandingViewController {
     
     func setupUI() {
         logoImageView.image = UIImage(named: "logo", in: Bundle(for: LandingViewController.self), with: nil)
-        startButton.setImage(UIImage(named: "ic-start", in: Bundle(for: LandingViewController.self), with: nil), for: .normal)
+        
+        startButton.layer.cornerRadius = 12
+        startButton.layer.masksToBounds = true
     }
     
 }

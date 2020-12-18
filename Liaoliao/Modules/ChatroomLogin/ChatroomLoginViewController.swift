@@ -28,6 +28,8 @@ private extension ChatroomLoginViewController {
     
     func setupUI() {
         avatarImageView.image = UIImage(named: "ic-female", in: Bundle(for: ChatroomLoginViewController.self), with: nil)
-        loginButton.setImage(UIImage(named: "ic-login", in: Bundle(for: ChatroomLoginViewController.self), with: nil), for: .normal)
+        
+        loginButton.layer.cornerRadius = 12
+        loginButton.layer.masksToBounds = true
     }
 }

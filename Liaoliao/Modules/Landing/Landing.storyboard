@@ -23,14 +23,14 @@
                                     <constraint firstAttribute="height" constant="120" id="j5M-4t-ede"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="聊聊" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMh-Hg-dxb">
-                                <rect key="frame" x="65" y="292" width="284" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="聊聊" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMh-Hg-dxb">
+                                <rect key="frame" x="162" y="292" width="90" height="52.5"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="28c-Ov-34Q">
-                                <rect key="frame" x="109" y="372" width="200" height="66.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="28c-Ov-34Q">
+                                <rect key="frame" x="107" y="362.5" width="200" height="66.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="聊天，一触及达" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVw-Xe-xAZ">
                                         <rect key="frame" x="12.5" y="0.0" width="175" height="29"/>
@@ -49,8 +49,14 @@
                                     <constraint firstAttribute="width" constant="200" id="Ewc-US-qGH"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq8-bc-yn4">
-                                <rect key="frame" x="186" y="752" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq8-bc-yn4">
+                                <rect key="frame" x="60" y="722" width="294" height="60"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dRk-1X-dtS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="onStartTapped:" destination="LE2-hf-00K" eventType="touchUpInside" id="Koz-5Y-hfa"/>
                                 </connections>
@@ -66,7 +72,9 @@
                             <constraint firstItem="SOV-re-Qoh" firstAttribute="bottom" secondItem="Pq8-bc-yn4" secondAttribute="bottom" constant="80" id="dT0-s4-G9d"/>
                             <constraint firstItem="28c-Ov-34Q" firstAttribute="centerX" secondItem="SOV-re-Qoh" secondAttribute="centerX" id="egx-d4-DlO"/>
                             <constraint firstItem="28c-Ov-34Q" firstAttribute="top" secondItem="XMh-Hg-dxb" secondAttribute="bottom" constant="18" id="lZq-bt-gcS"/>
+                            <constraint firstItem="Pq8-bc-yn4" firstAttribute="leading" secondItem="SOV-re-Qoh" secondAttribute="leading" constant="60" id="lh8-e0-bNZ"/>
                             <constraint firstItem="XMh-Hg-dxb" firstAttribute="top" secondItem="wrU-Q0-1fL" secondAttribute="bottom" constant="38" id="mnq-oJ-fZW"/>
+                            <constraint firstItem="SOV-re-Qoh" firstAttribute="trailing" secondItem="Pq8-bc-yn4" secondAttribute="trailing" constant="60" id="sWf-JJ-JO0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -83,6 +91,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
