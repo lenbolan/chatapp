@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		60807324F10DDB8CAC73D3D4 /* Pods_UseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F13F7FED03C96221DE4098D /* Pods_UseCases.framework */; };
 		9A8FF3829A779CE64637A2B4 /* Pods_Liaoliao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866EDBFE47F4501ABDBE443A /* Pods_Liaoliao.framework */; };
+		9FDF0CB77F2109163ABF2AE9 /* Pods_LiaolisoService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BEABFA5219D71A6D9C9D69 /* Pods_LiaolisoService.framework */; };
 		A16B43D7258C739600875743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D6258C739600875743 /* AppDelegate.swift */; };
 		A16B43D9258C739600875743 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D8258C739600875743 /* SceneDelegate.swift */; };
 		A16B43DB258C739600875743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43DA258C739600875743 /* ViewController.swift */; };
@@ -164,11 +165,13 @@
 
 /* Begin PBXFileReference section */
 		1B2623DD00343E8F8AC15609 /* Pods_ChatroomLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatroomLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E5923A7B50C8EAF7DD61048 /* Pods-LiaolisoService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiaolisoService.debug.xcconfig"; path = "Target Support Files/Pods-LiaolisoService/Pods-LiaolisoService.debug.xcconfig"; sourceTree = "<group>"; };
 		1F2563B9192490C3D62624E4 /* Pods-Landing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Landing.debug.xcconfig"; path = "Target Support Files/Pods-Landing/Pods-Landing.debug.xcconfig"; sourceTree = "<group>"; };
 		22C06561A60F97A8F3244E68 /* Pods-ChatroomLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatroomLogin.release.xcconfig"; path = "Target Support Files/Pods-ChatroomLogin/Pods-ChatroomLogin.release.xcconfig"; sourceTree = "<group>"; };
 		22E1B0960ED9BFB1713BBA41 /* Pods-ChatroomLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatroomLogin.debug.xcconfig"; path = "Target Support Files/Pods-ChatroomLogin/Pods-ChatroomLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		293F37DE0DAA767B77CB4FF5 /* Pods-Liaoliao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liaoliao.release.xcconfig"; path = "Target Support Files/Pods-Liaoliao/Pods-Liaoliao.release.xcconfig"; sourceTree = "<group>"; };
 		33ADAF07E125283643C2AEC4 /* Pods_Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37BEABFA5219D71A6D9C9D69 /* Pods_LiaolisoService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiaolisoService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6E78A86A29FA42B81446EC /* Pods_Landing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Landing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F13F7FED03C96221DE4098D /* Pods_UseCases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UseCases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1A1507041C58677010BC99 /* Pods_Window.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Window.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +230,7 @@
 		B6463ECE978B2A0477744C4D /* Pods-Window.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Window.debug.xcconfig"; path = "Target Support Files/Pods-Window/Pods-Window.debug.xcconfig"; sourceTree = "<group>"; };
 		D2D36E107A53CA0821DB4088 /* Pods-Landing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Landing.release.xcconfig"; path = "Target Support Files/Pods-Landing/Pods-Landing.release.xcconfig"; sourceTree = "<group>"; };
 		D51909A3782D2D072266FC29 /* Pods-Liaoliao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liaoliao.debug.xcconfig"; path = "Target Support Files/Pods-Liaoliao/Pods-Liaoliao.debug.xcconfig"; sourceTree = "<group>"; };
+		D6FD22F5D99C6D703AA848C7 /* Pods-LiaolisoService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiaolisoService.release.xcconfig"; path = "Target Support Files/Pods-LiaolisoService/Pods-LiaolisoService.release.xcconfig"; sourceTree = "<group>"; };
 		E64C3E60C79C479B32F76727 /* Pods-Utility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utility.release.xcconfig"; path = "Target Support Files/Pods-Utility/Pods-Utility.release.xcconfig"; sourceTree = "<group>"; };
 		EFFDDA7200C33C6E5CDEFADF /* Pods-Utility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utility.debug.xcconfig"; path = "Target Support Files/Pods-Utility/Pods-Utility.debug.xcconfig"; sourceTree = "<group>"; };
 		F44C2E39BF58A6CE78C2DB88 /* Pods-UseCases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseCases.release.xcconfig"; path = "Target Support Files/Pods-UseCases/Pods-UseCases.release.xcconfig"; sourceTree = "<group>"; };
@@ -292,6 +296,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FDF0CB77F2109163ABF2AE9 /* Pods_LiaolisoService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +319,7 @@
 				33ADAF07E125283643C2AEC4 /* Pods_Utility.framework */,
 				7F1A1507041C58677010BC99 /* Pods_Window.framework */,
 				7F13F7FED03C96221DE4098D /* Pods_UseCases.framework */,
+				37BEABFA5219D71A6D9C9D69 /* Pods_LiaolisoService.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -333,6 +339,8 @@
 				977468DE46F6300A326FA23D /* Pods-Window.release.xcconfig */,
 				8B3D50F361FAFFD6FDF85081 /* Pods-UseCases.debug.xcconfig */,
 				F44C2E39BF58A6CE78C2DB88 /* Pods-UseCases.release.xcconfig */,
+				1E5923A7B50C8EAF7DD61048 /* Pods-LiaolisoService.debug.xcconfig */,
+				D6FD22F5D99C6D703AA848C7 /* Pods-LiaolisoService.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -674,6 +682,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1D6F4E0258DD248000FE69C /* Build configuration list for PBXNativeTarget "LiaolisoService" */;
 			buildPhases = (
+				D9890453806AA730A486855B /* [CP] Check Pods Manifest.lock */,
 				A1D6F4D2258DD247000FE69C /* Headers */,
 				A1D6F4D3258DD247000FE69C /* Sources */,
 				A1D6F4D4258DD247000FE69C /* Frameworks */,
@@ -966,6 +975,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Utility-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9890453806AA730A486855B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiaolisoService-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1590,6 +1621,7 @@
 		};
 		A1D6F4E1258DD248000FE69C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E5923A7B50C8EAF7DD61048 /* Pods-LiaolisoService.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1618,6 +1650,7 @@
 		};
 		A1D6F4E2258DD248000FE69C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FD22F5D99C6D703AA848C7 /* Pods-LiaolisoService.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
