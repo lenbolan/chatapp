@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,6 +39,9 @@
 		A16B447C258C76BB00875743 /* ChatroomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */; };
 		A16B447D258C76BB00875743 /* ChatroomLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16B447A258C76BA00875743 /* ChatroomLogin.storyboard */; };
 		A16B4487258C7B2B00875743 /* ChatroomLogin.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16B4486258C7B2B00875743 /* ChatroomLogin.xcassets */; };
+		A1D6F475258DB2ED000FE69C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F474258DB2ED000FE69C /* Presenter.swift */; };
+		A1D6F47B258DB508000FE69C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F47A258DB508000FE69C /* Router.swift */; };
+		A1D6F481258DC545000FE69C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F480258DC545000FE69C /* String+Extension.swift */; };
 		C8A1BD0A26711BC6F6D14040 /* Pods_Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33ADAF07E125283643C2AEC4 /* Pods_Utility.framework */; };
 		D7E14F5758F3CD23BC74D154 /* Pods_ChatroomLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2623DD00343E8F8AC15609 /* Pods_ChatroomLogin.framework */; };
 		EDEB39409BA65D085554BD9F /* Pods_Landing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6E78A86A29FA42B81446EC /* Pods_Landing.framework */; };
@@ -151,6 +154,9 @@
 		A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatroomLoginViewController.swift; sourceTree = "<group>"; };
 		A16B447A258C76BA00875743 /* ChatroomLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatroomLogin.storyboard; sourceTree = "<group>"; };
 		A16B4486258C7B2B00875743 /* ChatroomLogin.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ChatroomLogin.xcassets; sourceTree = "<group>"; };
+		A1D6F474258DB2ED000FE69C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A1D6F47A258DB508000FE69C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A1D6F480258DC545000FE69C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		B6463ECE978B2A0477744C4D /* Pods-Window.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Window.debug.xcconfig"; path = "Target Support Files/Pods-Window/Pods-Window.debug.xcconfig"; sourceTree = "<group>"; };
 		D2D36E107A53CA0821DB4088 /* Pods-Landing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Landing.release.xcconfig"; path = "Target Support Files/Pods-Landing/Pods-Landing.release.xcconfig"; sourceTree = "<group>"; };
 		D51909A3782D2D072266FC29 /* Pods-Liaoliao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liaoliao.debug.xcconfig"; path = "Target Support Files/Pods-Liaoliao/Pods-Liaoliao.debug.xcconfig"; sourceTree = "<group>"; };
@@ -232,7 +238,6 @@
 				B6463ECE978B2A0477744C4D /* Pods-Window.debug.xcconfig */,
 				977468DE46F6300A326FA23D /* Pods-Window.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -303,6 +308,7 @@
 				A16B4407258C744300875743 /* Info.plist */,
 				A16B4456258C75E800875743 /* UIViewController+Extensions.swift */,
 				A16B4406258C744300875743 /* Utility.h */,
+				A1D6F480258DC545000FE69C /* String+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -337,6 +343,8 @@
 				A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */,
 				A16B442F258C74EB00875743 /* Info.plist */,
 				A16B4486258C7B2B00875743 /* ChatroomLogin.xcassets */,
+				A1D6F474258DB2ED000FE69C /* Presenter.swift */,
+				A1D6F47A258DB508000FE69C /* Router.swift */,
 			);
 			path = ChatroomLogin;
 			sourceTree = "<group>";
@@ -734,6 +742,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D6F481258DC545000FE69C /* String+Extension.swift in Sources */,
 				A16B4457258C75E800875743 /* UIViewController+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -751,6 +760,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D6F47B258DB508000FE69C /* Router.swift in Sources */,
+				A1D6F475258DB2ED000FE69C /* Presenter.swift in Sources */,
 				A16B447B258C76BA00875743 /* Builder.swift in Sources */,
 				A16B447C258C76BB00875743 /* ChatroomLoginViewController.swift in Sources */,
 			);
