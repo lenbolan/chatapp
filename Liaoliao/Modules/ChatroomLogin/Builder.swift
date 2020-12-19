@@ -7,6 +7,7 @@
 
 import UIKit
 import Utility
+import UseCases
 
 public final class Builder {
     
@@ -14,10 +15,19 @@ public final class Builder {
         let storyboard = UIStoryboard.init(name: "ChatroomLogin", bundle: Bundle.init(for: self))
         let view = ChatroomLoginViewController.instantiate(from: storyboard)
         
+        let accountInteractor = UseCasesFactory.accoutsInteractor
+        
         let router = Router(viewController: view)
         
         view.presenterProducer = {
-            Presenter(input: $0, router: router, useCases: ())
+            Presenter(
+                input: $0,
+                router: router,
+                useCases: (
+                    login: accountInteractor.login,
+                    ()
+                )
+            )
         }
         
         return view

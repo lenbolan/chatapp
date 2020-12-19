@@ -16,7 +16,8 @@ protocol Routing {
 class Presenter: Presentation {
     
     typealias UseCases = (
-    
+        login: (_ username: String, _ email: String) -> Single<()>,
+        ()
     )
     
     var input: Input
@@ -25,6 +26,8 @@ class Presenter: Presentation {
     private let useCases: UseCases
     private let router: Routing
     
+    private let bag = DisposeBag()
+    
     init(input: Input,
          router: Routing,
          useCases: UseCases) {
@@ -32,6 +35,7 @@ class Presenter: Presentation {
         self.output = Presenter.output(input: self.input)
         self.router = router
         self.useCases = useCases
+        self.process()
     }
     
 }
@@ -51,7 +55,15 @@ private extension Presenter {
     }
     
     func process() {
-        
+        self.input.login
+            .withLatestFrom(Driver.combineLatest(self.input.username, self.input.email))
+            .asObservable()
+            .flatMap({ [useCases] (username, email) in
+                useCases.login(username, email)
+            })
+            .asDriver(onErrorDriveWith: .never())
+            .drive()
+            .disposed(by: bag)
     }
     
 }

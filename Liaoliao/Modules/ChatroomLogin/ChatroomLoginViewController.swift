@@ -13,7 +13,8 @@ protocol Presentation {
     
     typealias Input = (
         username: Driver<String>,
-        email: Driver<String>
+        email: Driver<String>,
+        login: Driver<Void>
     )
     typealias Output = (
         enableLogin: Driver<Bool>, ()
@@ -44,7 +45,8 @@ class ChatroomLoginViewController: UIViewController {
         
         presenter = presenterProducer((
             username: usernameTextField.rx.text.orEmpty.asDriver(),
-            email: emailTextField.rx.text.orEmpty.asDriver()
+            email: emailTextField.rx.text.orEmpty.asDriver(),
+            login: loginButton.rx.tap.asDriver()
         ))
         setupUI()
         setupBinding()
