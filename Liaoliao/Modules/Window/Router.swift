@@ -14,7 +14,8 @@ class Router {
     
     typealias Submodules = (
         landingModule: (_ onStart: @escaping () -> Void) -> UIViewController,
-        loginModule: () -> UIViewController
+        loginModule: (_ onLogin: @escaping () -> Void) -> UIViewController,
+        tabbarModule: () -> UIViewController
     )
     
     init(window: UIWindow, submodules: Submodules) {
@@ -35,7 +36,12 @@ extension Router: Routing {
     }
     
     func routeToLogin() {
-        let loginView = self.submodules.loginModule()
+        let loginView = self.submodules.loginModule { [weak self] in
+            print("Launch the tabbar from here")
+            let tabbarView = self?.submodules.tabbarModule()
+            self?.window.rootViewController = tabbarView
+            self?.window.makeKeyAndVisible()
+        }
         self.window.rootViewController = loginView
         self.window.makeKeyAndVisible()
     }

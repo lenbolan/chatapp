@@ -11,6 +11,13 @@
 		9A8FF3829A779CE64637A2B4 /* Pods_Liaoliao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866EDBFE47F4501ABDBE443A /* Pods_Liaoliao.framework */; };
 		9FDF0CB77F2109163ABF2AE9 /* Pods_LiaolisoService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BEABFA5219D71A6D9C9D69 /* Pods_LiaolisoService.framework */; };
 		A15410972597599900600EBB /* ChatroomWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15410962597599900600EBB /* ChatroomWebsocket.swift */; };
+		A15410BA25977FE400600EBB /* Tabbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A15410B825977FE400600EBB /* Tabbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A15410BD25977FE400600EBB /* Tabbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15410B625977FE400600EBB /* Tabbar.framework */; };
+		A15410BE25977FE400600EBB /* Tabbar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A15410B625977FE400600EBB /* Tabbar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A15410D32597814400600EBB /* LiaoliaoTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15410D22597814400600EBB /* LiaoliaoTabbarController.swift */; };
+		A15410DD2597818400600EBB /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15410DC2597818400600EBB /* Builder.swift */; };
+		A15410E72597830C00600EBB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15410E62597830C00600EBB /* Presenter.swift */; };
+		A15410F12597849600600EBB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15410F02597849600600EBB /* Router.swift */; };
 		A16B43D7258C739600875743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D6258C739600875743 /* AppDelegate.swift */; };
 		A16B43D9258C739600875743 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D8258C739600875743 /* SceneDelegate.swift */; };
 		A16B43DB258C739600875743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43DA258C739600875743 /* ViewController.swift */; };
@@ -78,6 +85,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = A16B4417258C74D400875743;
 			remoteInfo = Landing;
+		};
+		A15410BB25977FE400600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15410B525977FE400600EBB;
+			remoteInfo = Tabbar;
+		};
+		A15410FA2597891C00600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15410B525977FE400600EBB;
+			remoteInfo = Tabbar;
 		};
 		A16B43F6258C741700875743 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -165,6 +186,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A15410BE25977FE400600EBB /* Tabbar.framework in Embed Frameworks */,
 				A16B43F9258C741700875743 /* Window.framework in Embed Frameworks */,
 				A16B4434258C74EB00875743 /* ChatroomLogin.framework in Embed Frameworks */,
 				A1D6F4DF258DD248000FE69C /* LiaolisoService.framework in Embed Frameworks */,
@@ -194,6 +216,13 @@
 		8B3D50F361FAFFD6FDF85081 /* Pods-UseCases.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseCases.debug.xcconfig"; path = "Target Support Files/Pods-UseCases/Pods-UseCases.debug.xcconfig"; sourceTree = "<group>"; };
 		977468DE46F6300A326FA23D /* Pods-Window.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Window.release.xcconfig"; path = "Target Support Files/Pods-Window/Pods-Window.release.xcconfig"; sourceTree = "<group>"; };
 		A15410962597599900600EBB /* ChatroomWebsocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomWebsocket.swift; sourceTree = "<group>"; };
+		A15410B625977FE400600EBB /* Tabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15410B825977FE400600EBB /* Tabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tabbar.h; sourceTree = "<group>"; };
+		A15410B925977FE400600EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15410D22597814400600EBB /* LiaoliaoTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiaoliaoTabbarController.swift; sourceTree = "<group>"; };
+		A15410DC2597818400600EBB /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		A15410E62597830C00600EBB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A15410F02597849600600EBB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A16B43D3258C739600875743 /* Liaoliao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liaoliao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16B43D6258C739600875743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16B43D8258C739600875743 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -253,6 +282,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A15410B325977FE400600EBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A16B43D0258C739600875743 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +296,7 @@
 				A1D6F557258DE06C000FE69C /* Models.framework in Frameworks */,
 				A1D6F492258DCF7C000FE69C /* UseCases.framework in Frameworks */,
 				A16B43F8258C741700875743 /* Window.framework in Frameworks */,
+				A15410BD25977FE400600EBB /* Tabbar.framework in Frameworks */,
 				A1D6F4DE258DD248000FE69C /* LiaolisoService.framework in Frameworks */,
 				A16B4433258C74EB00875743 /* ChatroomLogin.framework in Frameworks */,
 				A16B440B258C744300875743 /* Utility.framework in Frameworks */,
@@ -361,6 +398,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A15410B725977FE400600EBB /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				A15410B825977FE400600EBB /* Tabbar.h */,
+				A15410B925977FE400600EBB /* Info.plist */,
+				A15410D22597814400600EBB /* LiaoliaoTabbarController.swift */,
+				A15410DC2597818400600EBB /* Builder.swift */,
+				A15410E62597830C00600EBB /* Presenter.swift */,
+				A15410F02597849600600EBB /* Router.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 		A16B43CA258C739600875743 = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +435,7 @@
 				A1D6F48B258DCF7C000FE69C /* UseCases.framework */,
 				A1D6F4D7258DD247000FE69C /* LiaolisoService.framework */,
 				A1D6F550258DE06C000FE69C /* Models.framework */,
+				A15410B625977FE400600EBB /* Tabbar.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -410,6 +461,7 @@
 				A16B442D258C74EB00875743 /* ChatroomLogin */,
 				A16B4419258C74D400875743 /* Landing */,
 				A16B4412258C749500875743 /* Shared */,
+				A15410B725977FE400600EBB /* Tabbar */,
 				A16B43F2258C741700875743 /* Window */,
 			);
 			path = Modules;
@@ -510,6 +562,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		A15410B125977FE400600EBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15410BA25977FE400600EBB /* Tabbar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A16B43EC258C741700875743 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -569,6 +629,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		A15410B525977FE400600EBB /* Tabbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A15410C125977FE400600EBB /* Build configuration list for PBXNativeTarget "Tabbar" */;
+			buildPhases = (
+				A15410B125977FE400600EBB /* Headers */,
+				A15410B225977FE400600EBB /* Sources */,
+				A15410B325977FE400600EBB /* Frameworks */,
+				A15410B425977FE400600EBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tabbar;
+			productName = Tabbar;
+			productReference = A15410B625977FE400600EBB /* Tabbar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		A16B43D2258C739600875743 /* Liaoliao */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A16B43E7258C739B00875743 /* Build configuration list for PBXNativeTarget "Liaoliao" */;
@@ -590,6 +668,7 @@
 				A1D6F491258DCF7C000FE69C /* PBXTargetDependency */,
 				A1D6F4DD258DD248000FE69C /* PBXTargetDependency */,
 				A1D6F556258DE06C000FE69C /* PBXTargetDependency */,
+				A15410BC25977FE400600EBB /* PBXTargetDependency */,
 			);
 			name = Liaoliao;
 			productName = Liaoliao;
@@ -609,6 +688,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A15410FB2597891C00600EBB /* PBXTargetDependency */,
 				A15410A725975BA100600EBB /* PBXTargetDependency */,
 				A15410A925975BA100600EBB /* PBXTargetDependency */,
 			);
@@ -743,6 +823,10 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					A15410B525977FE400600EBB = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
 					A16B43D2258C739600875743 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -797,11 +881,19 @@
 				A1D6F48A258DCF7C000FE69C /* UseCases */,
 				A1D6F4D6258DD247000FE69C /* LiaolisoService */,
 				A1D6F54F258DE06C000FE69C /* Models */,
+				A15410B525977FE400600EBB /* Tabbar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A15410B425977FE400600EBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A16B43D1258C739600875743 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1042,6 +1134,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A15410B225977FE400600EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15410F12597849600600EBB /* Router.swift in Sources */,
+				A15410E72597830C00600EBB /* Presenter.swift in Sources */,
+				A15410D32597814400600EBB /* LiaoliaoTabbarController.swift in Sources */,
+				A15410DD2597818400600EBB /* Builder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A16B43CF258C739600875743 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1131,6 +1234,16 @@
 			target = A16B4417258C74D400875743 /* Landing */;
 			targetProxy = A15410A825975BA100600EBB /* PBXContainerItemProxy */;
 		};
+		A15410BC25977FE400600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15410B525977FE400600EBB /* Tabbar */;
+			targetProxy = A15410BB25977FE400600EBB /* PBXContainerItemProxy */;
+		};
+		A15410FB2597891C00600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15410B525977FE400600EBB /* Tabbar */;
+			targetProxy = A15410FA2597891C00600EBB /* PBXContainerItemProxy */;
+		};
 		A16B43F7258C741700875743 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A16B43F0258C741700875743 /* Window */;
@@ -1208,6 +1321,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A15410BF25977FE400600EBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Tabbar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Tabbar;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A15410C025977FE400600EBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Tabbar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Tabbar;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		A16B43E5258C739B00875743 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1764,6 +1934,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A15410C125977FE400600EBB /* Build configuration list for PBXNativeTarget "Tabbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15410BF25977FE400600EBB /* Debug */,
+				A15410C025977FE400600EBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A16B43CE258C739600875743 /* Build configuration list for PBXProject "Liaoliao" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
