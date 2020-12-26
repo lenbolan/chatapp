@@ -65,7 +65,7 @@ private extension ChatroomLoginViewController {
     
     func setupBinding() {
         presenter.output.enableLogin
-            .debug("Enble Login Driver", trimOutput: false)
+//            .debug("Enble Login Driver", trimOutput: false)
             .drive(loginButton.rx.isEnabled)
             .disposed(by: bag)
     }

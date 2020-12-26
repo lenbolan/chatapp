@@ -7,7 +7,7 @@
 
 public struct User {
     
-    init(email: String, username: String) {
+    public init(email: String, username: String) {
         self.email = email
         self.username = username
     }

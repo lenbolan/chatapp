@@ -6,9 +6,14 @@
 //
 
 import SocketIO
+import RxSwift
+import RxRelay
+
+import Models
 
 public protocol ChatroomWebsocketAPI {
     
+    var socketResponse: Observable<ChatroomWebsocket.Response> { get }
     func login(username: String, email: String)
     
 }
@@ -18,6 +23,9 @@ public class ChatroomWebsocketService {
     private let socketUrl: String
     private var socketManager: SocketManager!
     private var socket: SocketIOClient!
+    
+    private let socketResponseRelay: PublishRelay<ChatroomWebsocket.Response> = PublishRelay()
+    public lazy var socketResponse: Observable<ChatroomWebsocket.Response> = self.socketResponseRelay.asObservable()
     
     public init(socketUrl: String) {
         self.socketUrl = socketUrl
@@ -34,7 +42,19 @@ extension ChatroomWebsocketService: ChatroomWebsocketAPI {
     
     public func login(username: String, email: String) {
         print("Login request received for username: \(username) and email: \(email)")
-        self.socket.emit("login", username, email)
+        self.socket.emit(ChatSocket.Request.login, username, email)
+    }
+    
+}
+
+struct ChatSocket {
+    
+    struct Request {
+        static let login = "login"
+    }
+    
+    struct Response {
+        static let loginResponse = "loginResponse"
     }
     
 }
@@ -46,6 +66,15 @@ private extension ChatroomWebsocketService {
         self.socket = self.socketManager.defaultSocket
         
         self.socket.connect()
+        
+        self.socket.on(ChatSocket.Response.loginResponse) { [weak self] (dataArray, socketAck) in
+            print("Login successful for user: \(dataArray)")
+            
+            if let username = dataArray[0] as? String,
+               let email = dataArray[1] as? String {
+                self?.socketResponseRelay.accept(.loggedIn(username: username, email: email))
+            }
+        }
     }
     
 }

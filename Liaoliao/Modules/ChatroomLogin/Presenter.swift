@@ -61,6 +61,9 @@ private extension Presenter {
             .flatMap({ [useCases] (username, email) in
                 useCases.login(username, email)
             })
+            .map({ (_) in
+                print("Login successful for user")
+            })
             .asDriver(onErrorDriveWith: .never())
             .drive()
             .disposed(by: bag)

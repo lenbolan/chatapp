@@ -10,6 +10,7 @@
 		60807324F10DDB8CAC73D3D4 /* Pods_UseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F13F7FED03C96221DE4098D /* Pods_UseCases.framework */; };
 		9A8FF3829A779CE64637A2B4 /* Pods_Liaoliao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866EDBFE47F4501ABDBE443A /* Pods_Liaoliao.framework */; };
 		9FDF0CB77F2109163ABF2AE9 /* Pods_LiaolisoService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BEABFA5219D71A6D9C9D69 /* Pods_LiaolisoService.framework */; };
+		A15410972597599900600EBB /* ChatroomWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15410962597599900600EBB /* ChatroomWebsocket.swift */; };
 		A16B43D7258C739600875743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D6258C739600875743 /* AppDelegate.swift */; };
 		A16B43D9258C739600875743 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D8258C739600875743 /* SceneDelegate.swift */; };
 		A16B43DB258C739600875743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43DA258C739600875743 /* ViewController.swift */; };
@@ -64,6 +65,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A15410A625975BA100600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16B442B258C74EB00875743;
+			remoteInfo = ChatroomLogin;
+		};
+		A15410A825975BA100600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16B4417258C74D400875743;
+			remoteInfo = Landing;
+		};
 		A16B43F6258C741700875743 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A16B43CB258C739600875743 /* Project object */;
@@ -178,6 +193,7 @@
 		866EDBFE47F4501ABDBE443A /* Pods_Liaoliao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Liaoliao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3D50F361FAFFD6FDF85081 /* Pods-UseCases.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseCases.debug.xcconfig"; path = "Target Support Files/Pods-UseCases/Pods-UseCases.debug.xcconfig"; sourceTree = "<group>"; };
 		977468DE46F6300A326FA23D /* Pods-Window.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Window.release.xcconfig"; path = "Target Support Files/Pods-Window/Pods-Window.release.xcconfig"; sourceTree = "<group>"; };
+		A15410962597599900600EBB /* ChatroomWebsocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomWebsocket.swift; sourceTree = "<group>"; };
 		A16B43D3258C739600875743 /* Liaoliao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liaoliao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16B43D6258C739600875743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16B43D8258C739600875743 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -486,6 +502,7 @@
 				A1D6F552258DE06C000FE69C /* Models.h */,
 				A1D6F553258DE06C000FE69C /* Info.plist */,
 				A1D6F55C258DE086000FE69C /* User.swift */,
+				A15410962597599900600EBB /* ChatroomWebsocket.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -592,6 +609,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				A15410A725975BA100600EBB /* PBXTargetDependency */,
+				A15410A925975BA100600EBB /* PBXTargetDependency */,
 			);
 			name = Window;
 			productName = Window;
@@ -1094,6 +1113,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15410972597599900600EBB /* ChatroomWebsocket.swift in Sources */,
 				A1D6F55D258DE086000FE69C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1101,6 +1121,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A15410A725975BA100600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A16B442B258C74EB00875743 /* ChatroomLogin */;
+			targetProxy = A15410A625975BA100600EBB /* PBXContainerItemProxy */;
+		};
+		A15410A925975BA100600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A16B4417258C74D400875743 /* Landing */;
+			targetProxy = A15410A825975BA100600EBB /* PBXContainerItemProxy */;
+		};
 		A16B43F7258C741700875743 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A16B43F0258C741700875743 /* Window */;
