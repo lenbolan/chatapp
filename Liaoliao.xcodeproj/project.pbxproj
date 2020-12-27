@@ -42,6 +42,9 @@
 		A1541203259875DB00600EBB /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541200259875DB00600EBB /* Builder.swift */; };
 		A15412102598760000600EBB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154120F2598760000600EBB /* ProfileViewController.swift */; };
 		A154121D2598761300600EBB /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A154121C2598761300600EBB /* Profile.storyboard */; };
+		A154123B25988B0400600EBB /* Tabbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A154123A25988B0400600EBB /* Tabbar.xcassets */; };
+		A154124825988D9600600EBB /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154124725988D9600600EBB /* UINavigationController+Extension.swift */; };
+		A15412552598956600600EBB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15412542598956600600EBB /* UIColor+Extension.swift */; };
 		A16B43D7258C739600875743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D6258C739600875743 /* AppDelegate.swift */; };
 		A16B43D9258C739600875743 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D8258C739600875743 /* SceneDelegate.swift */; };
 		A16B43DB258C739600875743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43DA258C739600875743 /* ViewController.swift */; };
@@ -165,6 +168,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = A16B4403258C744300875743;
 			remoteInfo = Utility;
+		};
+		A1541229259881AA00600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1541108259856F400600EBB;
+			remoteInfo = Chatrooms;
+		};
+		A154122B259881B100600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1541176259870D600600EBB;
+			remoteInfo = Friends;
+		};
+		A154122D259881B500600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15411D92598754800600EBB;
+			remoteInfo = Profile;
 		};
 		A16B43F6258C741700875743 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -316,6 +340,9 @@
 		A1541200259875DB00600EBB /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		A154120F2598760000600EBB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A154121C2598761300600EBB /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		A154123A25988B0400600EBB /* Tabbar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tabbar.xcassets; sourceTree = "<group>"; };
+		A154124725988D9600600EBB /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		A15412542598956600600EBB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A16B43D3258C739600875743 /* Liaoliao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liaoliao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16B43D6258C739600875743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16B43D8258C739600875743 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -524,6 +551,7 @@
 				A15410DC2597818400600EBB /* Builder.swift */,
 				A15410E62597830C00600EBB /* Presenter.swift */,
 				A15410F02597849600600EBB /* Router.swift */,
+				A154123A25988B0400600EBB /* Tabbar.xcassets */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -652,6 +680,8 @@
 				A16B4456258C75E800875743 /* UIViewController+Extensions.swift */,
 				A16B4406258C744300875743 /* Utility.h */,
 				A1D6F480258DC545000FE69C /* String+Extension.swift */,
+				A154124725988D9600600EBB /* UINavigationController+Extension.swift */,
+				A15412542598956600600EBB /* UIColor+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -830,6 +860,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				A154122E259881B500600EBB /* PBXTargetDependency */,
+				A154122C259881B100600EBB /* PBXTargetDependency */,
+				A154122A259881AA00600EBB /* PBXTargetDependency */,
 			);
 			name = Tabbar;
 			productName = Tabbar;
@@ -1155,6 +1188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A154123B25988B0400600EBB /* Tabbar.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1493,6 +1527,8 @@
 			files = (
 				A1D6F481258DC545000FE69C /* String+Extension.swift in Sources */,
 				A16B4457258C75E800875743 /* UIViewController+Extensions.swift in Sources */,
+				A154124825988D9600600EBB /* UINavigationController+Extension.swift in Sources */,
+				A15412552598956600600EBB /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1594,6 +1630,21 @@
 			isa = PBXTargetDependency;
 			target = A16B4403258C744300875743 /* Utility */;
 			targetProxy = A15411FC2598758D00600EBB /* PBXContainerItemProxy */;
+		};
+		A154122A259881AA00600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1541108259856F400600EBB /* Chatrooms */;
+			targetProxy = A1541229259881AA00600EBB /* PBXContainerItemProxy */;
+		};
+		A154122C259881B100600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1541176259870D600600EBB /* Friends */;
+			targetProxy = A154122B259881B100600EBB /* PBXContainerItemProxy */;
+		};
+		A154122E259881B500600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15411D92598754800600EBB /* Profile */;
+			targetProxy = A154122D259881B500600EBB /* PBXContainerItemProxy */;
 		};
 		A16B43F7258C741700875743 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

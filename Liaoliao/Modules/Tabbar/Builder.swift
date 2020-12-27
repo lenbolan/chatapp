@@ -7,10 +7,19 @@
 
 import UIKit
 
+import Utility
+import Chatrooms
+import Friends
+import Profile
+
 public final class Builder {
     
     public static func build() -> UITabBarController {
-        let submodules: Router.Submodules = ()
+        let submodules: Router.Submodules = (
+            chatrooms: Chatrooms.Builder.build(usingNavigationFactory: UINavigationController.build),
+            friends: Friends.Builder.build(usingNavigationFactory: UINavigationController.build),
+            profile: Profile.Builder.build(usingNavigationFactory: UINavigationController.build)
+        )
         
         let tabs: LiaoliaoTabs = Router.tabs(usingSubmodules: submodules)
         

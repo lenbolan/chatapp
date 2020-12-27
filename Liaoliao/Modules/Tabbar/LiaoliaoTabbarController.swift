@@ -7,7 +7,11 @@
 
 import UIKit
 
-typealias LiaoliaoTabs = ()
+typealias LiaoliaoTabs = (
+    chatrooms: UIViewController,
+    friends: UIViewController,
+    profile: UIViewController
+)
 
 protocol Presentation {
     
@@ -23,6 +27,7 @@ class LiaoliaoTabbarController: UITabBarController {
     
     init(tabs: LiaoliaoTabs) {
         super.init(nibName: nil, bundle: nil)
+        self.viewControllers = [tabs.chatrooms, tabs.friends, tabs.profile]
     }
     
     required init?(coder: NSCoder) {
