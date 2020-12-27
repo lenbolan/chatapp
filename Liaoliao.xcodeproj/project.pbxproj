@@ -18,6 +18,30 @@
 		A15410DD2597818400600EBB /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15410DC2597818400600EBB /* Builder.swift */; };
 		A15410E72597830C00600EBB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15410E62597830C00600EBB /* Presenter.swift */; };
 		A15410F12597849600600EBB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15410F02597849600600EBB /* Router.swift */; };
+		A154110D259856F400600EBB /* Chatrooms.h in Headers */ = {isa = PBXBuildFile; fileRef = A154110B259856F400600EBB /* Chatrooms.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1541110259856F400600EBB /* Chatrooms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1541109259856F400600EBB /* Chatrooms.framework */; };
+		A1541111259856F400600EBB /* Chatrooms.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1541109259856F400600EBB /* Chatrooms.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A15411282598577100600EBB /* ChatroomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15411272598577100600EBB /* ChatroomsViewController.swift */; };
+		A1541133259857A700600EBB /* Chatrooms.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1541132259857A700600EBB /* Chatrooms.storyboard */; };
+		A154113E259858BA00600EBB /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154113D259858BA00600EBB /* Builder.swift */; };
+		A15411492598592000600EBB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15411482598592000600EBB /* Presenter.swift */; };
+		A154115D25985AA200600EBB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154115C25985AA200600EBB /* Router.swift */; };
+		A154117B259870D600600EBB /* Friends.h in Headers */ = {isa = PBXBuildFile; fileRef = A1541179259870D600600EBB /* Friends.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A154117E259870D600600EBB /* Friends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1541177259870D600600EBB /* Friends.framework */; };
+		A154117F259870D600600EBB /* Friends.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1541177259870D600600EBB /* Friends.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A15411A4259871F300600EBB /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15411A1259871F300600EBB /* Builder.swift */; };
+		A15411A5259871F300600EBB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15411A2259871F300600EBB /* Router.swift */; };
+		A15411A6259871F300600EBB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15411A3259871F300600EBB /* Presenter.swift */; };
+		A15411B4259873E700600EBB /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15411B3259873E700600EBB /* FriendsViewController.swift */; };
+		A15411CA2598741000600EBB /* Friends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15411C92598741000600EBB /* Friends.storyboard */; };
+		A15411DE2598754800600EBB /* Profile.h in Headers */ = {isa = PBXBuildFile; fileRef = A15411DC2598754800600EBB /* Profile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A15411E12598754800600EBB /* Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15411DA2598754800600EBB /* Profile.framework */; };
+		A15411E22598754800600EBB /* Profile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A15411DA2598754800600EBB /* Profile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1541201259875DB00600EBB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15411FE259875DA00600EBB /* Presenter.swift */; };
+		A1541202259875DB00600EBB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15411FF259875DB00600EBB /* Router.swift */; };
+		A1541203259875DB00600EBB /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541200259875DB00600EBB /* Builder.swift */; };
+		A15412102598760000600EBB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154120F2598760000600EBB /* ProfileViewController.swift */; };
+		A154121D2598761300600EBB /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A154121C2598761300600EBB /* Profile.storyboard */; };
 		A16B43D7258C739600875743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D6258C739600875743 /* AppDelegate.swift */; };
 		A16B43D9258C739600875743 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D8258C739600875743 /* SceneDelegate.swift */; };
 		A16B43DB258C739600875743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43DA258C739600875743 /* ViewController.swift */; };
@@ -99,6 +123,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = A15410B525977FE400600EBB;
 			remoteInfo = Tabbar;
+		};
+		A154110E259856F400600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1541108259856F400600EBB;
+			remoteInfo = Chatrooms;
+		};
+		A154116725986B7400600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16B4403258C744300875743;
+			remoteInfo = Utility;
+		};
+		A154117C259870D600600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1541176259870D600600EBB;
+			remoteInfo = Friends;
+		};
+		A15411B1259873B700600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16B4403258C744300875743;
+			remoteInfo = Utility;
+		};
+		A15411DF2598754800600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15411D92598754800600EBB;
+			remoteInfo = Profile;
+		};
+		A15411FC2598758D00600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16B4403258C744300875743;
+			remoteInfo = Utility;
 		};
 		A16B43F6258C741700875743 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -188,12 +254,15 @@
 			files = (
 				A15410BE25977FE400600EBB /* Tabbar.framework in Embed Frameworks */,
 				A16B43F9258C741700875743 /* Window.framework in Embed Frameworks */,
+				A15411E22598754800600EBB /* Profile.framework in Embed Frameworks */,
 				A16B4434258C74EB00875743 /* ChatroomLogin.framework in Embed Frameworks */,
 				A1D6F4DF258DD248000FE69C /* LiaolisoService.framework in Embed Frameworks */,
 				A1D6F493258DCF7C000FE69C /* UseCases.framework in Embed Frameworks */,
 				A16B440C258C744300875743 /* Utility.framework in Embed Frameworks */,
+				A154117F259870D600600EBB /* Friends.framework in Embed Frameworks */,
 				A16B4420258C74D400875743 /* Landing.framework in Embed Frameworks */,
 				A1D6F558258DE06C000FE69C /* Models.framework in Embed Frameworks */,
+				A1541111259856F400600EBB /* Chatrooms.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +292,30 @@
 		A15410DC2597818400600EBB /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		A15410E62597830C00600EBB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		A15410F02597849600600EBB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A1541109259856F400600EBB /* Chatrooms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Chatrooms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A154110B259856F400600EBB /* Chatrooms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chatrooms.h; sourceTree = "<group>"; };
+		A154110C259856F400600EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15411272598577100600EBB /* ChatroomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomsViewController.swift; sourceTree = "<group>"; };
+		A1541132259857A700600EBB /* Chatrooms.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatrooms.storyboard; sourceTree = "<group>"; };
+		A154113D259858BA00600EBB /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		A15411482598592000600EBB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A154115C25985AA200600EBB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A1541177259870D600600EBB /* Friends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Friends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1541179259870D600600EBB /* Friends.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Friends.h; sourceTree = "<group>"; };
+		A154117A259870D600600EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15411A1259871F300600EBB /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		A15411A2259871F300600EBB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A15411A3259871F300600EBB /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A15411B3259873E700600EBB /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		A15411C92598741000600EBB /* Friends.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Friends.storyboard; sourceTree = "<group>"; };
+		A15411DA2598754800600EBB /* Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15411DC2598754800600EBB /* Profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		A15411DD2598754800600EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15411FE259875DA00600EBB /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A15411FF259875DB00600EBB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A1541200259875DB00600EBB /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		A154120F2598760000600EBB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A154121C2598761300600EBB /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		A16B43D3258C739600875743 /* Liaoliao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liaoliao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16B43D6258C739600875743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16B43D8258C739600875743 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -289,14 +382,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1541106259856F400600EBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1541174259870D600600EBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15411D72598754800600EBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A16B43D0258C739600875743 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A1D6F557258DE06C000FE69C /* Models.framework in Frameworks */,
+				A154117E259870D600600EBB /* Friends.framework in Frameworks */,
+				A1541110259856F400600EBB /* Chatrooms.framework in Frameworks */,
 				A1D6F492258DCF7C000FE69C /* UseCases.framework in Frameworks */,
 				A16B43F8258C741700875743 /* Window.framework in Frameworks */,
 				A15410BD25977FE400600EBB /* Tabbar.framework in Frameworks */,
+				A15411E12598754800600EBB /* Profile.framework in Frameworks */,
 				A1D6F4DE258DD248000FE69C /* LiaolisoService.framework in Frameworks */,
 				A16B4433258C74EB00875743 /* ChatroomLogin.framework in Frameworks */,
 				A16B440B258C744300875743 /* Utility.framework in Frameworks */,
@@ -411,6 +528,48 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
+		A154110A259856F400600EBB /* Chatrooms */ = {
+			isa = PBXGroup;
+			children = (
+				A154110B259856F400600EBB /* Chatrooms.h */,
+				A154110C259856F400600EBB /* Info.plist */,
+				A15411272598577100600EBB /* ChatroomsViewController.swift */,
+				A1541132259857A700600EBB /* Chatrooms.storyboard */,
+				A154113D259858BA00600EBB /* Builder.swift */,
+				A15411482598592000600EBB /* Presenter.swift */,
+				A154115C25985AA200600EBB /* Router.swift */,
+			);
+			path = Chatrooms;
+			sourceTree = "<group>";
+		};
+		A1541178259870D600600EBB /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				A1541179259870D600600EBB /* Friends.h */,
+				A15411A1259871F300600EBB /* Builder.swift */,
+				A15411A3259871F300600EBB /* Presenter.swift */,
+				A15411A2259871F300600EBB /* Router.swift */,
+				A154117A259870D600600EBB /* Info.plist */,
+				A15411B3259873E700600EBB /* FriendsViewController.swift */,
+				A15411C92598741000600EBB /* Friends.storyboard */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		A15411DB2598754800600EBB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A15411DC2598754800600EBB /* Profile.h */,
+				A1541200259875DB00600EBB /* Builder.swift */,
+				A15411FE259875DA00600EBB /* Presenter.swift */,
+				A15411FF259875DB00600EBB /* Router.swift */,
+				A15411DD2598754800600EBB /* Info.plist */,
+				A154120F2598760000600EBB /* ProfileViewController.swift */,
+				A154121C2598761300600EBB /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		A16B43CA258C739600875743 = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +595,9 @@
 				A1D6F4D7258DD247000FE69C /* LiaolisoService.framework */,
 				A1D6F550258DE06C000FE69C /* Models.framework */,
 				A15410B625977FE400600EBB /* Tabbar.framework */,
+				A1541109259856F400600EBB /* Chatrooms.framework */,
+				A1541177259870D600600EBB /* Friends.framework */,
+				A15411DA2598754800600EBB /* Profile.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -459,7 +621,10 @@
 			isa = PBXGroup;
 			children = (
 				A16B442D258C74EB00875743 /* ChatroomLogin */,
+				A154110A259856F400600EBB /* Chatrooms */,
+				A1541178259870D600600EBB /* Friends */,
 				A16B4419258C74D400875743 /* Landing */,
+				A15411DB2598754800600EBB /* Profile */,
 				A16B4412258C749500875743 /* Shared */,
 				A15410B725977FE400600EBB /* Tabbar */,
 				A16B43F2258C741700875743 /* Window */,
@@ -570,6 +735,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1541104259856F400600EBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A154110D259856F400600EBB /* Chatrooms.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1541172259870D600600EBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A154117B259870D600600EBB /* Friends.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15411D52598754800600EBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15411DE2598754800600EBB /* Profile.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A16B43EC258C741700875743 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -647,6 +836,63 @@
 			productReference = A15410B625977FE400600EBB /* Tabbar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A1541108259856F400600EBB /* Chatrooms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1541114259856F400600EBB /* Build configuration list for PBXNativeTarget "Chatrooms" */;
+			buildPhases = (
+				A1541104259856F400600EBB /* Headers */,
+				A1541105259856F400600EBB /* Sources */,
+				A1541106259856F400600EBB /* Frameworks */,
+				A1541107259856F400600EBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A154116825986B7400600EBB /* PBXTargetDependency */,
+			);
+			name = Chatrooms;
+			productName = Chatrooms;
+			productReference = A1541109259856F400600EBB /* Chatrooms.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1541176259870D600600EBB /* Friends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1541180259870D600600EBB /* Build configuration list for PBXNativeTarget "Friends" */;
+			buildPhases = (
+				A1541172259870D600600EBB /* Headers */,
+				A1541173259870D600600EBB /* Sources */,
+				A1541174259870D600600EBB /* Frameworks */,
+				A1541175259870D600600EBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A15411B2259873B700600EBB /* PBXTargetDependency */,
+			);
+			name = Friends;
+			productName = Friends;
+			productReference = A1541177259870D600600EBB /* Friends.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A15411D92598754800600EBB /* Profile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A15411E32598754800600EBB /* Build configuration list for PBXNativeTarget "Profile" */;
+			buildPhases = (
+				A15411D52598754800600EBB /* Headers */,
+				A15411D62598754800600EBB /* Sources */,
+				A15411D72598754800600EBB /* Frameworks */,
+				A15411D82598754800600EBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A15411FD2598758D00600EBB /* PBXTargetDependency */,
+			);
+			name = Profile;
+			productName = Profile;
+			productReference = A15411DA2598754800600EBB /* Profile.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		A16B43D2258C739600875743 /* Liaoliao */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A16B43E7258C739B00875743 /* Build configuration list for PBXNativeTarget "Liaoliao" */;
@@ -669,6 +915,9 @@
 				A1D6F4DD258DD248000FE69C /* PBXTargetDependency */,
 				A1D6F556258DE06C000FE69C /* PBXTargetDependency */,
 				A15410BC25977FE400600EBB /* PBXTargetDependency */,
+				A154110F259856F400600EBB /* PBXTargetDependency */,
+				A154117D259870D600600EBB /* PBXTargetDependency */,
+				A15411E02598754800600EBB /* PBXTargetDependency */,
 			);
 			name = Liaoliao;
 			productName = Liaoliao;
@@ -827,6 +1076,18 @@
 						CreatedOnToolsVersion = 12.3;
 						LastSwiftMigration = 1230;
 					};
+					A1541108259856F400600EBB = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+					A1541176259870D600600EBB = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+					A15411D92598754800600EBB = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
 					A16B43D2258C739600875743 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -882,6 +1143,9 @@
 				A1D6F4D6258DD247000FE69C /* LiaolisoService */,
 				A1D6F54F258DE06C000FE69C /* Models */,
 				A15410B525977FE400600EBB /* Tabbar */,
+				A1541108259856F400600EBB /* Chatrooms */,
+				A1541176259870D600600EBB /* Friends */,
+				A15411D92598754800600EBB /* Profile */,
 			);
 		};
 /* End PBXProject section */
@@ -891,6 +1155,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1541107259856F400600EBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1541133259857A700600EBB /* Chatrooms.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1541175259870D600600EBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15411CA2598741000600EBB /* Friends.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15411D82598754800600EBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A154121D2598761300600EBB /* Profile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1145,6 +1433,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1541105259856F400600EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A154115D25985AA200600EBB /* Router.swift in Sources */,
+				A15411282598577100600EBB /* ChatroomsViewController.swift in Sources */,
+				A15411492598592000600EBB /* Presenter.swift in Sources */,
+				A154113E259858BA00600EBB /* Builder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1541173259870D600600EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15411B4259873E700600EBB /* FriendsViewController.swift in Sources */,
+				A15411A6259871F300600EBB /* Presenter.swift in Sources */,
+				A15411A5259871F300600EBB /* Router.swift in Sources */,
+				A15411A4259871F300600EBB /* Builder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15411D62598754800600EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1541202259875DB00600EBB /* Router.swift in Sources */,
+				A1541201259875DB00600EBB /* Presenter.swift in Sources */,
+				A15412102598760000600EBB /* ProfileViewController.swift in Sources */,
+				A1541203259875DB00600EBB /* Builder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A16B43CF258C739600875743 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1243,6 +1564,36 @@
 			isa = PBXTargetDependency;
 			target = A15410B525977FE400600EBB /* Tabbar */;
 			targetProxy = A15410FA2597891C00600EBB /* PBXContainerItemProxy */;
+		};
+		A154110F259856F400600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1541108259856F400600EBB /* Chatrooms */;
+			targetProxy = A154110E259856F400600EBB /* PBXContainerItemProxy */;
+		};
+		A154116825986B7400600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A16B4403258C744300875743 /* Utility */;
+			targetProxy = A154116725986B7400600EBB /* PBXContainerItemProxy */;
+		};
+		A154117D259870D600600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1541176259870D600600EBB /* Friends */;
+			targetProxy = A154117C259870D600600EBB /* PBXContainerItemProxy */;
+		};
+		A15411B2259873B700600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A16B4403258C744300875743 /* Utility */;
+			targetProxy = A15411B1259873B700600EBB /* PBXContainerItemProxy */;
+		};
+		A15411E02598754800600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15411D92598754800600EBB /* Profile */;
+			targetProxy = A15411DF2598754800600EBB /* PBXContainerItemProxy */;
+		};
+		A15411FD2598758D00600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A16B4403258C744300875743 /* Utility */;
+			targetProxy = A15411FC2598758D00600EBB /* PBXContainerItemProxy */;
 		};
 		A16B43F7258C741700875743 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1369,6 +1720,177 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.one.Tabbar;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1541112259856F400600EBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Chatrooms/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Chatrooms;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1541113259856F400600EBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Chatrooms/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Chatrooms;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1541181259870D600600EBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Friends/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Friends;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1541182259870D600600EBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Friends/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Friends;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A15411E42598754800600EBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Profile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Profile;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A15411E52598754800600EBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Profile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.Profile;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1939,6 +2461,33 @@
 			buildConfigurations = (
 				A15410BF25977FE400600EBB /* Debug */,
 				A15410C025977FE400600EBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1541114259856F400600EBB /* Build configuration list for PBXNativeTarget "Chatrooms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1541112259856F400600EBB /* Debug */,
+				A1541113259856F400600EBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1541180259870D600600EBB /* Build configuration list for PBXNativeTarget "Friends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1541181259870D600600EBB /* Debug */,
+				A1541182259870D600600EBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A15411E32598754800600EBB /* Build configuration list for PBXNativeTarget "Profile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15411E42598754800600EBB /* Debug */,
+				A15411E52598754800600EBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
