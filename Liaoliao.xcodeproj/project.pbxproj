@@ -45,6 +45,14 @@
 		A154123B25988B0400600EBB /* Tabbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A154123A25988B0400600EBB /* Tabbar.xcassets */; };
 		A154124825988D9600600EBB /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154124725988D9600600EBB /* UINavigationController+Extension.swift */; };
 		A15412552598956600600EBB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15412542598956600600EBB /* UIColor+Extension.swift */; };
+		A154126B2598B82900600EBB /* EmptyView.h in Headers */ = {isa = PBXBuildFile; fileRef = A15412692598B82900600EBB /* EmptyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A154126E2598B82900600EBB /* EmptyView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15412672598B82900600EBB /* EmptyView.framework */; };
+		A154126F2598B82900600EBB /* EmptyView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A15412672598B82900600EBB /* EmptyView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A154128C2598B8C500600EBB /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154128B2598B8C500600EBB /* EmptyView.swift */; };
+		A154129A2598B91300600EBB /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15412992598B91300600EBB /* EmptyView.xib */; };
+		A15412B82598C23E00600EBB /* Chatrooms.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15412B72598C23E00600EBB /* Chatrooms.xcassets */; };
+		A15412C62598C5A400600EBB /* Friends.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15412C52598C5A400600EBB /* Friends.xcassets */; };
+		A15412D42598CADF00600EBB /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15412D32598CADE00600EBB /* UIImage+Extension.swift */; };
 		A16B43D7258C739600875743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D6258C739600875743 /* AppDelegate.swift */; };
 		A16B43D9258C739600875743 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D8258C739600875743 /* SceneDelegate.swift */; };
 		A16B43DB258C739600875743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43DA258C739600875743 /* ViewController.swift */; };
@@ -190,6 +198,27 @@
 			remoteGlobalIDString = A15411D92598754800600EBB;
 			remoteInfo = Profile;
 		};
+		A154126C2598B82900600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15412662598B82900600EBB;
+			remoteInfo = EmptyView;
+		};
+		A15412A72598BFFD00600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15412662598B82900600EBB;
+			remoteInfo = EmptyView;
+		};
+		A15412A92598C00C00600EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15412662598B82900600EBB;
+			remoteInfo = EmptyView;
+		};
 		A16B43F6258C741700875743 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A16B43CB258C739600875743 /* Project object */;
@@ -277,6 +306,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A15410BE25977FE400600EBB /* Tabbar.framework in Embed Frameworks */,
+				A154126F2598B82900600EBB /* EmptyView.framework in Embed Frameworks */,
 				A16B43F9258C741700875743 /* Window.framework in Embed Frameworks */,
 				A15411E22598754800600EBB /* Profile.framework in Embed Frameworks */,
 				A16B4434258C74EB00875743 /* ChatroomLogin.framework in Embed Frameworks */,
@@ -343,6 +373,14 @@
 		A154123A25988B0400600EBB /* Tabbar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tabbar.xcassets; sourceTree = "<group>"; };
 		A154124725988D9600600EBB /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		A15412542598956600600EBB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A15412672598B82900600EBB /* EmptyView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmptyView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15412692598B82900600EBB /* EmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
+		A154126A2598B82900600EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A154128B2598B8C500600EBB /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		A15412992598B91300600EBB /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
+		A15412B72598C23E00600EBB /* Chatrooms.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chatrooms.xcassets; sourceTree = "<group>"; };
+		A15412C52598C5A400600EBB /* Friends.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Friends.xcassets; sourceTree = "<group>"; };
+		A15412D32598CADE00600EBB /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		A16B43D3258C739600875743 /* Liaoliao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liaoliao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16B43D6258C739600875743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16B43D8258C739600875743 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -430,6 +468,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A15412642598B82900600EBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A16B43D0258C739600875743 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,6 +490,7 @@
 				A16B4433258C74EB00875743 /* ChatroomLogin.framework in Frameworks */,
 				A16B440B258C744300875743 /* Utility.framework in Frameworks */,
 				A16B441F258C74D400875743 /* Landing.framework in Frameworks */,
+				A154126E2598B82900600EBB /* EmptyView.framework in Frameworks */,
 				9A8FF3829A779CE64637A2B4 /* Pods_Liaoliao.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +612,7 @@
 				A154113D259858BA00600EBB /* Builder.swift */,
 				A15411482598592000600EBB /* Presenter.swift */,
 				A154115C25985AA200600EBB /* Router.swift */,
+				A15412B72598C23E00600EBB /* Chatrooms.xcassets */,
 			);
 			path = Chatrooms;
 			sourceTree = "<group>";
@@ -580,6 +627,7 @@
 				A154117A259870D600600EBB /* Info.plist */,
 				A15411B3259873E700600EBB /* FriendsViewController.swift */,
 				A15411C92598741000600EBB /* Friends.storyboard */,
+				A15412C52598C5A400600EBB /* Friends.xcassets */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -596,6 +644,25 @@
 				A154121C2598761300600EBB /* Profile.storyboard */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		A15412612598B7EA00600EBB /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				A15412682598B82900600EBB /* EmptyView */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		A15412682598B82900600EBB /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				A15412692598B82900600EBB /* EmptyView.h */,
+				A154126A2598B82900600EBB /* Info.plist */,
+				A154128B2598B8C500600EBB /* EmptyView.swift */,
+				A15412992598B91300600EBB /* EmptyView.xib */,
+			);
+			path = EmptyView;
 			sourceTree = "<group>";
 		};
 		A16B43CA258C739600875743 = {
@@ -626,6 +693,7 @@
 				A1541109259856F400600EBB /* Chatrooms.framework */,
 				A1541177259870D600600EBB /* Friends.framework */,
 				A15411DA2598754800600EBB /* Profile.framework */,
+				A15412672598B82900600EBB /* EmptyView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -682,6 +750,7 @@
 				A1D6F480258DC545000FE69C /* String+Extension.swift */,
 				A154124725988D9600600EBB /* UINavigationController+Extension.swift */,
 				A15412542598956600600EBB /* UIColor+Extension.swift */,
+				A15412D32598CADE00600EBB /* UIImage+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -689,6 +758,7 @@
 		A16B4412258C749500875743 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A15412612598B7EA00600EBB /* Controls */,
 				A16B4405258C744300875743 /* Utility */,
 			);
 			path = Shared;
@@ -789,6 +859,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A15412622598B82900600EBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A154126B2598B82900600EBB /* EmptyView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A16B43EC258C741700875743 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -881,6 +959,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A15412A82598BFFD00600EBB /* PBXTargetDependency */,
 				A154116825986B7400600EBB /* PBXTargetDependency */,
 			);
 			name = Chatrooms;
@@ -900,6 +979,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A15412AA2598C00C00600EBB /* PBXTargetDependency */,
 				A15411B2259873B700600EBB /* PBXTargetDependency */,
 			);
 			name = Friends;
@@ -924,6 +1004,24 @@
 			name = Profile;
 			productName = Profile;
 			productReference = A15411DA2598754800600EBB /* Profile.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A15412662598B82900600EBB /* EmptyView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A15412702598B82900600EBB /* Build configuration list for PBXNativeTarget "EmptyView" */;
+			buildPhases = (
+				A15412622598B82900600EBB /* Headers */,
+				A15412632598B82900600EBB /* Sources */,
+				A15412642598B82900600EBB /* Frameworks */,
+				A15412652598B82900600EBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmptyView;
+			productName = EmptyView;
+			productReference = A15412672598B82900600EBB /* EmptyView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A16B43D2258C739600875743 /* Liaoliao */ = {
@@ -951,6 +1049,7 @@
 				A154110F259856F400600EBB /* PBXTargetDependency */,
 				A154117D259870D600600EBB /* PBXTargetDependency */,
 				A15411E02598754800600EBB /* PBXTargetDependency */,
+				A154126D2598B82900600EBB /* PBXTargetDependency */,
 			);
 			name = Liaoliao;
 			productName = Liaoliao;
@@ -1121,6 +1220,10 @@
 						CreatedOnToolsVersion = 12.3;
 						LastSwiftMigration = 1230;
 					};
+					A15412662598B82900600EBB = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
 					A16B43D2258C739600875743 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -1179,6 +1282,7 @@
 				A1541108259856F400600EBB /* Chatrooms */,
 				A1541176259870D600600EBB /* Friends */,
 				A15411D92598754800600EBB /* Profile */,
+				A15412662598B82900600EBB /* EmptyView */,
 			);
 		};
 /* End PBXProject section */
@@ -1196,6 +1300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15412B82598C23E00600EBB /* Chatrooms.xcassets in Resources */,
 				A1541133259857A700600EBB /* Chatrooms.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1205,6 +1310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15411CA2598741000600EBB /* Friends.storyboard in Resources */,
+				A15412C62598C5A400600EBB /* Friends.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1213,6 +1319,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A154121D2598761300600EBB /* Profile.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15412652598B82900600EBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A154129A2598B91300600EBB /* EmptyView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1500,6 +1614,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A15412632598B82900600EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A154128C2598B8C500600EBB /* EmptyView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A16B43CF258C739600875743 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1527,6 +1649,7 @@
 			files = (
 				A1D6F481258DC545000FE69C /* String+Extension.swift in Sources */,
 				A16B4457258C75E800875743 /* UIViewController+Extensions.swift in Sources */,
+				A15412D42598CADF00600EBB /* UIImage+Extension.swift in Sources */,
 				A154124825988D9600600EBB /* UINavigationController+Extension.swift in Sources */,
 				A15412552598956600600EBB /* UIColor+Extension.swift in Sources */,
 			);
@@ -1645,6 +1768,21 @@
 			isa = PBXTargetDependency;
 			target = A15411D92598754800600EBB /* Profile */;
 			targetProxy = A154122D259881B500600EBB /* PBXContainerItemProxy */;
+		};
+		A154126D2598B82900600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15412662598B82900600EBB /* EmptyView */;
+			targetProxy = A154126C2598B82900600EBB /* PBXContainerItemProxy */;
+		};
+		A15412A82598BFFD00600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15412662598B82900600EBB /* EmptyView */;
+			targetProxy = A15412A72598BFFD00600EBB /* PBXContainerItemProxy */;
+		};
+		A15412AA2598C00C00600EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15412662598B82900600EBB /* EmptyView */;
+			targetProxy = A15412A92598C00C00600EBB /* PBXContainerItemProxy */;
 		};
 		A16B43F7258C741700875743 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1942,6 +2080,63 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.one.Profile;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A15412712598B82900600EBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Shared/Controls/EmptyView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.EmptyView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A15412722598B82900600EBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/Shared/Controls/EmptyView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.EmptyView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -2539,6 +2734,15 @@
 			buildConfigurations = (
 				A15411E42598754800600EBB /* Debug */,
 				A15411E52598754800600EBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A15412702598B82900600EBB /* Build configuration list for PBXNativeTarget "EmptyView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15412712598B82900600EBB /* Debug */,
+				A15412722598B82900600EBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
