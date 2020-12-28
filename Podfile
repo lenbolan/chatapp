@@ -6,9 +6,11 @@ target 'ChatroomLogin' do
   use_frameworks!
 
   # Pods for ChatroomLogin
-  pod 'RxSwift', '6.0.0-rc.2'
-  pod 'RxCocoa', '6.0.0-rc.2'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'Socket.IO-Client-Swift', '~> 15.2.0'
+  pod 'Alamofire'
+  pod 'RxAlamofire'
 
 end
 
@@ -25,9 +27,11 @@ target 'Liaoliao' do
   use_frameworks!
 
   # Pods for Liaoliao
-  pod 'RxSwift', '6.0.0-rc.2'
-  pod 'RxCocoa', '6.0.0-rc.2'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'Socket.IO-Client-Swift', '~> 15.2.0'
+  pod 'Alamofire'
+  pod 'RxAlamofire'
 
 end
 
@@ -52,9 +56,11 @@ target 'UseCases' do
   use_frameworks!
 
   # Pods for UseCases
-  pod 'RxSwift', '6.0.0-rc.2'
-  pod 'RxCocoa', '6.0.0-rc.2'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'Socket.IO-Client-Swift', '~> 15.2.0'
+  pod 'Alamofire'
+  pod 'RxAlamofire'
 
 end
 
@@ -63,8 +69,10 @@ target 'LiaolisoService' do
   use_frameworks!
 
   # Pods for LiaolisoService
-  pod 'RxSwift', '6.0.0-rc.2'
-  pod 'RxCocoa', '6.0.0-rc.2'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'Socket.IO-Client-Swift', '~> 15.2.0'
+  pod 'Alamofire'
+  pod 'RxAlamofire'
 
 end

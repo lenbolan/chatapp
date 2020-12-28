@@ -25,8 +25,7 @@ public final class AccountInteractor {
 
 public extension AccountInteractor {
     
-    func login(username: String, email: String) -> Single<()> {
-//        self.websocketService.login(username: username, email: email)
+    func login(email: String, password: String) -> Single<()> {
         return self.websocketService.socketResponse
             .debug("Websocket login flow", trimOutput: false)
             .filter({
@@ -41,7 +40,7 @@ public extension AccountInteractor {
             .flatMap(saveUser(user:))
             .asSingle()
             .do(onSubscribe: { [weak self] in
-                self?.websocketService.login(username: username, email: email)
+                self?.websocketService.login(username: email, email: password)
             })
     }
 }

@@ -39,9 +39,9 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uUr-d0-fZ1">
-                                <rect key="frame" x="60" y="508" width="294" height="100"/>
+                                <rect key="frame" x="60" y="508" width="294" height="120"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AIM-rl-ZVz">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AIM-rl-ZVz">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="mCx-z9-0fe"/>
@@ -49,13 +49,13 @@
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UhD-sA-8Xa">
-                                        <rect key="frame" x="0.0" y="70" width="294" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6mf-VG-gQB">
+                                        <rect key="frame" x="0.0" y="70" width="294" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="Bt8-RL-Inw"/>
+                                            <constraint firstAttribute="height" constant="50" id="6aS-AB-1c9"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -91,10 +91,10 @@
                     <connections>
                         <outlet property="avatarImageView" destination="zKg-3e-pWO" id="qVc-EH-JOt"/>
                         <outlet property="descriptionLabel" destination="ubu-3r-Wcj" id="XLF-i2-091"/>
-                        <outlet property="emailTextField" destination="UhD-sA-8Xa" id="UQ3-q2-PTi"/>
+                        <outlet property="emailTextField" destination="AIM-rl-ZVz" id="Krj-5D-29U"/>
                         <outlet property="loginButton" destination="iIP-2d-AvD" id="BP9-Qn-gTY"/>
+                        <outlet property="passwordTextField" destination="6mf-VG-gQB" id="rEv-S8-Tjf"/>
                         <outlet property="titleLabel" destination="Irh-9F-XCk" id="TFF-Fk-I9d"/>
-                        <outlet property="usernameTextField" destination="AIM-rl-ZVz" id="qpY-zs-28U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bA-qk-LOK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

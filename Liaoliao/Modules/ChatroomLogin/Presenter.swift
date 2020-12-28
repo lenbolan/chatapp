@@ -45,8 +45,8 @@ private extension Presenter {
     static func output(input: Input) ->  Output {
         
         let enableLoginDriver = Driver.combineLatest(
-            input.username.map({ !$0.isEmpty }),
-            input.email.map( { $0.isEmail() })
+            input.email.map( { $0.isEmail() }),
+            input.password.map({ !$0.isEmpty })
         ).map( { $0 && $1 })
         
         return (
@@ -56,7 +56,7 @@ private extension Presenter {
     
     func process() {
         self.input.login
-            .withLatestFrom(Driver.combineLatest(self.input.username, self.input.email))
+            .withLatestFrom(Driver.combineLatest(self.input.email, self.input.password))
             .asObservable()
             .flatMap({ [useCases] (username, email) in
                 useCases.login(username, email)

@@ -53,6 +53,8 @@
 		A15412B82598C23E00600EBB /* Chatrooms.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15412B72598C23E00600EBB /* Chatrooms.xcassets */; };
 		A15412C62598C5A400600EBB /* Friends.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15412C52598C5A400600EBB /* Friends.xcassets */; };
 		A15412D42598CADF00600EBB /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15412D32598CADE00600EBB /* UIImage+Extension.swift */; };
+		A15412FC2599C59C00600EBB /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15412FB2599C59C00600EBB /* HttpService.swift */; };
+		A15413162599C5CB00600EBB /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15413152599C5CB00600EBB /* HttpRouter.swift */; };
 		A16B43D7258C739600875743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D6258C739600875743 /* AppDelegate.swift */; };
 		A16B43D9258C739600875743 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D8258C739600875743 /* SceneDelegate.swift */; };
 		A16B43DB258C739600875743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43DA258C739600875743 /* ViewController.swift */; };
@@ -381,6 +383,8 @@
 		A15412B72598C23E00600EBB /* Chatrooms.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chatrooms.xcassets; sourceTree = "<group>"; };
 		A15412C52598C5A400600EBB /* Friends.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Friends.xcassets; sourceTree = "<group>"; };
 		A15412D32598CADE00600EBB /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		A15412FB2599C59C00600EBB /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		A15413152599C5CB00600EBB /* HttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
 		A16B43D3258C739600875743 /* Liaoliao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liaoliao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16B43D6258C739600875743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16B43D8258C739600875743 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -665,6 +669,15 @@
 			path = EmptyView;
 			sourceTree = "<group>";
 		};
+		A15412FA2599C56D00600EBB /* HttpService */ = {
+			isa = PBXGroup;
+			children = (
+				A15412FB2599C59C00600EBB /* HttpService.swift */,
+				A15413152599C5CB00600EBB /* HttpRouter.swift */,
+			);
+			path = HttpService;
+			sourceTree = "<group>";
+		};
 		A16B43CA258C739600875743 = {
 			isa = PBXGroup;
 			children = (
@@ -806,6 +819,7 @@
 		A1D6F4D8258DD247000FE69C /* LiaolisoService */ = {
 			isa = PBXGroup;
 			children = (
+				A15412FA2599C56D00600EBB /* HttpService */,
 				A1D6F4D9258DD247000FE69C /* LiaolisoService.h */,
 				A1D6F4DA258DD247000FE69C /* Info.plist */,
 				A1D6F4EA258DD274000FE69C /* ChatroomWebsocketService.swift */,
@@ -1689,6 +1703,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D6F4EB258DD274000FE69C /* ChatroomWebsocketService.swift in Sources */,
+				A15412FC2599C59C00600EBB /* HttpService.swift in Sources */,
+				A15413162599C5CB00600EBB /* HttpRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
