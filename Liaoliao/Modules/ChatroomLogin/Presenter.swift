@@ -16,7 +16,7 @@ protocol Routing {
 class Presenter: Presentation {
     
     typealias UseCases = (
-        login: (_ username: String, _ email: String) -> Single<()>,
+        login: (_ email: String, _ password: String) -> Single<()>,
         ()
     )
     
@@ -58,8 +58,8 @@ private extension Presenter {
         self.input.login
             .withLatestFrom(Driver.combineLatest(self.input.email, self.input.password))
             .asObservable()
-            .flatMap({ [useCases] (username, email) in
-                useCases.login(username, email)
+            .flatMap({ [useCases] (email, password) in
+                useCases.login(email, password)
             })
             .map({ [router] (_) in
                 print("Login successful for user")

@@ -22,9 +22,9 @@ public protocol HttpRouter {
 
 extension HttpRouter {
     
-    var parameters: Parameters? { return nil }
+    public var parameters: Parameters? { return nil }
     
-    func body() throws -> Data? { return nil }
+    public func body() throws -> Data? { return nil }
     
     func asURLRequest() throws -> URLRequest {
         var url = try baseUrlString.asURL()
@@ -36,7 +36,7 @@ extension HttpRouter {
         return request
     }
     
-    func request(usingHttpService httpService: HttpService) throws -> DataRequest {
+    public func request(usingHttpService httpService: HttpService) throws -> DataRequest {
         return try httpService.request(asURLRequest())
     }
     

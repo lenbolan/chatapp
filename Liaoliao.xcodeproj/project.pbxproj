@@ -55,6 +55,12 @@
 		A15412D42598CADF00600EBB /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15412D32598CADE00600EBB /* UIImage+Extension.swift */; };
 		A15412FC2599C59C00600EBB /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15412FB2599C59C00600EBB /* HttpService.swift */; };
 		A15413162599C5CB00600EBB /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15413152599C5CB00600EBB /* HttpRouter.swift */; };
+		A15413A4259F096800600EBB /* ChatroomHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15413A3259F096700600EBB /* ChatroomHttpService.swift */; };
+		A15413B2259F0A4500600EBB /* AccountHttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15413B1259F0A4500600EBB /* AccountHttpRouter.swift */; };
+		A15413C0259F151A00600EBB /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15413BF259F151A00600EBB /* AuthResponse.swift */; };
+		A15413CE259F22AC00600EBB /* JSONSchemaSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15413CD259F22AC00600EBB /* JSONSchemaSupport.swift */; };
+		A15413DC25A002E600600EBB /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15413DB25A002E600600EBB /* AccountService.swift */; };
+		A15413F725A0066C00600EBB /* ChatroomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15413F625A0066C00600EBB /* ChatroomError.swift */; };
 		A16B43D7258C739600875743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D6258C739600875743 /* AppDelegate.swift */; };
 		A16B43D9258C739600875743 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43D8258C739600875743 /* SceneDelegate.swift */; };
 		A16B43DB258C739600875743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B43DA258C739600875743 /* ViewController.swift */; };
@@ -385,6 +391,12 @@
 		A15412D32598CADE00600EBB /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		A15412FB2599C59C00600EBB /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		A15413152599C5CB00600EBB /* HttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		A15413A3259F096700600EBB /* ChatroomHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomHttpService.swift; sourceTree = "<group>"; };
+		A15413B1259F0A4500600EBB /* AccountHttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHttpRouter.swift; sourceTree = "<group>"; };
+		A15413BF259F151A00600EBB /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		A15413CD259F22AC00600EBB /* JSONSchemaSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSchemaSupport.swift; sourceTree = "<group>"; };
+		A15413DB25A002E600600EBB /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		A15413F625A0066C00600EBB /* ChatroomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomError.swift; sourceTree = "<group>"; };
 		A16B43D3258C739600875743 /* Liaoliao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liaoliao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16B43D6258C739600875743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16B43D8258C739600875743 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -674,8 +686,18 @@
 			children = (
 				A15412FB2599C59C00600EBB /* HttpService.swift */,
 				A15413152599C5CB00600EBB /* HttpRouter.swift */,
+				A15413A3259F096700600EBB /* ChatroomHttpService.swift */,
+				A15413B1259F0A4500600EBB /* AccountHttpRouter.swift */,
 			);
 			path = HttpService;
+			sourceTree = "<group>";
+		};
+		A15413F525A0064500600EBB /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				A15413F625A0066C00600EBB /* ChatroomError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 		A16B43CA258C739600875743 = {
@@ -764,6 +786,7 @@
 				A154124725988D9600600EBB /* UINavigationController+Extension.swift */,
 				A15412542598956600600EBB /* UIColor+Extension.swift */,
 				A15412D32598CADE00600EBB /* UIImage+Extension.swift */,
+				A15413CD259F22AC00600EBB /* JSONSchemaSupport.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -823,6 +846,7 @@
 				A1D6F4D9258DD247000FE69C /* LiaolisoService.h */,
 				A1D6F4DA258DD247000FE69C /* Info.plist */,
 				A1D6F4EA258DD274000FE69C /* ChatroomWebsocketService.swift */,
+				A15413DB25A002E600600EBB /* AccountService.swift */,
 			);
 			path = LiaolisoService;
 			sourceTree = "<group>";
@@ -830,10 +854,12 @@
 		A1D6F551258DE06C000FE69C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A15413F525A0064500600EBB /* Errors */,
 				A1D6F552258DE06C000FE69C /* Models.h */,
 				A1D6F553258DE06C000FE69C /* Info.plist */,
 				A1D6F55C258DE086000FE69C /* User.swift */,
 				A15410962597599900600EBB /* ChatroomWebsocket.swift */,
+				A15413BF259F151A00600EBB /* AuthResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1661,6 +1687,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15413CE259F22AC00600EBB /* JSONSchemaSupport.swift in Sources */,
 				A1D6F481258DC545000FE69C /* String+Extension.swift in Sources */,
 				A16B4457258C75E800875743 /* UIViewController+Extensions.swift in Sources */,
 				A15412D42598CADF00600EBB /* UIImage+Extension.swift in Sources */,
@@ -1704,6 +1731,9 @@
 			files = (
 				A1D6F4EB258DD274000FE69C /* ChatroomWebsocketService.swift in Sources */,
 				A15412FC2599C59C00600EBB /* HttpService.swift in Sources */,
+				A15413A4259F096800600EBB /* ChatroomHttpService.swift in Sources */,
+				A15413DC25A002E600600EBB /* AccountService.swift in Sources */,
+				A15413B2259F0A4500600EBB /* AccountHttpRouter.swift in Sources */,
 				A15413162599C5CB00600EBB /* HttpRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1713,6 +1743,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15410972597599900600EBB /* ChatroomWebsocket.swift in Sources */,
+				A15413F725A0066C00600EBB /* ChatroomError.swift in Sources */,
+				A15413C0259F151A00600EBB /* AuthResponse.swift in Sources */,
 				A1D6F55D258DE086000FE69C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
