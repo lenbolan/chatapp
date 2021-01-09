@@ -1,6 +1,19 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+target 'ChatroomSignUp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ChatroomLogin
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Socket.IO-Client-Swift', '~> 15.2.0'
+  pod 'Alamofire'
+  pod 'RxAlamofire'
+
+end
+
 target 'ChatroomLogin' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!

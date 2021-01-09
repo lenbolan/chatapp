@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F39A6F4C240B11400376454 /* Pods_ChatroomSignUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0E3267DF8513D2CBAE21CD /* Pods_ChatroomSignUp.framework */; };
 		60807324F10DDB8CAC73D3D4 /* Pods_UseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F13F7FED03C96221DE4098D /* Pods_UseCases.framework */; };
 		9A8FF3829A779CE64637A2B4 /* Pods_Liaoliao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866EDBFE47F4501ABDBE443A /* Pods_Liaoliao.framework */; };
 		9FDF0CB77F2109163ABF2AE9 /* Pods_LiaolisoService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BEABFA5219D71A6D9C9D69 /* Pods_LiaolisoService.framework */; };
@@ -42,7 +43,6 @@
 		A1541203259875DB00600EBB /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541200259875DB00600EBB /* Builder.swift */; };
 		A15412102598760000600EBB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154120F2598760000600EBB /* ProfileViewController.swift */; };
 		A154121D2598761300600EBB /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A154121C2598761300600EBB /* Profile.storyboard */; };
-		A154123B25988B0400600EBB /* Tabbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A154123A25988B0400600EBB /* Tabbar.xcassets */; };
 		A154124825988D9600600EBB /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154124725988D9600600EBB /* UINavigationController+Extension.swift */; };
 		A15412552598956600600EBB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15412542598956600600EBB /* UIColor+Extension.swift */; };
 		A154126B2598B82900600EBB /* EmptyView.h in Headers */ = {isa = PBXBuildFile; fileRef = A15412692598B82900600EBB /* EmptyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,8 +50,6 @@
 		A154126F2598B82900600EBB /* EmptyView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A15412672598B82900600EBB /* EmptyView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A154128C2598B8C500600EBB /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154128B2598B8C500600EBB /* EmptyView.swift */; };
 		A154129A2598B91300600EBB /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15412992598B91300600EBB /* EmptyView.xib */; };
-		A15412B82598C23E00600EBB /* Chatrooms.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15412B72598C23E00600EBB /* Chatrooms.xcassets */; };
-		A15412C62598C5A400600EBB /* Friends.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15412C52598C5A400600EBB /* Friends.xcassets */; };
 		A15412D42598CADF00600EBB /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15412D32598CADE00600EBB /* UIImage+Extension.swift */; };
 		A15412FC2599C59C00600EBB /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15412FB2599C59C00600EBB /* HttpService.swift */; };
 		A15413162599C5CB00600EBB /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15413152599C5CB00600EBB /* HttpRouter.swift */; };
@@ -92,6 +90,14 @@
 		A16B447C258C76BB00875743 /* ChatroomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */; };
 		A16B447D258C76BB00875743 /* ChatroomLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16B447A258C76BA00875743 /* ChatroomLogin.storyboard */; };
 		A16B4487258C7B2B00875743 /* ChatroomLogin.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16B4486258C7B2B00875743 /* ChatroomLogin.xcassets */; };
+		A1CE915325A98F33003A7941 /* ChatroomSignUp.h in Headers */ = {isa = PBXBuildFile; fileRef = A1CE915125A98F33003A7941 /* ChatroomSignUp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1CE915625A98F33003A7941 /* ChatroomSignUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CE914F25A98F33003A7941 /* ChatroomSignUp.framework */; };
+		A1CE915725A98F33003A7941 /* ChatroomSignUp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1CE914F25A98F33003A7941 /* ChatroomSignUp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1CE917E25A99005003A7941 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE917B25A99005003A7941 /* Builder.swift */; };
+		A1CE917F25A99005003A7941 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE917C25A99005003A7941 /* Router.swift */; };
+		A1CE918025A99005003A7941 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE917D25A99005003A7941 /* Presenter.swift */; };
+		A1CE91AB25A9934E003A7941 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE91AA25A9934E003A7941 /* SignUpViewController.swift */; };
+		A1CE91BA25A9955D003A7941 /* ChatroomSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1CE91B925A9955D003A7941 /* ChatroomSignUp.storyboard */; };
 		A1D6F475258DB2ED000FE69C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F474258DB2ED000FE69C /* Presenter.swift */; };
 		A1D6F47B258DB508000FE69C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F47A258DB508000FE69C /* Router.swift */; };
 		A1D6F481258DC545000FE69C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F480258DC545000FE69C /* String+Extension.swift */; };
@@ -269,6 +275,34 @@
 			remoteGlobalIDString = A16B4403258C744300875743;
 			remoteInfo = Utility;
 		};
+		A1CE915425A98F33003A7941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1CE914E25A98F33003A7941;
+			remoteInfo = ChatroomSignUp;
+		};
+		A1CE917525A98F7F003A7941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A16B4403258C744300875743;
+			remoteInfo = Utility;
+		};
+		A1CE917725A98F84003A7941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1D6F48A258DCF7C000FE69C;
+			remoteInfo = UseCases;
+		};
+		A1CE917925A98F8B003A7941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1D6F54F258DE06C000FE69C;
+			remoteInfo = Models;
+		};
 		A1D6F490258DCF7C000FE69C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A16B43CB258C739600875743 /* Project object */;
@@ -313,6 +347,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A1CE915725A98F33003A7941 /* ChatroomSignUp.framework in Embed Frameworks */,
 				A15410BE25977FE400600EBB /* Tabbar.framework in Embed Frameworks */,
 				A154126F2598B82900600EBB /* EmptyView.framework in Embed Frameworks */,
 				A16B43F9258C741700875743 /* Window.framework in Embed Frameworks */,
@@ -334,6 +369,7 @@
 /* Begin PBXFileReference section */
 		1B2623DD00343E8F8AC15609 /* Pods_ChatroomLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatroomLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5923A7B50C8EAF7DD61048 /* Pods-LiaolisoService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiaolisoService.debug.xcconfig"; path = "Target Support Files/Pods-LiaolisoService/Pods-LiaolisoService.debug.xcconfig"; sourceTree = "<group>"; };
+		1F0E3267DF8513D2CBAE21CD /* Pods_ChatroomSignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatroomSignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2563B9192490C3D62624E4 /* Pods-Landing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Landing.debug.xcconfig"; path = "Target Support Files/Pods-Landing/Pods-Landing.debug.xcconfig"; sourceTree = "<group>"; };
 		22C06561A60F97A8F3244E68 /* Pods-ChatroomLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatroomLogin.release.xcconfig"; path = "Target Support Files/Pods-ChatroomLogin/Pods-ChatroomLogin.release.xcconfig"; sourceTree = "<group>"; };
 		22E1B0960ED9BFB1713BBA41 /* Pods-ChatroomLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatroomLogin.debug.xcconfig"; path = "Target Support Files/Pods-ChatroomLogin/Pods-ChatroomLogin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -378,7 +414,6 @@
 		A1541200259875DB00600EBB /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		A154120F2598760000600EBB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A154121C2598761300600EBB /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		A154123A25988B0400600EBB /* Tabbar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tabbar.xcassets; sourceTree = "<group>"; };
 		A154124725988D9600600EBB /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		A15412542598956600600EBB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A15412672598B82900600EBB /* EmptyView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmptyView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -386,8 +421,6 @@
 		A154126A2598B82900600EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A154128B2598B8C500600EBB /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		A15412992598B91300600EBB /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
-		A15412B72598C23E00600EBB /* Chatrooms.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chatrooms.xcassets; sourceTree = "<group>"; };
-		A15412C52598C5A400600EBB /* Friends.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Friends.xcassets; sourceTree = "<group>"; };
 		A15412D32598CADE00600EBB /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		A15412FB2599C59C00600EBB /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		A15413152599C5CB00600EBB /* HttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
@@ -430,6 +463,14 @@
 		A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatroomLoginViewController.swift; sourceTree = "<group>"; };
 		A16B447A258C76BA00875743 /* ChatroomLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatroomLogin.storyboard; sourceTree = "<group>"; };
 		A16B4486258C7B2B00875743 /* ChatroomLogin.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ChatroomLogin.xcassets; sourceTree = "<group>"; };
+		A1CE914F25A98F33003A7941 /* ChatroomSignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChatroomSignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CE915125A98F33003A7941 /* ChatroomSignUp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatroomSignUp.h; sourceTree = "<group>"; };
+		A1CE915225A98F33003A7941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1CE917B25A99005003A7941 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		A1CE917C25A99005003A7941 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A1CE917D25A99005003A7941 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A1CE91AA25A9934E003A7941 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A1CE91B925A9955D003A7941 /* ChatroomSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatroomSignUp.storyboard; sourceTree = "<group>"; };
 		A1D6F474258DB2ED000FE69C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		A1D6F47A258DB508000FE69C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A1D6F480258DC545000FE69C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -447,10 +488,12 @@
 		A1D6F553258DE06C000FE69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1D6F55C258DE086000FE69C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B6463ECE978B2A0477744C4D /* Pods-Window.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Window.debug.xcconfig"; path = "Target Support Files/Pods-Window/Pods-Window.debug.xcconfig"; sourceTree = "<group>"; };
+		D15DD333BC7152E48C85ABCC /* Pods-ChatroomSignUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatroomSignUp.debug.xcconfig"; path = "Target Support Files/Pods-ChatroomSignUp/Pods-ChatroomSignUp.debug.xcconfig"; sourceTree = "<group>"; };
 		D2D36E107A53CA0821DB4088 /* Pods-Landing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Landing.release.xcconfig"; path = "Target Support Files/Pods-Landing/Pods-Landing.release.xcconfig"; sourceTree = "<group>"; };
 		D51909A3782D2D072266FC29 /* Pods-Liaoliao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liaoliao.debug.xcconfig"; path = "Target Support Files/Pods-Liaoliao/Pods-Liaoliao.debug.xcconfig"; sourceTree = "<group>"; };
 		D6FD22F5D99C6D703AA848C7 /* Pods-LiaolisoService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiaolisoService.release.xcconfig"; path = "Target Support Files/Pods-LiaolisoService/Pods-LiaolisoService.release.xcconfig"; sourceTree = "<group>"; };
 		E64C3E60C79C479B32F76727 /* Pods-Utility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utility.release.xcconfig"; path = "Target Support Files/Pods-Utility/Pods-Utility.release.xcconfig"; sourceTree = "<group>"; };
+		EA573881DA37D9DCDE6A6A3E /* Pods-ChatroomSignUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatroomSignUp.release.xcconfig"; path = "Target Support Files/Pods-ChatroomSignUp/Pods-ChatroomSignUp.release.xcconfig"; sourceTree = "<group>"; };
 		EFFDDA7200C33C6E5CDEFADF /* Pods-Utility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utility.debug.xcconfig"; path = "Target Support Files/Pods-Utility/Pods-Utility.debug.xcconfig"; sourceTree = "<group>"; };
 		F44C2E39BF58A6CE78C2DB88 /* Pods-UseCases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseCases.release.xcconfig"; path = "Target Support Files/Pods-UseCases/Pods-UseCases.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -498,6 +541,7 @@
 				A1D6F557258DE06C000FE69C /* Models.framework in Frameworks */,
 				A154117E259870D600600EBB /* Friends.framework in Frameworks */,
 				A1541110259856F400600EBB /* Chatrooms.framework in Frameworks */,
+				A1CE915625A98F33003A7941 /* ChatroomSignUp.framework in Frameworks */,
 				A1D6F492258DCF7C000FE69C /* UseCases.framework in Frameworks */,
 				A16B43F8258C741700875743 /* Window.framework in Frameworks */,
 				A15410BD25977FE400600EBB /* Tabbar.framework in Frameworks */,
@@ -543,6 +587,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1CE914C25A98F33003A7941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F39A6F4C240B11400376454 /* Pods_ChatroomSignUp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1D6F488258DCF7C000FE69C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -579,6 +631,7 @@
 				7F1A1507041C58677010BC99 /* Pods_Window.framework */,
 				7F13F7FED03C96221DE4098D /* Pods_UseCases.framework */,
 				37BEABFA5219D71A6D9C9D69 /* Pods_LiaolisoService.framework */,
+				1F0E3267DF8513D2CBAE21CD /* Pods_ChatroomSignUp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -600,6 +653,8 @@
 				F44C2E39BF58A6CE78C2DB88 /* Pods-UseCases.release.xcconfig */,
 				1E5923A7B50C8EAF7DD61048 /* Pods-LiaolisoService.debug.xcconfig */,
 				D6FD22F5D99C6D703AA848C7 /* Pods-LiaolisoService.release.xcconfig */,
+				D15DD333BC7152E48C85ABCC /* Pods-ChatroomSignUp.debug.xcconfig */,
+				EA573881DA37D9DCDE6A6A3E /* Pods-ChatroomSignUp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -613,7 +668,6 @@
 				A15410DC2597818400600EBB /* Builder.swift */,
 				A15410E62597830C00600EBB /* Presenter.swift */,
 				A15410F02597849600600EBB /* Router.swift */,
-				A154123A25988B0400600EBB /* Tabbar.xcassets */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -628,7 +682,6 @@
 				A154113D259858BA00600EBB /* Builder.swift */,
 				A15411482598592000600EBB /* Presenter.swift */,
 				A154115C25985AA200600EBB /* Router.swift */,
-				A15412B72598C23E00600EBB /* Chatrooms.xcassets */,
 			);
 			path = Chatrooms;
 			sourceTree = "<group>";
@@ -643,7 +696,6 @@
 				A154117A259870D600600EBB /* Info.plist */,
 				A15411B3259873E700600EBB /* FriendsViewController.swift */,
 				A15411C92598741000600EBB /* Friends.storyboard */,
-				A15412C52598C5A400600EBB /* Friends.xcassets */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -729,6 +781,7 @@
 				A1541177259870D600600EBB /* Friends.framework */,
 				A15411DA2598754800600EBB /* Profile.framework */,
 				A15412672598B82900600EBB /* EmptyView.framework */,
+				A1CE914F25A98F33003A7941 /* ChatroomSignUp.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -753,6 +806,7 @@
 			children = (
 				A16B442D258C74EB00875743 /* ChatroomLogin */,
 				A154110A259856F400600EBB /* Chatrooms */,
+				A1CE915025A98F33003A7941 /* ChatroomSignUp */,
 				A1541178259870D600600EBB /* Friends */,
 				A16B4419258C74D400875743 /* Landing */,
 				A15411DB2598754800600EBB /* Profile */,
@@ -826,6 +880,20 @@
 				A1D6F47A258DB508000FE69C /* Router.swift */,
 			);
 			path = ChatroomLogin;
+			sourceTree = "<group>";
+		};
+		A1CE915025A98F33003A7941 /* ChatroomSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				A1CE917B25A99005003A7941 /* Builder.swift */,
+				A1CE917D25A99005003A7941 /* Presenter.swift */,
+				A1CE917C25A99005003A7941 /* Router.swift */,
+				A1CE915125A98F33003A7941 /* ChatroomSignUp.h */,
+				A1CE915225A98F33003A7941 /* Info.plist */,
+				A1CE91AA25A9934E003A7941 /* SignUpViewController.swift */,
+				A1CE91B925A9955D003A7941 /* ChatroomSignUp.storyboard */,
+			);
+			path = ChatroomSignUp;
 			sourceTree = "<group>";
 		};
 		A1D6F48C258DCF7C000FE69C /* UseCases */ = {
@@ -936,6 +1004,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A16B4430258C74EB00875743 /* ChatroomLogin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CE914A25A98F33003A7941 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CE915325A98F33003A7941 /* ChatroomSignUp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1090,6 +1166,7 @@
 				A154117D259870D600600EBB /* PBXTargetDependency */,
 				A15411E02598754800600EBB /* PBXTargetDependency */,
 				A154126D2598B82900600EBB /* PBXTargetDependency */,
+				A1CE915525A98F33003A7941 /* PBXTargetDependency */,
 			);
 			name = Liaoliao;
 			productName = Liaoliao;
@@ -1176,6 +1253,28 @@
 			name = ChatroomLogin;
 			productName = ChatroomLogin;
 			productReference = A16B442C258C74EB00875743 /* ChatroomLogin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1CE914E25A98F33003A7941 /* ChatroomSignUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1CE915A25A98F33003A7941 /* Build configuration list for PBXNativeTarget "ChatroomSignUp" */;
+			buildPhases = (
+				7EB383A8EF70A83B80E22E41 /* [CP] Check Pods Manifest.lock */,
+				A1CE914A25A98F33003A7941 /* Headers */,
+				A1CE914B25A98F33003A7941 /* Sources */,
+				A1CE914C25A98F33003A7941 /* Frameworks */,
+				A1CE914D25A98F33003A7941 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1CE917A25A98F8B003A7941 /* PBXTargetDependency */,
+				A1CE917825A98F84003A7941 /* PBXTargetDependency */,
+				A1CE917625A98F7F003A7941 /* PBXTargetDependency */,
+			);
+			name = ChatroomSignUp;
+			productName = ChatroomSignUp;
+			productReference = A1CE914F25A98F33003A7941 /* ChatroomSignUp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A1D6F48A258DCF7C000FE69C /* UseCases */ = {
@@ -1283,6 +1382,10 @@
 						CreatedOnToolsVersion = 12.0.1;
 						LastSwiftMigration = 1200;
 					};
+					A1CE914E25A98F33003A7941 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
 					A1D6F48A258DCF7C000FE69C = {
 						CreatedOnToolsVersion = 12.0.1;
 						LastSwiftMigration = 1200;
@@ -1323,6 +1426,7 @@
 				A1541176259870D600600EBB /* Friends */,
 				A15411D92598754800600EBB /* Profile */,
 				A15412662598B82900600EBB /* EmptyView */,
+				A1CE914E25A98F33003A7941 /* ChatroomSignUp */,
 			);
 		};
 /* End PBXProject section */
@@ -1332,7 +1436,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A154123B25988B0400600EBB /* Tabbar.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1340,7 +1443,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A15412B82598C23E00600EBB /* Chatrooms.xcassets in Resources */,
 				A1541133259857A700600EBB /* Chatrooms.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1350,7 +1452,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15411CA2598741000600EBB /* Friends.storyboard in Resources */,
-				A15412C62598C5A400600EBB /* Friends.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1409,6 +1510,14 @@
 			files = (
 				A16B4487258C7B2B00875743 /* ChatroomLogin.xcassets in Resources */,
 				A16B447D258C76BB00875743 /* ChatroomLogin.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CE914D25A98F33003A7941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CE91BA25A9955D003A7941 /* ChatroomSignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1496,6 +1605,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-UseCases-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EB383A8EF70A83B80E22E41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatroomSignUp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1716,6 +1847,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1CE914B25A98F33003A7941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CE918025A99005003A7941 /* Presenter.swift in Sources */,
+				A1CE917F25A99005003A7941 /* Router.swift in Sources */,
+				A1CE91AB25A9934E003A7941 /* SignUpViewController.swift in Sources */,
+				A1CE917E25A99005003A7941 /* Builder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1D6F487258DCF7C000FE69C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1861,6 +2003,26 @@
 			isa = PBXTargetDependency;
 			target = A16B4403258C744300875743 /* Utility */;
 			targetProxy = A16B4472258C768300875743 /* PBXContainerItemProxy */;
+		};
+		A1CE915525A98F33003A7941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1CE914E25A98F33003A7941 /* ChatroomSignUp */;
+			targetProxy = A1CE915425A98F33003A7941 /* PBXContainerItemProxy */;
+		};
+		A1CE917625A98F7F003A7941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A16B4403258C744300875743 /* Utility */;
+			targetProxy = A1CE917525A98F7F003A7941 /* PBXContainerItemProxy */;
+		};
+		A1CE917825A98F84003A7941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1D6F48A258DCF7C000FE69C /* UseCases */;
+			targetProxy = A1CE917725A98F84003A7941 /* PBXContainerItemProxy */;
+		};
+		A1CE917A25A98F8B003A7941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1D6F54F258DE06C000FE69C /* Models */;
+			targetProxy = A1CE917925A98F8B003A7941 /* PBXContainerItemProxy */;
 		};
 		A1D6F491258DCF7C000FE69C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2580,6 +2742,65 @@
 			};
 			name = Release;
 		};
+		A1CE915825A98F33003A7941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D15DD333BC7152E48C85ABCC /* Pods-ChatroomSignUp.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/ChatroomSignUp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.ChatroomSignUp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1CE915925A98F33003A7941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA573881DA37D9DCDE6A6A3E /* Pods-ChatroomSignUp.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Liaoliao/Modules/ChatroomSignUp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.one.ChatroomSignUp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		A1D6F495258DCF7C000FE69C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8B3D50F361FAFFD6FDF85081 /* Pods-UseCases.debug.xcconfig */;
@@ -2847,6 +3068,15 @@
 			buildConfigurations = (
 				A16B4436258C74EB00875743 /* Debug */,
 				A16B4437258C74EB00875743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1CE915A25A98F33003A7941 /* Build configuration list for PBXNativeTarget "ChatroomSignUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1CE915825A98F33003A7941 /* Debug */,
+				A1CE915925A98F33003A7941 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

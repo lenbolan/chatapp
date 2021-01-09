@@ -7,42 +7,47 @@
 		<key>ChatroomLogin.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>18</integer>
-		</dict>
-		<key>Chatrooms.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>24</integer>
-		</dict>
-		<key>EmptyView.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>15</integer>
-		</dict>
-		<key>Friends.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
-		</dict>
-		<key>Landing.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
 			<integer>23</integer>
 		</dict>
-		<key>Liaoliao.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>21</integer>
-		</dict>
-		<key>LiaolisoService.xcscheme_^#shared#^_</key>
+		<key>ChatroomSignUp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>22</integer>
 		</dict>
+		<key>Chatrooms.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>EmptyView.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>Friends.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
+		<key>Landing.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>Liaoliao.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
+		</dict>
+		<key>LiaolisoService.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
 		<key>Models.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>26</integer>
+			<integer>19</integer>
 		</dict>
 		<key>Modules.xcscheme_^#shared#^_</key>
 		<dict>
@@ -52,7 +57,7 @@
 		<key>Profile.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>18</integer>
 		</dict>
 		<key>Tabbar.xcscheme_^#shared#^_</key>
 		<dict>
@@ -67,12 +72,12 @@
 		<key>Utility.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>28</integer>
 		</dict>
 		<key>Window.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>26</integer>
 		</dict>
 	</dict>
 </dict>
