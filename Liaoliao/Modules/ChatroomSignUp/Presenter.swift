@@ -9,12 +9,15 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+import Models
+
 protocol Presentation {
     typealias Input = (
         email: Driver<String>,
         username: Driver<String>,
         password: Driver<String>,
-        signup: Driver<Void>
+        signup: Driver<Void>,
+        backToLogin: Driver<Void>
     )
     typealias Output = (
         enableSignUp: Driver<Bool>, ()
@@ -30,13 +33,18 @@ class Presenter: Presentation {
     var output: Output
     
     typealias UseCases = (
-        input: (),
+        input: (
+            signUp: (_ email: String, _ username: String, _ password: String) -> Single<()>,
+            ()
+        ),
         output: ()
     )
     
     private let dependencies: Dependencies
     private let router: Routing
     private let useCases: UseCases
+    
+    private let bag = DisposeBag()
     
     typealias Dependencies = (router: Routing, useCases: UseCases)
     
@@ -64,6 +72,32 @@ private extension Presenter {
     }
     
     func process() {
+        
+        self.input.signup
+            .withLatestFrom(Driver.combineLatest(self.input.email, self.input.username, self.input.password))
+            .debug("SignUp Driver", trimOutput: false)
+            .asObservable()
+            .flatMapLatest( { [useCases] (email, username, password) in
+                useCases.input.signUp(email, username, password).catchError { (error) -> Single<()> in
+                    if let error = error as? ChatroomError {
+                        print(error.errorDescription ?? "")
+                    }
+                    return .never()
+                }
+            })
+            .map({ [router] _ in
+                router.routeToChatrooms()
+            })
+            .asDriver(onErrorDriveWith: .never())
+            .drive()
+            .disposed(by: bag)
+        
+        self.input.backToLogin
+            .map ({ [router] _ in
+                router.routeToLogin()
+            })
+            .drive()
+            .disposed(by: bag)
         
     }
     

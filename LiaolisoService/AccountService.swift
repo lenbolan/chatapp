@@ -13,6 +13,7 @@ import Models
 public protocol AccountAPI {
     
     func login(email: String, password: String) -> Single<User>
+    func signUp(user: User) -> Single<User>
     
 }
 
@@ -45,6 +46,28 @@ extension AccountService: AccountAPI {
                 }
             }
             .map( { $0.user } )
+            .asSingle()
+    }
+    
+    public func signUp(user: User) -> Single<User> {
+        return try! AccountHttpRouter.signUp(user: user).rx
+            .request(withService: httpService)
+            .responseJSON()
+            .map({ (dataResult) -> AuthResponse in
+                guard let data = dataResult.data else {
+                    throw ChatroomError.notFound(message: user.email)
+                }
+                if dataResult.response?.statusCode == 201 {
+                    do {
+                        return try AuthResponse(data: data)
+                    } catch {
+                        throw ChatroomError.parsingFailed
+                    }
+                } else {
+                    throw ChatroomError.unauthorized(message: user.email)
+                }
+            })
+            .map({ $0.user })
             .asSingle()
     }
     

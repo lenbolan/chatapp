@@ -11,13 +11,16 @@ import UseCases
 
 public final class Builder {
     
-    public static func build(onLogin: @escaping () -> Void) -> UIViewController {
+    public static func build(onLogin: @escaping () -> Void,
+                             swapSignUp: @escaping () -> Void) -> UIViewController {
         let storyboard = UIStoryboard.init(name: "ChatroomLogin", bundle: Bundle.init(for: self))
         let view = ChatroomLoginViewController.instantiate(from: storyboard)
         
         let accountInteractor = UseCasesFactory.accoutsInteractor
         
-        let router = Router(viewController: view, onLogin: onLogin)
+        let router = Router(viewController: view,
+                            onLogin: onLogin,
+                            swapSignUp: swapSignUp)
         
         view.presenterProducer = {
             Presenter(

@@ -303,6 +303,13 @@
 			remoteGlobalIDString = A1D6F54F258DE06C000FE69C;
 			remoteInfo = Models;
 		};
+		A1CE91D525A9CD10003A7941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1CE914E25A98F33003A7941;
+			remoteInfo = ChatroomSignUp;
+		};
 		A1D6F490258DCF7C000FE69C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A16B43CB258C739600875743 /* Project object */;
@@ -1186,6 +1193,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A1CE91D625A9CD10003A7941 /* PBXTargetDependency */,
 				A15410FB2597891C00600EBB /* PBXTargetDependency */,
 				A15410A725975BA100600EBB /* PBXTargetDependency */,
 				A15410A925975BA100600EBB /* PBXTargetDependency */,
@@ -2023,6 +2031,11 @@
 			isa = PBXTargetDependency;
 			target = A1D6F54F258DE06C000FE69C /* Models */;
 			targetProxy = A1CE917925A98F8B003A7941 /* PBXContainerItemProxy */;
+		};
+		A1CE91D625A9CD10003A7941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1CE914E25A98F33003A7941 /* ChatroomSignUp */;
+			targetProxy = A1CE91D525A9CD10003A7941 /* PBXContainerItemProxy */;
 		};
 		A1D6F491258DCF7C000FE69C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

@@ -8,6 +8,7 @@
 import UIKit
 import Landing
 import ChatroomLogin
+import ChatroomSignUp
 import Tabbar
 
 public final class Builder {
@@ -17,6 +18,7 @@ public final class Builder {
         
         let landingModule = Landing.Builder.build
         let loginModule = ChatroomLogin.Builder.build
+        let signUpModule = ChatroomSignUp.Builder.build
         let tabbarModule = Tabbar.Builder.build
         
         let router = Router(
@@ -24,6 +26,7 @@ public final class Builder {
             submodules: (
                 landingModule: landingModule,
                 loginModule: loginModule,
+                signUpModule: signUpModule,
                 tabbarModule: tabbarModule
             )
         )

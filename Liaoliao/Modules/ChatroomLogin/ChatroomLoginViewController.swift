@@ -14,7 +14,8 @@ protocol Presentation {
     typealias Input = (
         email: Driver<String>,
         password: Driver<String>,
-        login: Driver<Void>
+        login: Driver<Void>,
+        swapSignUp: Driver<Void>
     )
     typealias Output = (
         enableLogin: Driver<Bool>, ()
@@ -34,6 +35,7 @@ class ChatroomLoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var swapSignUpButton: UIButton!
     
     private var presenter: Presentation!
     var presenterProducer: Presentation.Producer!
@@ -46,7 +48,8 @@ class ChatroomLoginViewController: UIViewController {
         presenter = presenterProducer((
             email: emailTextField.rx.text.orEmpty.asDriver(),
             password: passwordTextField.rx.text.orEmpty.asDriver(),
-            login: loginButton.rx.tap.asDriver()
+            login: loginButton.rx.tap.asDriver(),
+            swapSignUp: swapSignUpButton.rx.tap.asDriver()
         ))
         setupUI()
         setupBinding()

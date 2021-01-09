@@ -38,33 +38,44 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="l8i-uR-C0q">
-                                <rect key="frame" x="132" y="508" width="150.5" height="190"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="l8i-uR-C0q">
+                                <rect key="frame" x="132" y="508" width="150.5" height="210"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ioL-YP-1aP">
-                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="IXY-CG-it6"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEt-6p-dTe">
-                                        <rect key="frame" x="0.0" y="70" width="150.5" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="vg3-EK-srL"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a9y-lt-6bb">
-                                        <rect key="frame" x="0.0" y="140" width="150.5" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="m10-CZ-aKd"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ETL-Y9-okq">
+                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="150"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ioL-YP-1aP">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="IXY-CG-it6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEt-6p-dTe">
+                                                <rect key="frame" x="0.0" y="55" width="150.5" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="vg3-EK-srL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a9y-lt-6bb">
+                                                <rect key="frame" x="0.0" y="110" width="150.5" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="m10-CZ-aKd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-Tm-ZCQ">
+                                        <rect key="frame" x="0.0" y="180" width="150.5" height="30"/>
+                                        <state key="normal" title="Back to Login?">
+                                            <color key="titleColor" red="0.2228350043" green="0.132180661" blue="0.42613303660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADj-aP-Zyg">
@@ -95,6 +106,7 @@
                     </view>
                     <connections>
                         <outlet property="avatarImageView" destination="Uwh-m8-47u" id="3hI-cr-UQW"/>
+                        <outlet property="backToLoginButton" destination="yIC-Tm-ZCQ" id="Rbd-6Q-IcV"/>
                         <outlet property="detailsLabel" destination="pBD-dZ-xHl" id="91g-HJ-b0J"/>
                         <outlet property="emailTextField" destination="ioL-YP-1aP" id="HIM-LV-js2"/>
                         <outlet property="passwordTextField" destination="a9y-lt-6bb" id="mJc-rb-I4o"/>

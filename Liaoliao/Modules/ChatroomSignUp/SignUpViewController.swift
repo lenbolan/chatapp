@@ -18,6 +18,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var backToLoginButton: UIButton!
     
     private var presenter: Presentation!
     var presenterProducer: Presentation.Producer!
@@ -31,7 +32,8 @@ class SignUpViewController: UIViewController {
             email: emailTextField.rx.text.orEmpty.asDriver(),
             username: emailTextField.rx.text.orEmpty.asDriver(),
             password: emailTextField.rx.text.orEmpty.asDriver(),
-            signup: signUpButton.rx.tap.asDriver()
+            signup: signUpButton.rx.tap.asDriver(),
+            backToLogin: backToLoginButton.rx.tap.asDriver()
         ))
         setupUI()
         setupBinding()
@@ -42,7 +44,7 @@ class SignUpViewController: UIViewController {
 private extension SignUpViewController {
     
     func setupUI() {
-        avatarImageView.image = UIImage(named: "ic-male", in: Bundle(for: type(of: self)), with: nil)
+        avatarImageView.image = UIImage(named: "ic-male")
         
         signUpButton.layer.cornerRadius = 12
         signUpButton.layer.masksToBounds = true

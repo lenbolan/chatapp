@@ -10,6 +10,8 @@ import Foundation
 protocol Routing {
     func routeToLanding()
     func routeToLogin()
+    func routeToSignup()
+    func routeToChatrooms()
 }
 
 class Presenter: Presentation {
