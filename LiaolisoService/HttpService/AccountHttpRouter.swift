@@ -16,15 +16,15 @@ public enum AccountHttpRouter {
 extension AccountHttpRouter: ReactiveHttpRouter {
     
     public var baseUrlString: String {
-        return "http://localhost:80/api"
+        return "http://localhost:80/"
     }
     
     public var path: String {
         switch self {
         case .login:
-            return "/login"
+            return "login"
         case .signUp:
-            return "/signup"
+            return "signup"
         }
     }
     

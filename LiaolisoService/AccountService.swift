@@ -7,6 +7,7 @@
 
 import Foundation
 import RxSwift
+
 import Models
 
 public protocol AccountAPI {
@@ -31,14 +32,16 @@ extension AccountService: AccountAPI {
             .responseJSON()
             .map { (result) -> AuthResponse in
                 guard let data = result.data else {
-                    throw ChatroomError.notFound
+                    throw ChatroomError.notFound(message: email)
                 }
-                
                 if result.response?.statusCode == 200 {
-                    let authResponse = try AuthResponse(data: data)
-                    return authResponse
+                    do {
+                        return try AuthResponse(data: data)
+                    } catch {
+                        throw ChatroomError.parsingFailed
+                    }
                 } else {
-                    throw ChatroomError.internalError
+                    throw ChatroomError.unauthorized(message: email)
                 }
             }
             .map( { $0.user } )
