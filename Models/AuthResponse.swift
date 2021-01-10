@@ -64,8 +64,18 @@ import Foundation
 
 // MARK: - TokenData
 public struct TokenData: Codable {
-    let email, accessToken, refreshToken: String
-    let expiresIn: Int
+    public let email, accessToken, refreshToken: String
+    public let expiresIn: Int
+    
+    public init(email: String,
+                accessToken: String,
+                refreshToken: String,
+                expiresIn: Int) {
+        self.email = email
+        self.accessToken = accessToken
+        self.refreshToken = refreshToken
+        self.expiresIn = expiresIn
+    }
 }
 
 // MARK: TokenData convenience initializers and mutators

@@ -13,6 +13,7 @@ public final class UseCasesFactory {
 //    private static let deployedUrl = "https://lbchat.herokuapp.com/"
     private static let websocketService = ChatroomWebsocketService(socketUrl: deployedUrl)
     private static let accountService = AccountService()
-    public static let accoutsInteractor: AccountInteractor = AccountInteractor(accountService: accountService)
+    private static let userSettings = UserSettingsService.shared
+    public static let accoutsInteractor: AccountInteractor = AccountInteractor(accountService: accountService, userSettings: userSettings)
     
 }

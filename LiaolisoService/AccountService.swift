@@ -27,7 +27,7 @@ public final class AccountService {
 extension AccountService: AccountAPI {
     
     public func login(email: String, password: String) -> Single<User> {
-        try! AccountHttpRouter
+        return AccountHttpRouter
             .login(user: User(email: email, password: password))
             .rx.request(withService: httpService)
             .responseJSON()
@@ -50,7 +50,7 @@ extension AccountService: AccountAPI {
     }
     
     public func signUp(user: User) -> Single<User> {
-        return try! AccountHttpRouter.signUp(user: user).rx
+        return AccountHttpRouter.signUp(user: user).rx
             .request(withService: httpService)
             .responseJSON()
             .map({ (dataResult) -> AuthResponse in

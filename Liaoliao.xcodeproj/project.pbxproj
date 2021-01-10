@@ -86,7 +86,6 @@
 		A16B4457258C75E800875743 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4456258C75E800875743 /* UIViewController+Extensions.swift */; };
 		A16B4460258C760700875743 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B445C258C760600875743 /* Builder.swift */; };
 		A16B4461258C760700875743 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16B445D258C760600875743 /* Landing.storyboard */; };
-		A16B4462258C760700875743 /* Landing.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16B445E258C760700875743 /* Landing.xcassets */; };
 		A16B4463258C760700875743 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B445F258C760700875743 /* LandingViewController.swift */; };
 		A16B447B258C76BA00875743 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4478258C76B900875743 /* Builder.swift */; };
 		A16B447C258C76BB00875743 /* ChatroomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */; };
@@ -100,6 +99,8 @@
 		A1CE918025A99005003A7941 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE917D25A99005003A7941 /* Presenter.swift */; };
 		A1CE91AB25A9934E003A7941 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE91AA25A9934E003A7941 /* SignUpViewController.swift */; };
 		A1CE91BA25A9955D003A7941 /* ChatroomSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1CE91B925A9955D003A7941 /* ChatroomSignUp.storyboard */; };
+		A1CE923025AAE441003A7941 /* UserSettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE922F25AAE441003A7941 /* UserSettingsService.swift */; };
+		A1CE925925AB10F0003A7941 /* Landing.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CE925825AB10F0003A7941 /* Landing.xcassets */; };
 		A1D6F475258DB2ED000FE69C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F474258DB2ED000FE69C /* Presenter.swift */; };
 		A1D6F47B258DB508000FE69C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F47A258DB508000FE69C /* Router.swift */; };
 		A1D6F481258DC545000FE69C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F480258DC545000FE69C /* String+Extension.swift */; };
@@ -489,7 +490,6 @@
 		A16B4456258C75E800875743 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		A16B445C258C760600875743 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		A16B445D258C760600875743 /* Landing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
-		A16B445E258C760700875743 /* Landing.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Landing.xcassets; sourceTree = "<group>"; };
 		A16B445F258C760700875743 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		A16B4478258C76B900875743 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		A16B4479258C76B900875743 /* ChatroomLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatroomLoginViewController.swift; sourceTree = "<group>"; };
@@ -503,6 +503,8 @@
 		A1CE917D25A99005003A7941 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		A1CE91AA25A9934E003A7941 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A1CE91B925A9955D003A7941 /* ChatroomSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatroomSignUp.storyboard; sourceTree = "<group>"; };
+		A1CE922F25AAE441003A7941 /* UserSettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsService.swift; sourceTree = "<group>"; };
+		A1CE925825AB10F0003A7941 /* Landing.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Landing.xcassets; sourceTree = "<group>"; };
 		A1D6F474258DB2ED000FE69C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		A1D6F47A258DB508000FE69C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A1D6F480258DC545000FE69C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -922,8 +924,8 @@
 				A16B441B258C74D400875743 /* Info.plist */,
 				A16B441A258C74D400875743 /* Landing.h */,
 				A16B445D258C760600875743 /* Landing.storyboard */,
-				A16B445E258C760700875743 /* Landing.xcassets */,
 				A16B445F258C760700875743 /* LandingViewController.swift */,
+				A1CE925825AB10F0003A7941 /* Landing.xcassets */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -976,6 +978,7 @@
 				A1D6F4DA258DD247000FE69C /* Info.plist */,
 				A1D6F4EA258DD274000FE69C /* ChatroomWebsocketService.swift */,
 				A15413DB25A002E600600EBB /* AccountService.swift */,
+				A1CE922F25AAE441003A7941 /* UserSettingsService.swift */,
 			);
 			path = LiaolisoService;
 			sourceTree = "<group>";
@@ -1565,7 +1568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A16B4461258C760700875743 /* Landing.storyboard in Resources */,
-				A16B4462258C760700875743 /* Landing.xcassets in Resources */,
+				A1CE925925AB10F0003A7941 /* Landing.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1958,6 +1961,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1CE923025AAE441003A7941 /* UserSettingsService.swift in Sources */,
 				A1D6F4EB258DD274000FE69C /* ChatroomWebsocketService.swift in Sources */,
 				A15412FC2599C59C00600EBB /* HttpService.swift in Sources */,
 				A15413A4259F096800600EBB /* ChatroomHttpService.swift in Sources */,
