@@ -1,0 +1,6 @@
+framework module Pods_CommonPods_Window {
+  umbrella header "Pods-CommonPods-Window-umbrella.h"
+
+  export *
+  module * { export * }
+}

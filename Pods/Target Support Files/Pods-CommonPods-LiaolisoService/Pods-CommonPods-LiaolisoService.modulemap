@@ -1,0 +1,6 @@
+framework module Pods_CommonPods_LiaolisoService {
+  umbrella header "Pods-CommonPods-LiaolisoService-umbrella.h"
+
+  export *
+  module * { export * }
+}

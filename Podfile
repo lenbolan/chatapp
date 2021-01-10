@@ -1,91 +1,90 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'ChatroomSignUp' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for ChatroomLogin
+def commonPods
+  
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Socket.IO-Client-Swift', '~> 15.2.0'
   pod 'Alamofire'
   pod 'RxAlamofire'
-
+  
 end
 
-target 'ChatroomLogin' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+abstract_target 'CommonPods' do
+  
+  commonPods
 
-  # Pods for ChatroomLogin
-  pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'Socket.IO-Client-Swift', '~> 15.2.0'
-  pod 'Alamofire'
-  pod 'RxAlamofire'
+  target 'ChatroomSignUp' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
 
-end
+    # Pods for ChatroomLogin
 
-target 'Landing' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  end
 
-  # Pods for Landing
+  target 'ChatroomLogin' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
 
-end
+    # Pods for ChatroomLogin
 
-target 'Liaoliao' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  end
 
-  # Pods for Liaoliao
-  pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'Socket.IO-Client-Swift', '~> 15.2.0'
-  pod 'Alamofire'
-  pod 'RxAlamofire'
+  target 'Landing' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
 
-end
+    # Pods for Landing
 
-target 'Utility' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  end
 
-  # Pods for Utility
+  target 'Liaoliao' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
 
-end
+    # Pods for Liaoliao
 
-target 'Window' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  end
 
-  # Pods for Window
+  target 'Utility' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
 
-end
+    # Pods for Utility
 
-target 'UseCases' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  end
 
-  # Pods for UseCases
-  pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'Socket.IO-Client-Swift', '~> 15.2.0'
-  pod 'Alamofire'
-  pod 'RxAlamofire'
+  target 'Window' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
 
-end
+    # Pods for Window
 
-target 'LiaolisoService' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  end
 
-  # Pods for LiaolisoService
-  pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'Socket.IO-Client-Swift', '~> 15.2.0'
-  pod 'Alamofire'
-  pod 'RxAlamofire'
+  target 'UseCases' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
 
+    # Pods for UseCases
+
+  end
+
+  target 'LiaolisoService' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
+
+    # Pods for LiaolisoService
+
+  end
+
+  target 'Profile' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
+
+    # Pods for LiaolisoService
+
+  end
+  
 end

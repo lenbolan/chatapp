@@ -8,6 +8,8 @@
 import UIKit
 import Utility
 
+import UseCases
+
 public final class Builder {
     
     public static func build(usingNavigationFactory factory: NavigationFactory) -> UIViewController {
@@ -16,6 +18,9 @@ public final class Builder {
         view.title = "Profile"
         
         let submodules: Router.Submodules = ()
+        
+        let accountInteractor = UseCasesFactory.accoutsInteractor
+        
         let router = Router(viewController: view, submodules: submodules)
         
         view.presenterProducer = { input in
@@ -23,7 +28,9 @@ public final class Builder {
                 router: router,
                 useCases: (
                     input: (),
-                    output: ()
+                    output: (
+                        profileUser: accountInteractor.user.filter( { $0 != nil } ).map( { $0! } ), ()
+                    )
                 )
             ))
         }

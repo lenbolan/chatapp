@@ -6,10 +6,17 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+
+import Models
 
 protocol Presentation {
     typealias Input = ()
-    typealias Output = ()
+    typealias Output = (
+        username: Driver<String>,
+        email: Driver<String>
+    )
     typealias Producer = (Presentation.Input) -> Presentation
     
     var input: Input { get }
@@ -22,7 +29,9 @@ class Presenter: Presentation {
     
     typealias UseCases = (
         input: (),
-        output: ()
+        output: (
+            profileUser: Observable<User>, ()
+        )
     )
     
     private let dependencies: Dependencies
@@ -33,10 +42,10 @@ class Presenter: Presentation {
     
     init(input: Input, dependencies: Dependencies) {
         self.input = input
-        self.output = Presenter.output(input: self.input)
         self.dependencies = dependencies
         self.router = dependencies.router
         self.useCases = dependencies.useCases
+        self.output = Presenter.output(input: self.input, useCases: self.useCases)
         self.process()
     }
     
@@ -44,8 +53,12 @@ class Presenter: Presentation {
 
 private extension Presenter {
     
-    static func output(input: Input) -> Output {
-        return ()
+    static func output(input: Input, useCases: UseCases) -> Output {
+        let profileUser = useCases.output.profileUser.map( { $0 } ).asDriver(onErrorDriveWith: .never())
+        return (
+            username: profileUser.map({ $0.username ?? "" }),
+            email: profileUser.map({ $0.email })
+        )
     }
     
     func process() {

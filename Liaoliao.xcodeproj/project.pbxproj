@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F39A6F4C240B11400376454 /* Pods_ChatroomSignUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0E3267DF8513D2CBAE21CD /* Pods_ChatroomSignUp.framework */; };
-		60807324F10DDB8CAC73D3D4 /* Pods_UseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F13F7FED03C96221DE4098D /* Pods_UseCases.framework */; };
-		9A8FF3829A779CE64637A2B4 /* Pods_Liaoliao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866EDBFE47F4501ABDBE443A /* Pods_Liaoliao.framework */; };
-		9FDF0CB77F2109163ABF2AE9 /* Pods_LiaolisoService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BEABFA5219D71A6D9C9D69 /* Pods_LiaolisoService.framework */; };
+		1A9BC91BA0BB45308DE87248 /* Pods_CommonPods_ChatroomLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880C8279082A7BB42F003A60 /* Pods_CommonPods_ChatroomLogin.framework */; };
+		31B3463C15D3A664D7A48B04 /* Pods_CommonPods_Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3F79BF67A30CEE949BB1A4 /* Pods_CommonPods_Profile.framework */; };
+		3B25500764285EA486EDA44D /* Pods_CommonPods_ChatroomSignUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441D4910B167E2A4C2337835 /* Pods_CommonPods_ChatroomSignUp.framework */; };
+		4501E36E643AA7AC94720162 /* Pods_CommonPods_Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6AEFCB6333B774BC55F071 /* Pods_CommonPods_Utility.framework */; };
+		7B57DEA354C7B7667DB561B3 /* Pods_CommonPods_Landing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E721FD5A6DE6A7173D28529 /* Pods_CommonPods_Landing.framework */; };
+		9AF14DBE547EA93C8A9CA421 /* Pods_CommonPods_Liaoliao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB29AA412022665980CFE38 /* Pods_CommonPods_Liaoliao.framework */; };
 		A15410972597599900600EBB /* ChatroomWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15410962597599900600EBB /* ChatroomWebsocket.swift */; };
 		A15410BA25977FE400600EBB /* Tabbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A15410B825977FE400600EBB /* Tabbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A15410BD25977FE400600EBB /* Tabbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15410B625977FE400600EBB /* Tabbar.framework */; };
@@ -114,10 +116,9 @@
 		A1D6F557258DE06C000FE69C /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D6F550258DE06C000FE69C /* Models.framework */; };
 		A1D6F558258DE06C000FE69C /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1D6F550258DE06C000FE69C /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1D6F55D258DE086000FE69C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D6F55C258DE086000FE69C /* User.swift */; };
-		C8A1BD0A26711BC6F6D14040 /* Pods_Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33ADAF07E125283643C2AEC4 /* Pods_Utility.framework */; };
-		D7E14F5758F3CD23BC74D154 /* Pods_ChatroomLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2623DD00343E8F8AC15609 /* Pods_ChatroomLogin.framework */; };
-		EDEB39409BA65D085554BD9F /* Pods_Landing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6E78A86A29FA42B81446EC /* Pods_Landing.framework */; };
-		F7FD06B8D15C24AFE4D5AAE9 /* Pods_Window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1A1507041C58677010BC99 /* Pods_Window.framework */; };
+		BC4EB442E3D23BA3D1266CBA /* Pods_CommonPods_Window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29A77AD7382453934B8B19F /* Pods_CommonPods_Window.framework */; };
+		BD5CEA97FB002F9D7A2CD802 /* Pods_CommonPods_LiaolisoService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D8479D40456AD793A4E2FF /* Pods_CommonPods_LiaolisoService.framework */; };
+		FD8809EF39C659F413DC760F /* Pods_CommonPods_UseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3990419AFE6114A818D16E81 /* Pods_CommonPods_UseCases.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -310,6 +311,20 @@
 			remoteGlobalIDString = A1CE914E25A98F33003A7941;
 			remoteInfo = ChatroomSignUp;
 		};
+		A1CE921E25AA9F2A003A7941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1D6F48A258DCF7C000FE69C;
+			remoteInfo = UseCases;
+		};
+		A1CE922025AA9F40003A7941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1D6F54F258DE06C000FE69C;
+			remoteInfo = Models;
+		};
 		A1D6F490258DCF7C000FE69C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A16B43CB258C739600875743 /* Project object */;
@@ -374,20 +389,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1B2623DD00343E8F8AC15609 /* Pods_ChatroomLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatroomLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02B28A6BAEEE721E4100DE58 /* Pods-CommonPods-Window.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-Window.release.xcconfig"; path = "Target Support Files/Pods-CommonPods-Window/Pods-CommonPods-Window.release.xcconfig"; sourceTree = "<group>"; };
+		03A00E811824BB807A4141E0 /* Pods-CommonPods-Landing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-Landing.release.xcconfig"; path = "Target Support Files/Pods-CommonPods-Landing/Pods-CommonPods-Landing.release.xcconfig"; sourceTree = "<group>"; };
+		04B8EAE15D22CF64D89A358A /* Pods-CommonPods-UseCases.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-UseCases.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-UseCases/Pods-CommonPods-UseCases.debug.xcconfig"; sourceTree = "<group>"; };
+		07F81221518BB6D2DD1B9DAD /* Pods-CommonPods-Utility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-Utility.release.xcconfig"; path = "Target Support Files/Pods-CommonPods-Utility/Pods-CommonPods-Utility.release.xcconfig"; sourceTree = "<group>"; };
+		0E721FD5A6DE6A7173D28529 /* Pods_CommonPods_Landing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPods_Landing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5923A7B50C8EAF7DD61048 /* Pods-LiaolisoService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiaolisoService.debug.xcconfig"; path = "Target Support Files/Pods-LiaolisoService/Pods-LiaolisoService.debug.xcconfig"; sourceTree = "<group>"; };
-		1F0E3267DF8513D2CBAE21CD /* Pods_ChatroomSignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatroomSignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2563B9192490C3D62624E4 /* Pods-Landing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Landing.debug.xcconfig"; path = "Target Support Files/Pods-Landing/Pods-Landing.debug.xcconfig"; sourceTree = "<group>"; };
 		22C06561A60F97A8F3244E68 /* Pods-ChatroomLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatroomLogin.release.xcconfig"; path = "Target Support Files/Pods-ChatroomLogin/Pods-ChatroomLogin.release.xcconfig"; sourceTree = "<group>"; };
 		22E1B0960ED9BFB1713BBA41 /* Pods-ChatroomLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatroomLogin.debug.xcconfig"; path = "Target Support Files/Pods-ChatroomLogin/Pods-ChatroomLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		293F37DE0DAA767B77CB4FF5 /* Pods-Liaoliao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liaoliao.release.xcconfig"; path = "Target Support Files/Pods-Liaoliao/Pods-Liaoliao.release.xcconfig"; sourceTree = "<group>"; };
-		33ADAF07E125283643C2AEC4 /* Pods_Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		37BEABFA5219D71A6D9C9D69 /* Pods_LiaolisoService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiaolisoService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E6E78A86A29FA42B81446EC /* Pods_Landing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Landing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F13F7FED03C96221DE4098D /* Pods_UseCases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UseCases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F1A1507041C58677010BC99 /* Pods_Window.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Window.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		866EDBFE47F4501ABDBE443A /* Pods_Liaoliao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Liaoliao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6A797AFE24E7CCB28C1604 /* Pods-CommonPods-ChatroomSignUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-ChatroomSignUp.release.xcconfig"; path = "Target Support Files/Pods-CommonPods-ChatroomSignUp/Pods-CommonPods-ChatroomSignUp.release.xcconfig"; sourceTree = "<group>"; };
+		3990419AFE6114A818D16E81 /* Pods_CommonPods_UseCases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPods_UseCases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C3F79BF67A30CEE949BB1A4 /* Pods_CommonPods_Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPods_Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		441D4910B167E2A4C2337835 /* Pods_CommonPods_ChatroomSignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPods_ChatroomSignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		453E22AE334062391DF7E7C8 /* Pods-CommonPods-Window.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-Window.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-Window/Pods-CommonPods-Window.debug.xcconfig"; sourceTree = "<group>"; };
+		52D8479D40456AD793A4E2FF /* Pods_CommonPods_LiaolisoService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPods_LiaolisoService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82956430218D36D4DCFDF451 /* Pods-CommonPods-Liaoliao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-Liaoliao.release.xcconfig"; path = "Target Support Files/Pods-CommonPods-Liaoliao/Pods-CommonPods-Liaoliao.release.xcconfig"; sourceTree = "<group>"; };
+		86C10FEAF193E469BB7FBA67 /* Pods-CommonPods-Landing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-Landing.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-Landing/Pods-CommonPods-Landing.debug.xcconfig"; sourceTree = "<group>"; };
+		87E51F85A7AC06AA03509A2E /* Pods-CommonPods-Profile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-Profile.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-Profile/Pods-CommonPods-Profile.debug.xcconfig"; sourceTree = "<group>"; };
+		880C8279082A7BB42F003A60 /* Pods_CommonPods_ChatroomLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPods_ChatroomLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8995E73573778BA0F6E1A43F /* Pods-CommonPods-UseCases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-UseCases.release.xcconfig"; path = "Target Support Files/Pods-CommonPods-UseCases/Pods-CommonPods-UseCases.release.xcconfig"; sourceTree = "<group>"; };
 		8B3D50F361FAFFD6FDF85081 /* Pods-UseCases.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseCases.debug.xcconfig"; path = "Target Support Files/Pods-UseCases/Pods-UseCases.debug.xcconfig"; sourceTree = "<group>"; };
+		8C920ADCB79A1C46716906C5 /* Pods-CommonPods-Liaoliao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-Liaoliao.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-Liaoliao/Pods-CommonPods-Liaoliao.debug.xcconfig"; sourceTree = "<group>"; };
+		8FC50D68090B9C59ADDFF86E /* Pods-CommonPods-LiaolisoService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-LiaolisoService.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-LiaolisoService/Pods-CommonPods-LiaolisoService.debug.xcconfig"; sourceTree = "<group>"; };
 		977468DE46F6300A326FA23D /* Pods-Window.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Window.release.xcconfig"; path = "Target Support Files/Pods-Window/Pods-Window.release.xcconfig"; sourceTree = "<group>"; };
 		A15410962597599900600EBB /* ChatroomWebsocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomWebsocket.swift; sourceTree = "<group>"; };
 		A15410B625977FE400600EBB /* Tabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -494,15 +519,24 @@
 		A1D6F552258DE06C000FE69C /* Models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
 		A1D6F553258DE06C000FE69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1D6F55C258DE086000FE69C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A80BF18065313D91745BCAE8 /* Pods-CommonPods-Profile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-Profile.release.xcconfig"; path = "Target Support Files/Pods-CommonPods-Profile/Pods-CommonPods-Profile.release.xcconfig"; sourceTree = "<group>"; };
+		AC6AEFCB6333B774BC55F071 /* Pods_CommonPods_Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPods_Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFEA8CB3A6DBDB975426FB4E /* Pods-CommonPods-ChatroomLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-ChatroomLogin.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-ChatroomLogin/Pods-CommonPods-ChatroomLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		B6463ECE978B2A0477744C4D /* Pods-Window.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Window.debug.xcconfig"; path = "Target Support Files/Pods-Window/Pods-Window.debug.xcconfig"; sourceTree = "<group>"; };
+		C0910326FC9EDED40444B3E6 /* Pods-CommonPods-LiaolisoService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-LiaolisoService.release.xcconfig"; path = "Target Support Files/Pods-CommonPods-LiaolisoService/Pods-CommonPods-LiaolisoService.release.xcconfig"; sourceTree = "<group>"; };
+		CE3D6751A438B6CA3B36E528 /* Pods-CommonPods-ChatroomSignUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-ChatroomSignUp.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-ChatroomSignUp/Pods-CommonPods-ChatroomSignUp.debug.xcconfig"; sourceTree = "<group>"; };
 		D15DD333BC7152E48C85ABCC /* Pods-ChatroomSignUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatroomSignUp.debug.xcconfig"; path = "Target Support Files/Pods-ChatroomSignUp/Pods-ChatroomSignUp.debug.xcconfig"; sourceTree = "<group>"; };
+		D29A77AD7382453934B8B19F /* Pods_CommonPods_Window.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPods_Window.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D36E107A53CA0821DB4088 /* Pods-Landing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Landing.release.xcconfig"; path = "Target Support Files/Pods-Landing/Pods-Landing.release.xcconfig"; sourceTree = "<group>"; };
 		D51909A3782D2D072266FC29 /* Pods-Liaoliao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liaoliao.debug.xcconfig"; path = "Target Support Files/Pods-Liaoliao/Pods-Liaoliao.debug.xcconfig"; sourceTree = "<group>"; };
 		D6FD22F5D99C6D703AA848C7 /* Pods-LiaolisoService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiaolisoService.release.xcconfig"; path = "Target Support Files/Pods-LiaolisoService/Pods-LiaolisoService.release.xcconfig"; sourceTree = "<group>"; };
+		E28FFADE74716792187C99E5 /* Pods-CommonPods-Utility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-Utility.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-Utility/Pods-CommonPods-Utility.debug.xcconfig"; sourceTree = "<group>"; };
 		E64C3E60C79C479B32F76727 /* Pods-Utility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utility.release.xcconfig"; path = "Target Support Files/Pods-Utility/Pods-Utility.release.xcconfig"; sourceTree = "<group>"; };
 		EA573881DA37D9DCDE6A6A3E /* Pods-ChatroomSignUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatroomSignUp.release.xcconfig"; path = "Target Support Files/Pods-ChatroomSignUp/Pods-ChatroomSignUp.release.xcconfig"; sourceTree = "<group>"; };
 		EFFDDA7200C33C6E5CDEFADF /* Pods-Utility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utility.debug.xcconfig"; path = "Target Support Files/Pods-Utility/Pods-Utility.debug.xcconfig"; sourceTree = "<group>"; };
 		F44C2E39BF58A6CE78C2DB88 /* Pods-UseCases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UseCases.release.xcconfig"; path = "Target Support Files/Pods-UseCases/Pods-UseCases.release.xcconfig"; sourceTree = "<group>"; };
+		F475B2DBD569368CA013996D /* Pods-CommonPods-ChatroomLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-ChatroomLogin.release.xcconfig"; path = "Target Support Files/Pods-CommonPods-ChatroomLogin/Pods-CommonPods-ChatroomLogin.release.xcconfig"; sourceTree = "<group>"; };
+		FDB29AA412022665980CFE38 /* Pods_CommonPods_Liaoliao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPods_Liaoliao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -531,6 +565,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31B3463C15D3A664D7A48B04 /* Pods_CommonPods_Profile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +593,7 @@
 				A16B440B258C744300875743 /* Utility.framework in Frameworks */,
 				A16B441F258C74D400875743 /* Landing.framework in Frameworks */,
 				A154126E2598B82900600EBB /* EmptyView.framework in Frameworks */,
-				9A8FF3829A779CE64637A2B4 /* Pods_Liaoliao.framework in Frameworks */,
+				9AF14DBE547EA93C8A9CA421 /* Pods_CommonPods_Liaoliao.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,7 +601,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7FD06B8D15C24AFE4D5AAE9 /* Pods_Window.framework in Frameworks */,
+				BC4EB442E3D23BA3D1266CBA /* Pods_CommonPods_Window.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +609,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8A1BD0A26711BC6F6D14040 /* Pods_Utility.framework in Frameworks */,
+				4501E36E643AA7AC94720162 /* Pods_CommonPods_Utility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +617,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDEB39409BA65D085554BD9F /* Pods_Landing.framework in Frameworks */,
+				7B57DEA354C7B7667DB561B3 /* Pods_CommonPods_Landing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +625,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7E14F5758F3CD23BC74D154 /* Pods_ChatroomLogin.framework in Frameworks */,
+				1A9BC91BA0BB45308DE87248 /* Pods_CommonPods_ChatroomLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,7 +633,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F39A6F4C240B11400376454 /* Pods_ChatroomSignUp.framework in Frameworks */,
+				3B25500764285EA486EDA44D /* Pods_CommonPods_ChatroomSignUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +641,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60807324F10DDB8CAC73D3D4 /* Pods_UseCases.framework in Frameworks */,
+				FD8809EF39C659F413DC760F /* Pods_CommonPods_UseCases.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +649,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FDF0CB77F2109163ABF2AE9 /* Pods_LiaolisoService.framework in Frameworks */,
+				BD5CEA97FB002F9D7A2CD802 /* Pods_CommonPods_LiaolisoService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,14 +666,15 @@
 		7F80FE01AE169A0E9C250B76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1B2623DD00343E8F8AC15609 /* Pods_ChatroomLogin.framework */,
-				7E6E78A86A29FA42B81446EC /* Pods_Landing.framework */,
-				866EDBFE47F4501ABDBE443A /* Pods_Liaoliao.framework */,
-				33ADAF07E125283643C2AEC4 /* Pods_Utility.framework */,
-				7F1A1507041C58677010BC99 /* Pods_Window.framework */,
-				7F13F7FED03C96221DE4098D /* Pods_UseCases.framework */,
-				37BEABFA5219D71A6D9C9D69 /* Pods_LiaolisoService.framework */,
-				1F0E3267DF8513D2CBAE21CD /* Pods_ChatroomSignUp.framework */,
+				880C8279082A7BB42F003A60 /* Pods_CommonPods_ChatroomLogin.framework */,
+				441D4910B167E2A4C2337835 /* Pods_CommonPods_ChatroomSignUp.framework */,
+				0E721FD5A6DE6A7173D28529 /* Pods_CommonPods_Landing.framework */,
+				FDB29AA412022665980CFE38 /* Pods_CommonPods_Liaoliao.framework */,
+				52D8479D40456AD793A4E2FF /* Pods_CommonPods_LiaolisoService.framework */,
+				3C3F79BF67A30CEE949BB1A4 /* Pods_CommonPods_Profile.framework */,
+				3990419AFE6114A818D16E81 /* Pods_CommonPods_UseCases.framework */,
+				AC6AEFCB6333B774BC55F071 /* Pods_CommonPods_Utility.framework */,
+				D29A77AD7382453934B8B19F /* Pods_CommonPods_Window.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -662,6 +698,24 @@
 				D6FD22F5D99C6D703AA848C7 /* Pods-LiaolisoService.release.xcconfig */,
 				D15DD333BC7152E48C85ABCC /* Pods-ChatroomSignUp.debug.xcconfig */,
 				EA573881DA37D9DCDE6A6A3E /* Pods-ChatroomSignUp.release.xcconfig */,
+				AFEA8CB3A6DBDB975426FB4E /* Pods-CommonPods-ChatroomLogin.debug.xcconfig */,
+				F475B2DBD569368CA013996D /* Pods-CommonPods-ChatroomLogin.release.xcconfig */,
+				CE3D6751A438B6CA3B36E528 /* Pods-CommonPods-ChatroomSignUp.debug.xcconfig */,
+				2E6A797AFE24E7CCB28C1604 /* Pods-CommonPods-ChatroomSignUp.release.xcconfig */,
+				86C10FEAF193E469BB7FBA67 /* Pods-CommonPods-Landing.debug.xcconfig */,
+				03A00E811824BB807A4141E0 /* Pods-CommonPods-Landing.release.xcconfig */,
+				8C920ADCB79A1C46716906C5 /* Pods-CommonPods-Liaoliao.debug.xcconfig */,
+				82956430218D36D4DCFDF451 /* Pods-CommonPods-Liaoliao.release.xcconfig */,
+				8FC50D68090B9C59ADDFF86E /* Pods-CommonPods-LiaolisoService.debug.xcconfig */,
+				C0910326FC9EDED40444B3E6 /* Pods-CommonPods-LiaolisoService.release.xcconfig */,
+				87E51F85A7AC06AA03509A2E /* Pods-CommonPods-Profile.debug.xcconfig */,
+				A80BF18065313D91745BCAE8 /* Pods-CommonPods-Profile.release.xcconfig */,
+				04B8EAE15D22CF64D89A358A /* Pods-CommonPods-UseCases.debug.xcconfig */,
+				8995E73573778BA0F6E1A43F /* Pods-CommonPods-UseCases.release.xcconfig */,
+				E28FFADE74716792187C99E5 /* Pods-CommonPods-Utility.debug.xcconfig */,
+				07F81221518BB6D2DD1B9DAD /* Pods-CommonPods-Utility.release.xcconfig */,
+				453E22AE334062391DF7E7C8 /* Pods-CommonPods-Window.debug.xcconfig */,
+				02B28A6BAEEE721E4100DE58 /* Pods-CommonPods-Window.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1114,6 +1168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A15411E32598754800600EBB /* Build configuration list for PBXNativeTarget "Profile" */;
 			buildPhases = (
+				E7E6AD9C7BDDA7BEB99DE344 /* [CP] Check Pods Manifest.lock */,
 				A15411D52598754800600EBB /* Headers */,
 				A15411D62598754800600EBB /* Sources */,
 				A15411D72598754800600EBB /* Frameworks */,
@@ -1122,6 +1177,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				A1CE922125AA9F40003A7941 /* PBXTargetDependency */,
+				A1CE921F25AA9F2A003A7941 /* PBXTargetDependency */,
 				A15411FD2598758D00600EBB /* PBXTargetDependency */,
 			);
 			name = Profile;
@@ -1568,7 +1625,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Window-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CommonPods-Window-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1590,7 +1647,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Landing-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CommonPods-Landing-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1612,7 +1669,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UseCases-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CommonPods-UseCases-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1634,7 +1691,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ChatroomSignUp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CommonPods-ChatroomSignUp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1656,7 +1713,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ChatroomLogin-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CommonPods-ChatroomLogin-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1678,7 +1735,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Liaoliao-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CommonPods-Liaoliao-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1700,7 +1757,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Utility-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CommonPods-Utility-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1722,7 +1779,29 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LiaolisoService-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CommonPods-LiaolisoService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7E6AD9C7BDDA7BEB99DE344 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonPods-Profile-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1735,15 +1814,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Liaoliao/Pods-Liaoliao-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CommonPods-Liaoliao/Pods-CommonPods-Liaoliao-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Liaoliao/Pods-Liaoliao-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CommonPods-Liaoliao/Pods-CommonPods-Liaoliao-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Liaoliao/Pods-Liaoliao-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CommonPods-Liaoliao/Pods-CommonPods-Liaoliao-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2037,6 +2116,16 @@
 			target = A1CE914E25A98F33003A7941 /* ChatroomSignUp */;
 			targetProxy = A1CE91D525A9CD10003A7941 /* PBXContainerItemProxy */;
 		};
+		A1CE921F25AA9F2A003A7941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1D6F48A258DCF7C000FE69C /* UseCases */;
+			targetProxy = A1CE921E25AA9F2A003A7941 /* PBXContainerItemProxy */;
+		};
+		A1CE922125AA9F40003A7941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1D6F54F258DE06C000FE69C /* Models */;
+			targetProxy = A1CE922025AA9F40003A7941 /* PBXContainerItemProxy */;
+		};
 		A1D6F491258DCF7C000FE69C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A1D6F48A258DCF7C000FE69C /* UseCases */;
@@ -2257,6 +2346,7 @@
 		};
 		A15411E42598754800600EBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87E51F85A7AC06AA03509A2E /* Pods-CommonPods-Profile.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2286,6 +2376,7 @@
 		};
 		A15411E52598754800600EBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A80BF18065313D91745BCAE8 /* Pods-CommonPods-Profile.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2487,7 +2578,7 @@
 		};
 		A16B43E8258C739B00875743 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D51909A3782D2D072266FC29 /* Pods-Liaoliao.debug.xcconfig */;
+			baseConfigurationReference = 8C920ADCB79A1C46716906C5 /* Pods-CommonPods-Liaoliao.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2508,7 +2599,7 @@
 		};
 		A16B43E9258C739B00875743 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 293F37DE0DAA767B77CB4FF5 /* Pods-Liaoliao.release.xcconfig */;
+			baseConfigurationReference = 82956430218D36D4DCFDF451 /* Pods-CommonPods-Liaoliao.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2529,7 +2620,7 @@
 		};
 		A16B43FB258C741700875743 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6463ECE978B2A0477744C4D /* Pods-Window.debug.xcconfig */;
+			baseConfigurationReference = 453E22AE334062391DF7E7C8 /* Pods-CommonPods-Window.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2558,7 +2649,7 @@
 		};
 		A16B43FC258C741700875743 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 977468DE46F6300A326FA23D /* Pods-Window.release.xcconfig */;
+			baseConfigurationReference = 02B28A6BAEEE721E4100DE58 /* Pods-CommonPods-Window.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2586,7 +2677,7 @@
 		};
 		A16B440E258C744300875743 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFFDDA7200C33C6E5CDEFADF /* Pods-Utility.debug.xcconfig */;
+			baseConfigurationReference = E28FFADE74716792187C99E5 /* Pods-CommonPods-Utility.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2615,7 +2706,7 @@
 		};
 		A16B440F258C744300875743 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E64C3E60C79C479B32F76727 /* Pods-Utility.release.xcconfig */;
+			baseConfigurationReference = 07F81221518BB6D2DD1B9DAD /* Pods-CommonPods-Utility.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2643,7 +2734,7 @@
 		};
 		A16B4422258C74D500875743 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F2563B9192490C3D62624E4 /* Pods-Landing.debug.xcconfig */;
+			baseConfigurationReference = 86C10FEAF193E469BB7FBA67 /* Pods-CommonPods-Landing.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2672,7 +2763,7 @@
 		};
 		A16B4423258C74D500875743 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2D36E107A53CA0821DB4088 /* Pods-Landing.release.xcconfig */;
+			baseConfigurationReference = 03A00E811824BB807A4141E0 /* Pods-CommonPods-Landing.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2700,7 +2791,7 @@
 		};
 		A16B4436258C74EB00875743 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22E1B0960ED9BFB1713BBA41 /* Pods-ChatroomLogin.debug.xcconfig */;
+			baseConfigurationReference = AFEA8CB3A6DBDB975426FB4E /* Pods-CommonPods-ChatroomLogin.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2729,7 +2820,7 @@
 		};
 		A16B4437258C74EB00875743 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22C06561A60F97A8F3244E68 /* Pods-ChatroomLogin.release.xcconfig */;
+			baseConfigurationReference = F475B2DBD569368CA013996D /* Pods-CommonPods-ChatroomLogin.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2757,7 +2848,7 @@
 		};
 		A1CE915825A98F33003A7941 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D15DD333BC7152E48C85ABCC /* Pods-ChatroomSignUp.debug.xcconfig */;
+			baseConfigurationReference = CE3D6751A438B6CA3B36E528 /* Pods-CommonPods-ChatroomSignUp.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2787,7 +2878,7 @@
 		};
 		A1CE915925A98F33003A7941 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA573881DA37D9DCDE6A6A3E /* Pods-ChatroomSignUp.release.xcconfig */;
+			baseConfigurationReference = 2E6A797AFE24E7CCB28C1604 /* Pods-CommonPods-ChatroomSignUp.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2816,7 +2907,7 @@
 		};
 		A1D6F495258DCF7C000FE69C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B3D50F361FAFFD6FDF85081 /* Pods-UseCases.debug.xcconfig */;
+			baseConfigurationReference = 04B8EAE15D22CF64D89A358A /* Pods-CommonPods-UseCases.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2845,7 +2936,7 @@
 		};
 		A1D6F496258DCF7C000FE69C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F44C2E39BF58A6CE78C2DB88 /* Pods-UseCases.release.xcconfig */;
+			baseConfigurationReference = 8995E73573778BA0F6E1A43F /* Pods-CommonPods-UseCases.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2873,7 +2964,7 @@
 		};
 		A1D6F4E1258DD248000FE69C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E5923A7B50C8EAF7DD61048 /* Pods-LiaolisoService.debug.xcconfig */;
+			baseConfigurationReference = 8FC50D68090B9C59ADDFF86E /* Pods-CommonPods-LiaolisoService.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2902,7 +2993,7 @@
 		};
 		A1D6F4E2258DD248000FE69C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6FD22F5D99C6D703AA848C7 /* Pods-LiaolisoService.release.xcconfig */;
+			baseConfigurationReference = C0910326FC9EDED40444B3E6 /* Pods-CommonPods-LiaolisoService.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
