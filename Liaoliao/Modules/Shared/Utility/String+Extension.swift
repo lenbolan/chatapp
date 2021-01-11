@@ -15,4 +15,11 @@ public extension String {
         return pattern.evaluate(with: self)
     }
     
+    func converToDate() -> Date? {
+        let createDateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        let dateFromStringFormatter = DateFormatter()
+        dateFromStringFormatter.dateFormat = createDateFormat
+        return dateFromStringFormatter.date(from: self)
+    }
+    
 }

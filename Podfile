@@ -8,6 +8,7 @@ def commonPods
   pod 'Socket.IO-Client-Swift', '~> 15.2.0'
   pod 'Alamofire'
   pod 'RxAlamofire'
+  pod 'RxDataSources'
   
 end
 

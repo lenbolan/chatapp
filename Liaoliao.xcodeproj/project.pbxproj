@@ -19,6 +19,9 @@
 		A15179D825AB2D8C00A6F136 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15179D725AB2D8C00A6F136 /* Message.swift */; };
 		A15179E725AB2ED500A6F136 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15179E625AB2ED500A6F136 /* Role.swift */; };
 		A15179F625AB35C700A6F136 /* ChatroomsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15179F525AB35C700A6F136 /* ChatroomsInteractor.swift */; };
+		A1517A4325AC6CC100A6F136 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1517A4225AC6CC100A6F136 /* Date+Extension.swift */; };
+		A1517A6225AC857100A6F136 /* ChatroomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1517A6025AC857100A6F136 /* ChatroomCell.swift */; };
+		A1517A6325AC857100A6F136 /* ChatroomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1517A6125AC857100A6F136 /* ChatroomCell.xib */; };
 		A15410972597599900600EBB /* ChatroomWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15410962597599900600EBB /* ChatroomWebsocket.swift */; };
 		A15410BA25977FE400600EBB /* Tabbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A15410B825977FE400600EBB /* Tabbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A15410BD25977FE400600EBB /* Tabbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15410B625977FE400600EBB /* Tabbar.framework */; };
@@ -132,6 +135,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A1517A5125AC850F00A6F136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A16B43CB258C739600875743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1D6F48A258DCF7C000FE69C;
+			remoteInfo = UseCases;
+		};
 		A15410A625975BA100600EBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A16B43CB258C739600875743 /* Project object */;
@@ -432,6 +442,9 @@
 		A15179D725AB2D8C00A6F136 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		A15179E625AB2ED500A6F136 /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 		A15179F525AB35C700A6F136 /* ChatroomsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomsInteractor.swift; sourceTree = "<group>"; };
+		A1517A4225AC6CC100A6F136 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		A1517A6025AC857100A6F136 /* ChatroomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomCell.swift; sourceTree = "<group>"; };
+		A1517A6125AC857100A6F136 /* ChatroomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatroomCell.xib; sourceTree = "<group>"; };
 		A15410962597599900600EBB /* ChatroomWebsocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomWebsocket.swift; sourceTree = "<group>"; };
 		A15410B625977FE400600EBB /* Tabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15410B825977FE400600EBB /* Tabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tabbar.h; sourceTree = "<group>"; };
@@ -746,6 +759,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A1517A7125AC991B00A6F136 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A1517A6025AC857100A6F136 /* ChatroomCell.swift */,
+				A1517A6125AC857100A6F136 /* ChatroomCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		A15410B725977FE400600EBB /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -762,6 +784,7 @@
 		A154110A259856F400600EBB /* Chatrooms */ = {
 			isa = PBXGroup;
 			children = (
+				A1517A7125AC991B00A6F136 /* Cells */,
 				A154110B259856F400600EBB /* Chatrooms.h */,
 				A154110C259856F400600EBB /* Info.plist */,
 				A15411272598577100600EBB /* ChatroomsViewController.swift */,
@@ -929,6 +952,7 @@
 				A15412542598956600600EBB /* UIColor+Extension.swift */,
 				A15412D32598CADE00600EBB /* UIImage+Extension.swift */,
 				A15413CD259F22AC00600EBB /* JSONSchemaSupport.swift */,
+				A1517A4225AC6CC100A6F136 /* Date+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -1172,6 +1196,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A1517A5225AC850F00A6F136 /* PBXTargetDependency */,
 				A15412A82598BFFD00600EBB /* PBXTargetDependency */,
 				A154116825986B7400600EBB /* PBXTargetDependency */,
 			);
@@ -1544,6 +1569,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1517A6325AC857100A6F136 /* ChatroomCell.xib in Resources */,
 				A1541133259857A700600EBB /* Chatrooms.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1901,6 +1927,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1517A6225AC857100A6F136 /* ChatroomCell.swift in Sources */,
 				A154115D25985AA200600EBB /* Router.swift in Sources */,
 				A15411282598577100600EBB /* ChatroomsViewController.swift in Sources */,
 				A15411492598592000600EBB /* Presenter.swift in Sources */,
@@ -1967,6 +1994,7 @@
 				A1D6F481258DC545000FE69C /* String+Extension.swift in Sources */,
 				A16B4457258C75E800875743 /* UIViewController+Extensions.swift in Sources */,
 				A15412D42598CADF00600EBB /* UIImage+Extension.swift in Sources */,
+				A1517A4325AC6CC100A6F136 /* Date+Extension.swift in Sources */,
 				A154124825988D9600600EBB /* UINavigationController+Extension.swift in Sources */,
 				A15412552598956600600EBB /* UIColor+Extension.swift in Sources */,
 			);
@@ -2048,6 +2076,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A1517A5225AC850F00A6F136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1D6F48A258DCF7C000FE69C /* UseCases */;
+			targetProxy = A1517A5125AC850F00A6F136 /* PBXContainerItemProxy */;
+		};
 		A15410A725975BA100600EBB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A16B442B258C74EB00875743 /* ChatroomLogin */;
