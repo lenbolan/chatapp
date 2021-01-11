@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import RxSwift
+
+import Models
 
 protocol Presentation {
     typealias Input = ()
@@ -20,9 +23,15 @@ class Presenter: Presentation {
     var input: Input
     var output: Output
     
+    private let bag = DisposeBag()
+    
     typealias UseCases = (
-        input: (),
-        output: ()
+        input: (
+            fetchChatrooms: () -> Completable, ()
+        ),
+        output: (
+            chatrooms: Observable<[Chatroom]>, ()
+        )
     )
     
     private let dependencies: Dependencies
@@ -49,7 +58,16 @@ private extension Presenter {
     }
     
     func process() {
+        self.useCases.input
+            .fetchChatrooms()
+            .debug("fetchChatrooms", trimOutput: false)
+            .subscribe()
+            .disposed(by: bag)
         
+        self.useCases.output.chatrooms
+            .debug("chatrooms", trimOutput: false)
+            .subscribe()
+            .disposed(by: bag)
     }
     
 }

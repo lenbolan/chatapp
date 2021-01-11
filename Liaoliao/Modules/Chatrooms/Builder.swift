@@ -7,6 +7,7 @@
 
 import UIKit
 import Utility
+import UseCases
 
 public final class Builder {
     
@@ -15,15 +16,22 @@ public final class Builder {
         let view = ChatroomsViewController.instantiate(from: storyboard)
         view.title = "Rooms"
         
+        let chatroomsInteractor = UseCasesFactory.chatroomsInteractor
+        
         let submodules: Router.Submodules = ()
+        
         let router = Router(viewController: view, submodules: submodules)
         
         view.presenterProducer = { input in
             Presenter(input: input, dependencies: (
                 router: router,
                 useCases: (
-                    input: (),
-                    output: ()
+                    input: (
+                        fetchChatrooms: chatroomsInteractor.fetchChatrooms, ()
+                    ),
+                    output: (
+                        chatrooms: chatroomsInteractor.chatrooms, ()
+                    )
                 )
             ))
         }
