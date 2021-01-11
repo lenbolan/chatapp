@@ -16,7 +16,7 @@ public enum AccountHttpRouter {
 extension AccountHttpRouter: ReactiveHttpRouter {
     
     public var baseUrlString: String {
-        return "http://localhost:80/"
+        return "http://localhost/"
     }
     
     public var path: String {

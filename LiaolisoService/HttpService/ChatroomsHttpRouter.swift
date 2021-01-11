@@ -24,7 +24,7 @@ extension ChatroomsHttpRouter: ReactiveHttpRouter {
     var path: String {
         switch self {
         case .chatrooms:
-            return "/chatrooms"
+            return "chatrooms"
         }
     }
     

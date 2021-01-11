@@ -28,6 +28,7 @@ extension ChatroomsService: ChatroomsAPI {
     public func chatrooms() -> Single<[Chatroom]> {
         ChatroomsHttpRouter.chatrooms.rx
             .request(withService: self.httpService)
+            .debug("chatrooms req", trimOutput: false)
             .responseJSON()
             .map { dataResponse in
                 if let error = dataResponse.error {
