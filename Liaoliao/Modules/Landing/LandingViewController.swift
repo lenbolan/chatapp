@@ -32,7 +32,7 @@ class LandingViewController: UIViewController {
 private extension LandingViewController {
     
     func setupUI() {
-        logoImageView.image = UIImage(named: "logo", in: Bundle(for: LandingViewController.self), with: nil)
+//        logoImageView.image = UIImage(named: "logo", in: Bundle(for: LandingViewController.self), with: nil)
         
         startButton.layer.cornerRadius = 12
         startButton.layer.masksToBounds = true
