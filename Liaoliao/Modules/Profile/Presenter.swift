@@ -12,7 +12,9 @@ import RxCocoa
 import Models
 
 protocol Presentation {
-    typealias Input = ()
+    typealias Input = (
+        onLogout: Driver<Void>, ()
+    )
     typealias Output = (
         username: Driver<String>,
         email: Driver<String>
@@ -27,8 +29,12 @@ class Presenter: Presentation {
     var input: Input
     var output: Output
     
+    private let bag = DisposeBag()
+    
     typealias UseCases = (
-        input: (),
+        input: (
+            logout: () -> Single<()>, ()
+        ),
         output: (
             profileUser: Observable<User>, ()
         )
@@ -62,7 +68,17 @@ private extension Presenter {
     }
     
     func process() {
-        
+        self.input.onLogout
+            .asObservable()
+            .flatMap({ [useCases] _ in
+                useCases.input.logout()
+            })
+            .map({ [router] _ in
+                router.routeToRoot()
+            })
+            .asDriver(onErrorDriveWith: .never())
+            .drive()
+            .disposed(by: bag)
     }
     
 }

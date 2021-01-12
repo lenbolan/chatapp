@@ -39,6 +39,14 @@ public extension AccountInteractor {
             .flatMap(saveUser(user:))
     }
     
+    func logout() -> Single<()> {
+        return Single.create { (single) -> Disposable in
+            self.userSettings.clearTokens()
+            single(.success(()))
+            return Disposables.create()
+        }
+    }
+    
 }
 
 private extension AccountInteractor {

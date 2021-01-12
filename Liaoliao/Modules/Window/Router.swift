@@ -16,7 +16,7 @@ class Router {
         landingModule: (_ onStart: @escaping () -> Void) -> UIViewController,
         loginModule: (_ onLogin: @escaping () -> Void, _ swapSignUp: @escaping () -> Void) -> UIViewController,
         signUpModule: (_ onSignUp: @escaping () -> Void, _ swapLogin: @escaping () -> Void) -> UIViewController,
-        tabbarModule: () -> UIViewController
+        tabbarModule: (_ onLogout: @escaping () -> Void) -> UIViewController
     )
     
     init(window: UIWindow, submodules: Submodules) {
@@ -62,7 +62,9 @@ extension Router: Routing {
     }
     
     func routeToChatrooms() {
-        let tabbarView = self.submodules.tabbarModule()
+        let tabbarView = self.submodules.tabbarModule { [weak self] in
+            self?.routeToLogin()
+        }
         self.window.rootViewController = tabbarView
         self.window.makeKeyAndVisible()
     }
