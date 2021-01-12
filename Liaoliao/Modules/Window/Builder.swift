@@ -11,6 +11,8 @@ import ChatroomLogin
 import ChatroomSignUp
 import Tabbar
 
+import UseCases
+
 public final class Builder {
     
     public static func build(windowScene: UIWindowScene) -> UIWindow {
@@ -21,6 +23,8 @@ public final class Builder {
         let signUpModule = ChatroomSignUp.Builder.build
         let tabbarModule = Tabbar.Builder.build
         
+        let accountInteractor = UseCasesFactory.accoutsInteractor
+        
         let router = Router(
             window: window,
             submodules: (
@@ -30,7 +34,10 @@ public final class Builder {
                 tabbarModule: tabbarModule
             )
         )
-        let presenter = Presenter(router: router)
+        let presenter = Presenter(router: router,
+                                  useCases: (
+                                    validate: accountInteractor.validate, ()
+                                  ))
         window.presenter = presenter
         
         return window

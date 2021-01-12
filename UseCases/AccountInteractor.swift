@@ -47,6 +47,13 @@ public extension AccountInteractor {
         }
     }
     
+    func validate() -> Single<Bool> {
+        return Single.create { (single) -> Disposable in
+            single(.success(!self.userSettings.accessToken.isEmpty))
+            return Disposables.create()
+        }
+    }
+    
 }
 
 private extension AccountInteractor {
