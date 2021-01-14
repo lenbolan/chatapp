@@ -18,7 +18,7 @@ public final class ChatroomHttpService: ReactiveHttpService {
     }
     
     public func request(_ urlRequest: URLRequestConvertible) -> DataRequest {
-        self.session.request(urlRequest)
+        self.session.request(urlRequest).validate(statusCode: 200..<400)
     }
     
 }

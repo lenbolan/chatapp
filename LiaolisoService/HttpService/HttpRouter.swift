@@ -16,6 +16,7 @@ public protocol HttpRouter {
     var method: HTTPMethod { get }
     var headers: HTTPHeaders? { get }
     var parameters: Parameters? { get }
+    var requestInterceptor: RequestInterceptor? { get }
     func body() throws -> Data?
     func request(usingHttpService httpService: HttpService) throws -> DataRequest
 }
@@ -23,8 +24,8 @@ public protocol HttpRouter {
 extension HttpRouter {
     
     public var parameters: Parameters? { return nil }
-    
     public func body() throws -> Data? { return nil }
+    public var requestInterceptor: RequestInterceptor? { return nil }
     
     func asURLRequest() throws -> URLRequest {
         var url = try baseUrlString.asURL()
@@ -48,7 +49,7 @@ extension Reactive where Base: ReactiveHttpRouter {
     
     func request<Service: ReactiveHttpService>(withService service: Service) -> Observable<DataRequest> {
         do {
-            return try service.rx.request(base.asURLRequest())
+            return try service.rx.request(base.asURLRequest(), base.requestInterceptor)
         } catch {
             return .error(error)
         }

@@ -22,9 +22,12 @@ public protocol ReactiveHttpService: HttpService, ReactiveCompatible {
 
 extension Reactive where Base: ReactiveHttpService {
     
-    public func request(_ urlRequest: URLRequestConvertible) -> Observable<DataRequest> {
+    public func request(_ urlRequest: URLRequestConvertible,
+                        _ requestInterceptor: RequestInterceptor?) -> Observable<DataRequest> {
         
-        return base.session.rx.request(urlRequest: urlRequest)
+        return base.session.rx
+            .request(urlRequest: urlRequest, interceptor: requestInterceptor)
+            .validate(statusCode: 200..<400)
         
     }
     

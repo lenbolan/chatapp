@@ -13,6 +13,9 @@
 		4501E36E643AA7AC94720162 /* Pods_CommonPods_Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6AEFCB6333B774BC55F071 /* Pods_CommonPods_Utility.framework */; };
 		7B57DEA354C7B7667DB561B3 /* Pods_CommonPods_Landing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E721FD5A6DE6A7173D28529 /* Pods_CommonPods_Landing.framework */; };
 		9AF14DBE547EA93C8A9CA421 /* Pods_CommonPods_Liaoliao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB29AA412022665980CFE38 /* Pods_CommonPods_Liaoliao.framework */; };
+		A150477625B01A220043A3C1 /* JWTAccessTokenInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150477525B01A220043A3C1 /* JWTAccessTokenInterceptor.swift */; };
+		A150478525B01FBC0043A3C1 /* RefreshToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150478425B01FBC0043A3C1 /* RefreshToken.swift */; };
+		A150479425B022CE0043A3C1 /* RefreshTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150479325B022CE0043A3C1 /* RefreshTokenResponse.swift */; };
 		A15179AB25AB295200A6F136 /* Chatrooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15179AA25AB295200A6F136 /* Chatrooms.swift */; };
 		A15179BA25AB2A5600A6F136 /* Chatroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15179B925AB2A5600A6F136 /* Chatroom.swift */; };
 		A15179C925AB2ACE00A6F136 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15179C825AB2ACE00A6F136 /* Member.swift */; };
@@ -436,6 +439,9 @@
 		8C920ADCB79A1C46716906C5 /* Pods-CommonPods-Liaoliao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-Liaoliao.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-Liaoliao/Pods-CommonPods-Liaoliao.debug.xcconfig"; sourceTree = "<group>"; };
 		8FC50D68090B9C59ADDFF86E /* Pods-CommonPods-LiaolisoService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-LiaolisoService.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-LiaolisoService/Pods-CommonPods-LiaolisoService.debug.xcconfig"; sourceTree = "<group>"; };
 		977468DE46F6300A326FA23D /* Pods-Window.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Window.release.xcconfig"; path = "Target Support Files/Pods-Window/Pods-Window.release.xcconfig"; sourceTree = "<group>"; };
+		A150477525B01A220043A3C1 /* JWTAccessTokenInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTAccessTokenInterceptor.swift; sourceTree = "<group>"; };
+		A150478425B01FBC0043A3C1 /* RefreshToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshToken.swift; sourceTree = "<group>"; };
+		A150479325B022CE0043A3C1 /* RefreshTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenResponse.swift; sourceTree = "<group>"; };
 		A15179AA25AB295200A6F136 /* Chatrooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatrooms.swift; sourceTree = "<group>"; };
 		A15179B925AB2A5600A6F136 /* Chatroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatroom.swift; sourceTree = "<group>"; };
 		A15179C825AB2ACE00A6F136 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
@@ -851,6 +857,7 @@
 				A15413A3259F096700600EBB /* ChatroomHttpService.swift */,
 				A15413B1259F0A4500600EBB /* AccountHttpRouter.swift */,
 				A1CE926725AB1952003A7941 /* ChatroomsHttpRouter.swift */,
+				A150477525B01A220043A3C1 /* JWTAccessTokenInterceptor.swift */,
 			);
 			path = HttpService;
 			sourceTree = "<group>";
@@ -1048,6 +1055,8 @@
 				A15179C825AB2ACE00A6F136 /* Member.swift */,
 				A15179D725AB2D8C00A6F136 /* Message.swift */,
 				A15179E625AB2ED500A6F136 /* Role.swift */,
+				A150478425B01FBC0043A3C1 /* RefreshToken.swift */,
+				A150479325B022CE0043A3C1 /* RefreshTokenResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2046,6 +2055,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1CE923025AAE441003A7941 /* UserSettingsService.swift in Sources */,
+				A150477625B01A220043A3C1 /* JWTAccessTokenInterceptor.swift in Sources */,
 				A1D6F4EB258DD274000FE69C /* ChatroomWebsocketService.swift in Sources */,
 				A1CE927725AB1B77003A7941 /* ChatroomsService.swift in Sources */,
 				A15412FC2599C59C00600EBB /* HttpService.swift in Sources */,
@@ -2062,7 +2072,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15410972597599900600EBB /* ChatroomWebsocket.swift in Sources */,
+				A150478525B01FBC0043A3C1 /* RefreshToken.swift in Sources */,
 				A15179AB25AB295200A6F136 /* Chatrooms.swift in Sources */,
+				A150479425B022CE0043A3C1 /* RefreshTokenResponse.swift in Sources */,
 				A15179BA25AB2A5600A6F136 /* Chatroom.swift in Sources */,
 				A15413F725A0066C00600EBB /* ChatroomError.swift in Sources */,
 				A15413C0259F151A00600EBB /* AuthResponse.swift in Sources */,

@@ -42,4 +42,8 @@ extension ChatroomsHttpRouter: ReactiveHttpRouter {
         ]
     }
     
+    var requestInterceptor: RequestInterceptor? {
+        return JWTAccessTokenInterceptor(userSettingsService: UserSettingsService.shared)
+    }
+    
 }
