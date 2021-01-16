@@ -73,13 +73,6 @@ private extension Presenter {
             .drive()
             .disposed(by: bag)
         
-        self.router.routeToLanding()
-            .flatMap(self.router.routeToLogin)
-            .map(self.routeToRelay.accept)
-            .asDriver(onErrorDriveWith: .never())
-            .drive()
-            .disposed(by: bag)
-        
         self.routeToDriver
             .debug("routeToDriver", trimOutput: false)
             .filter({
