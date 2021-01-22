@@ -20,7 +20,7 @@ abstract_target 'CommonPods' do
     # Comment the next line if you don't want to use dynamic frameworks
     use_frameworks!
 
-    # Pods for ChatroomLogin
+    # Pods for ChatroomSignUp
 
   end
 
@@ -36,7 +36,7 @@ abstract_target 'CommonPods' do
     # Comment the next line if you don't want to use dynamic frameworks
     use_frameworks!
 
-    # Pods for ChatroomLogin
+    # Pods for Chatrooms
 
   end
 
@@ -92,7 +92,15 @@ abstract_target 'CommonPods' do
     # Comment the next line if you don't want to use dynamic frameworks
     use_frameworks!
 
-    # Pods for LiaolisoService
+    # Pods for Profile
+
+  end
+  
+  target 'CreateChatroom' do
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
+
+    # Pods for CreateChatroom
 
   end
   

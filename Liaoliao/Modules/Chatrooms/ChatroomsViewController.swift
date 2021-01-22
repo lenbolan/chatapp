@@ -55,7 +55,9 @@ class ChatroomsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.presenter = presenterProducer(())
+        self.presenter = presenterProducer((
+            onCreateTap: self.createChatroomButton.rx.tap.asDriver(), ()
+        ))
         setupUI()
         setupBinding()
     }

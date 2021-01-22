@@ -13,7 +13,9 @@ import RxDataSources
 import Models
 
 protocol Presentation {
-    typealias Input = ()
+    typealias Input = (
+        onCreateTap: Driver<Void>, ()
+    )
     typealias Output = (
         sections: Driver<[ChatroomsSection]>, ()
     )
@@ -74,6 +76,13 @@ private extension Presenter {
             .fetchChatrooms()
             .debug("fetchChatrooms", trimOutput: false)
             .subscribe()
+            .disposed(by: bag)
+        
+        self.input.onCreateTap
+            .map({ [router] (_) in
+                router.routeToCreate()
+            })
+            .drive()
             .disposed(by: bag)
     }
     

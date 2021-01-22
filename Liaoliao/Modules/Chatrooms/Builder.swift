@@ -8,6 +8,7 @@
 import UIKit
 import Utility
 import UseCases
+import CreateChatroom
 
 public final class Builder {
     
@@ -17,8 +18,11 @@ public final class Builder {
         view.title = "Rooms"
         
         let chatroomsInteractor = UseCasesFactory.chatroomsInteractor
+        let createChatroomModule = CreateChatroom.Builder.build
         
-        let submodules: Router.Submodules = ()
+        let submodules: Router.Submodules = (
+            createChatroomModule: createChatroomModule, ()
+        )
         
         let router = Router(viewController: view, submodules: submodules)
         

@@ -8,14 +8,12 @@
 import UIKit
 
 protocol Routing {
-    func routeToCreate()
+    
 }
 
 class Router {
     
-    typealias Submodules = (
-        createChatroomModule: () -> UIViewController, ()
-    )
+    typealias Submodules = ()
     
     private weak var viewController: UIViewController?
     private let submodules: Submodules
@@ -29,9 +27,6 @@ class Router {
 
 extension Router: Routing {
     
-    func routeToCreate() {
-        let createView = submodules.createChatroomModule()
-        self.viewController?.present(createView, animated: true, completion: nil)
-    }
+    
     
 }
