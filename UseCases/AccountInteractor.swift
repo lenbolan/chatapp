@@ -7,20 +7,30 @@
 
 import RxSwift
 import RxRelay
+
 import LiaolisoService
 import Models
 
 public final class AccountInteractor {
     
+    let localUrl = "http://localhost/"
+    
+    private let bag = DisposeBag()
+    
     private let accountService: AccountAPI
     private let userSettings: UserSettingsAPI
+    private let websocketService: AccountWebsocketAPI
     
     private let userRelay: BehaviorRelay<User?> = BehaviorRelay(value: nil)
     public lazy var user: Observable<User?> = self.userRelay.asObservable()
     
-    init(accountService: AccountAPI, userSettings: UserSettingsAPI) {
+    init(accountService: AccountAPI,
+         userSettings: UserSettingsAPI,
+         websocketService: AccountWebsocketAPI) {
         self.accountService = accountService
         self.userSettings = userSettings
+        self.websocketService = websocketService
+        setupSocketConnection()
     }
     
 }
@@ -64,6 +74,18 @@ private extension AccountInteractor {
             self.userSettings.saveTokens(tokenData: tokenData)
         }
         return .just(())
+    }
+    
+    func setupSocketConnection() {
+        self.userSettings.tokenObservable
+            .filter({ !$0.isEmpty })
+            .withLatestFrom(Observable.just(localUrl)) { (URL(string: $1)!, $0) }
+            .flatMap({ [websocketService] (url, token) in
+                websocketService.setupConnection(usingSocketUrl: url, authToken: token)
+            })
+            .debug("setupConnection >>>", trimOutput: false)
+            .subscribe()
+            .disposed(by: bag)
     }
     
 }

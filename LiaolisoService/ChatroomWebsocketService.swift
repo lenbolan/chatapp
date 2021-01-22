@@ -11,14 +11,15 @@ import RxRelay
 
 import Models
 
-public protocol ChatroomWebsocketAPI {
-    
+protocol WebsocketResponseAPI {
     var socketResponse: Observable<ChatroomWebsocket.Response> { get }
-    func login(username: String, email: String)
-    
 }
 
-public class ChatroomWebsocketService {
+public protocol AccountWebsocketAPI {
+    func setupConnection(usingSocketUrl: URL, authToken: String) -> Single<Void>
+}
+
+public class ChatroomWebsocketService: WebsocketResponseAPI {
     
     private let socketUrl: String
     private var socketManager: SocketManager!
@@ -29,7 +30,6 @@ public class ChatroomWebsocketService {
     
     public init(socketUrl: String) {
         self.socketUrl = socketUrl
-        setup(usingSocketUrl: URL(string: self.socketUrl)!)
     }
     
     deinit {
@@ -38,11 +38,26 @@ public class ChatroomWebsocketService {
     
 }
 
-extension ChatroomWebsocketService: ChatroomWebsocketAPI {
+extension ChatroomWebsocketService: AccountWebsocketAPI {
     
-    public func login(username: String, email: String) {
-        print("Login request received for username: \(username) and email: \(email)")
-        self.socket.emit(ChatSocket.Request.login, username, email)
+    public func setupConnection(usingSocketUrl url: URL, authToken: String) -> Single<Void> {
+        
+        return Single.create { [weak self] (single) -> Disposable in
+            
+            guard let `self` = self else { return Disposables.create() }
+            let param: [String: Any] = ["token": authToken]
+            self.socketManager = SocketManager(socketURL: url, config: [.log(true), .compress])
+            self.socketManager.config = SocketIOClientConfiguration(arrayLiteral: .connectParams(param), .secure(false))
+            self.socket = self.socketManager.defaultSocket
+            
+            self.socket.connect()
+            
+            self.setupSocketResponse(authToken: authToken)
+            
+            single(.success(()))
+            
+            return Disposables.create()
+        }
     }
     
 }
@@ -50,30 +65,31 @@ extension ChatroomWebsocketService: ChatroomWebsocketAPI {
 struct ChatSocket {
     
     struct Request {
-        static let login = "login"
+        static let authenticate = "authenticate"
     }
     
     struct Response {
-        static let loginResponse = "loginResponse"
+        static let connect = "connect"
+        static let authenticated = "authenticated"
+        static let unauthorized = "unauthorized"
     }
     
 }
 
 private extension ChatroomWebsocketService {
     
-    func setup(usingSocketUrl socketUrl: URL) {
-        self.socketManager = SocketManager(socketURL: socketUrl)
-        self.socket = self.socketManager.defaultSocket
+    func setupSocketResponse(authToken: String) {
+        let param: [String: Any] = ["token": authToken]
+        self.socket.on(ChatSocket.Response.connect) { [weak self] (dataArray, socketAck) in
+            self?.socket.emit(ChatSocket.Request.authenticate, param)
+        }
         
-        self.socket.connect()
+        self.socket.on(ChatSocket.Response.authenticated) { [weak self] (dataArray, socketAck) in
+            print("User is authenticated")
+        }
         
-        self.socket.on(ChatSocket.Response.loginResponse) { [weak self] (dataArray, socketAck) in
-            print("Login successful for user: \(dataArray)")
-            
-            if let username = dataArray[0] as? String,
-               let email = dataArray[1] as? String {
-                self?.socketResponseRelay.accept(.loggedIn(username: username, email: email))
-            }
+        self.socket.on(ChatSocket.Response.unauthorized) { [weak self] (dataArray, socketAck) in
+            print("User is unauthorized")
         }
     }
     

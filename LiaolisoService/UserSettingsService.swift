@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 import Models
 
 public protocol UserSettingsAPI {
+    var tokenObservable: Observable<String> { get }
     var accessToken: String { get }
     var refreshToken: String { get }
     func saveTokens(tokenData: TokenData)
@@ -18,7 +21,8 @@ public protocol UserSettingsAPI {
 }
 
 public final class UserSettingsService {
-    
+    private let tokenRelay: BehaviorRelay<String> = BehaviorRelay(value: "")
+    public lazy var tokenObservable: Observable<String> = self.tokenRelay.asObservable().share(replay: 1, scope: .whileConnected)
     private let EMAIL: String = "EMAIL"
     private let ACCESS_TOKEN: String = "ACCESS_TOKEN"
     private let REFRESH_TOKEN: String = "REFRESH_TOKEN"
@@ -27,7 +31,7 @@ public final class UserSettingsService {
     public static let shared: UserSettingsService = UserSettingsService()
     
     private init() {
-        
+        tokenRelay.accept(UserDefaults.standard.string(forKey: ACCESS_TOKEN) ?? "")
     }
     
 }
@@ -47,6 +51,7 @@ extension UserSettingsService: UserSettingsAPI {
         UserDefaults.standard.set(tokenData.accessToken, forKey: ACCESS_TOKEN)
         UserDefaults.standard.set(tokenData.refreshToken, forKey: REFRESH_TOKEN)
         UserDefaults.standard.set(tokenData.expiresIn, forKey: EXPIRES_IN)
+        tokenRelay.accept(tokenData.accessToken)
     }
     
     public func getTokens() -> TokenData {
@@ -66,6 +71,7 @@ extension UserSettingsService: UserSettingsAPI {
         UserDefaults.standard.removeObject(forKey: ACCESS_TOKEN)
         UserDefaults.standard.removeObject(forKey: REFRESH_TOKEN)
         UserDefaults.standard.removeObject(forKey: EXPIRES_IN)
+        tokenRelay.accept("")
     }
     
 }
