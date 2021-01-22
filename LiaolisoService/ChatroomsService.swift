@@ -6,8 +6,10 @@
 //
 
 import RxSwift
+import Alamofire
 
 import Models
+import Utility
 
 public protocol ChatroomsAPI {
     func chatrooms() -> Single<[Chatroom]>
@@ -30,19 +32,40 @@ extension ChatroomsService: ChatroomsAPI {
             .request(withService: self.httpService)
             .debug("chatrooms req", trimOutput: false)
             .responseJSON()
-            .map { dataResponse in
-                if let error = dataResponse.error {
-                    print(error)
-                    throw ChatroomError.custom(error: error.localizedDescription)
-                }
-                guard let statusCode = dataResponse.response?.statusCode,
-                      statusCode == 200,
-                      let data = dataResponse.data else {
-                    throw ChatroomError.notFound(message: "Chatroom does not exist")
-                }
-                return try Chatrooms.init(data: data)
-            }
+            .map(ResponseParser.parseThrowable(dataResponse:))
             .asSingle()
+    }
+    
+}
+
+class ResponseParser {
+    
+    static func parseThrowable<T: Codable>(dataResponse: DataResponse<Any, AFError>) throws -> T {
+        if let error = dataResponse.error {
+            print(error)
+            throw ChatroomError.custom(error: error.localizedDescription)
+        }
+        
+        let statusCode = dataResponse.response?.statusCode
+        
+        guard [200, 201].contains(statusCode), let data = dataResponse.data else {
+            if statusCode == 404 {
+                throw ChatroomError.notFound(message: String(describing: T.self))
+            }
+            if statusCode == 401 {
+                throw ChatroomError.unauthorized(message: String(describing: T.self))
+            }
+            if statusCode == 400 {
+                throw ChatroomError.badRequest
+            }
+            throw ChatroomError.internalError
+        }
+        
+        do {
+            return try newJSONDecoder().decode(T.self, from: data)
+        } catch {
+            throw ChatroomError.parsingFailed
+        }
     }
     
 }

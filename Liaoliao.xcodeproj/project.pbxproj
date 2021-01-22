@@ -13,6 +13,8 @@
 		4501E36E643AA7AC94720162 /* Pods_CommonPods_Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6AEFCB6333B774BC55F071 /* Pods_CommonPods_Utility.framework */; };
 		7B57DEA354C7B7667DB561B3 /* Pods_CommonPods_Landing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E721FD5A6DE6A7173D28529 /* Pods_CommonPods_Landing.framework */; };
 		9AF14DBE547EA93C8A9CA421 /* Pods_CommonPods_Liaoliao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB29AA412022665980CFE38 /* Pods_CommonPods_Liaoliao.framework */; };
+		A14B0A2425BA9A9200B56296 /* ChatroomHttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14B0A2325BA9A9200B56296 /* ChatroomHttpRouter.swift */; };
+		A14B0A3325BAA23200B56296 /* ChatroomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14B0A3225BAA23200B56296 /* ChatroomService.swift */; };
 		A150477625B01A220043A3C1 /* JWTAccessTokenInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150477525B01A220043A3C1 /* JWTAccessTokenInterceptor.swift */; };
 		A150478525B01FBC0043A3C1 /* RefreshToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150478425B01FBC0043A3C1 /* RefreshToken.swift */; };
 		A150479425B022CE0043A3C1 /* RefreshTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150479325B022CE0043A3C1 /* RefreshTokenResponse.swift */; };
@@ -439,6 +441,8 @@
 		8C920ADCB79A1C46716906C5 /* Pods-CommonPods-Liaoliao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-Liaoliao.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-Liaoliao/Pods-CommonPods-Liaoliao.debug.xcconfig"; sourceTree = "<group>"; };
 		8FC50D68090B9C59ADDFF86E /* Pods-CommonPods-LiaolisoService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPods-LiaolisoService.debug.xcconfig"; path = "Target Support Files/Pods-CommonPods-LiaolisoService/Pods-CommonPods-LiaolisoService.debug.xcconfig"; sourceTree = "<group>"; };
 		977468DE46F6300A326FA23D /* Pods-Window.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Window.release.xcconfig"; path = "Target Support Files/Pods-Window/Pods-Window.release.xcconfig"; sourceTree = "<group>"; };
+		A14B0A2325BA9A9200B56296 /* ChatroomHttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomHttpRouter.swift; sourceTree = "<group>"; };
+		A14B0A3225BAA23200B56296 /* ChatroomService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomService.swift; sourceTree = "<group>"; };
 		A150477525B01A220043A3C1 /* JWTAccessTokenInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTAccessTokenInterceptor.swift; sourceTree = "<group>"; };
 		A150478425B01FBC0043A3C1 /* RefreshToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshToken.swift; sourceTree = "<group>"; };
 		A150479325B022CE0043A3C1 /* RefreshTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenResponse.swift; sourceTree = "<group>"; };
@@ -858,6 +862,7 @@
 				A15413B1259F0A4500600EBB /* AccountHttpRouter.swift */,
 				A1CE926725AB1952003A7941 /* ChatroomsHttpRouter.swift */,
 				A150477525B01A220043A3C1 /* JWTAccessTokenInterceptor.swift */,
+				A14B0A2325BA9A9200B56296 /* ChatroomHttpRouter.swift */,
 			);
 			path = HttpService;
 			sourceTree = "<group>";
@@ -1037,6 +1042,7 @@
 				A15413DB25A002E600600EBB /* AccountService.swift */,
 				A1CE922F25AAE441003A7941 /* UserSettingsService.swift */,
 				A1CE927625AB1B77003A7941 /* ChatroomsService.swift */,
+				A14B0A3225BAA23200B56296 /* ChatroomService.swift */,
 			);
 			path = LiaolisoService;
 			sourceTree = "<group>";
@@ -2060,6 +2066,8 @@
 				A1CE927725AB1B77003A7941 /* ChatroomsService.swift in Sources */,
 				A15412FC2599C59C00600EBB /* HttpService.swift in Sources */,
 				A15413A4259F096800600EBB /* ChatroomHttpService.swift in Sources */,
+				A14B0A3325BAA23200B56296 /* ChatroomService.swift in Sources */,
+				A14B0A2425BA9A9200B56296 /* ChatroomHttpRouter.swift in Sources */,
 				A15413DC25A002E600600EBB /* AccountService.swift in Sources */,
 				A1CE926825AB1952003A7941 /* ChatroomsHttpRouter.swift in Sources */,
 				A15413B2259F0A4500600EBB /* AccountHttpRouter.swift in Sources */,

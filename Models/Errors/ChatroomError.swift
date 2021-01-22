@@ -12,6 +12,7 @@ public enum ChatroomError: Error {
     case unauthorized(message: String)
     case parsingFailed
     case custom(error: String)
+    case badRequest
 }
 
 public extension ChatroomError {
@@ -24,6 +25,7 @@ public extension ChatroomError {
         case .unauthorized(let message): return "\(message) not authorized"
         case .parsingFailed: return "Something went wrong while parsing"
         case .custom(let description): return description
+        case .badRequest: return "Bad request"
         }
     }
     

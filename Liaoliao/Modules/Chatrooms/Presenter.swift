@@ -118,10 +118,10 @@ struct ChatroomViewModel {
 
 extension ChatroomViewModel {
     init(usingModel model: Chatroom) {
-        self.id = model.id
+        self.id = model.id ?? ""
         self.title = model.name
         self.statusMessage.accept(model.subject)
-        self.timestamp.accept(model.createdAt.converToDate()?.timeAgoSinceNow() ?? "Unknown")
+        self.timestamp.accept(model.createdAt?.converToDate()?.timeAgoSinceNow() ?? "Unknown")
     }
     
     static func build(models: Set<Chatroom>) -> [ChatroomViewModel] {

@@ -15,6 +15,8 @@ final class JWTAccessTokenInterceptor: RequestInterceptor {
     private let userSettingsService: UserSettingsAPI
     private let httpService: ChatroomHttpService = ChatroomHttpService.shared
     
+    let lock = NSLock()
+    
     private var accessToken: String? {
         return userSettingsService.accessToken
     }
@@ -33,6 +35,8 @@ extension JWTAccessTokenInterceptor {
     
     /// Set the bearer token as part of header with adapt
     func adapt(_ urlRequest: URLRequest, for session: Session, completion: @escaping (Result<URLRequest, Error>) -> Void) {
+        lock.lock(); defer { lock.unlock() }
+        
         var request = urlRequest
         
         if let token = accessToken {
@@ -49,6 +53,8 @@ extension JWTAccessTokenInterceptor {
                for session: Session,
                dueTo error: Error,
                completion: @escaping (RetryResult) -> Void) {
+        
+        lock.lock(); defer { lock.unlock() }
         
         guard let statusCode = request.response?.statusCode else {
             completion(.doNotRetry)
@@ -67,7 +73,7 @@ extension JWTAccessTokenInterceptor {
                 completion(.retry)
             }
         default:
-            completion(.retry)
+            completion(.doNotRetry)
         }
         
     }

@@ -11,11 +11,11 @@ import Utility
 
 // MARK: - Chatroom
 public struct Chatroom: Codable {
-    public let status: Bool
-    public let members: [Member]
-    public let messages: [Message]
-    public let creator, name, subject, createdAt: String
-    public let updatedAt, id: String
+    public var status: Bool = false
+    public var members: [Member]
+    public var messages: [Message] = []
+    public let creator, name, subject: String
+    public var createdAt, updatedAt, id: String?
 
     enum CodingKeys: String, CodingKey {
         case status, members, messages, creator, name, subject
@@ -28,6 +28,14 @@ public struct Chatroom: Codable {
 // MARK: Chatroom convenience initializers and mutators
 
 public extension Chatroom {
+    
+    init(name: String, subject: String, creator: String, members: [Member] = []) {
+        self.name = name
+        self.subject = subject
+        self.creator = creator
+        self.members = members
+    }
+    
     init(data: Data) throws {
         self = try newJSONDecoder().decode(Chatroom.self, from: data)
     }
