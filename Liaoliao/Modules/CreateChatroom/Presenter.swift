@@ -13,7 +13,9 @@ protocol Presentation {
         chatroomName: Driver<String>,
         chatroomSubject: Driver<String>
     )
-    typealias Output = ()
+    typealias Output = (
+        enableCreate: Driver<Bool>, ()
+    )
     typealias Producer = (Presentation.Input) -> Presentation
     
     var input: Input { get }
@@ -49,7 +51,12 @@ class Presenter: Presentation {
 private extension Presenter {
     
     static func output(input: Input) -> Output {
-        return ()
+        let enableDriver: Driver<Bool> = Driver.combineLatest(input.chatroomName, input.chatroomSubject) {
+            !$0.isEmpty && !$1.isEmpty
+        }
+        return (
+            enableCreate: enableDriver, ()
+        )
     }
     
     func process() {
